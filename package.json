@@ -1,0 +1,17 @@
+{
+  "name": "css-framework",
+  "version": "1.0.0",
+  "description": "A class-free CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "classless",
+    "class-free"
+  ],
+  "author": "Evgeny Orekhov",
+  "license": "MIT"
+}
