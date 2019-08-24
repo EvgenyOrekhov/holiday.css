@@ -1,0 +1,36 @@
+img,
+video {
+    max-width: 100%;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+audio,
+embed,
+iframe,
+object {
+    width: 100%;
+}
+
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]),
+select,
+textarea,
+meter,
+progress,
+output,
+label {
+    display: block;
+    width: 100%;
+}
+
+select[multiple],
+textarea {
+    min-height: 8em;
+}
