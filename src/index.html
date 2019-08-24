@@ -248,6 +248,17 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#interactive-elements">Interactive elements</a>
+                <ul>
+                    <li>
+                        <a href="#details">&lt;details&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#dialog">&lt;dialog&gt;</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -910,6 +921,38 @@ Example
                 <textarea placeholder="Placeholder"></textarea>
                 <textarea readonly>Readonly</textarea>
                 <textarea required>Required</textarea>
+            </section>
+        </section>
+        <section id="interactive-elements">
+            <h2>Interactive elements</h2>
+            <section id="details">
+                <h3>&lt;details&gt;</h3>
+                <details>
+                    <summary>Example</summary>
+                    Example
+                </details>
+                <details open>
+                    <summary>Example</summary>
+                    Example
+                </details>
+                <details>
+                    <summary>Example</summary>
+                    Example
+                </details>
+            </section>
+            <section id="dialog">
+                <h3>&lt;dialog&gt;</h3>
+                <button
+                    type="button"
+                    onclick="document.querySelector('#dialog-example').showModal()"
+                >Open dialog</button>
+                <dialog id="dialog-example">
+                    Example
+                    <form method="dialog">
+                        <button>Cancel</button>
+                        <button>OK</button>
+                    </form>
+                </dialog>
             </section>
         </section>
     </main>
