@@ -160,6 +160,23 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#image-and-multimedia">Image and multimedia</a>
+                <ul>
+                    <li>
+                        <a href="#audio">&lt;audio&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#img">&lt;img&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#map-area">&lt;map&gt;, &lt;area&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#video">&lt;video&gt;</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -471,6 +488,60 @@ Example
             <section id="wbr">
                 <h3>&lt;wbr&gt;</h3>
                 Ex<wbr>am<wbr>ple
+            </section>
+        </section>
+        <section id="image-and-multimedia">
+            <h2>Image and multimedia</h2>
+            <section id="audio">
+                <h3>&lt;audio&gt;</h3>
+                <audio
+                    controls
+                    src="https://ccrma.stanford.edu/~jos/mp3/pno-cs.mp3"
+                ></audio>
+            </section>
+            <section id="img">
+                <h3>&lt;img&gt;</h3>
+                <img
+                    src="https://via.placeholder.com/150"
+                    alt="Placeholder"
+                >
+            </section>
+            <section id="map-area">
+                <h3>&lt;map&gt;, &lt;area&gt;</h3>
+                <map name="infographic">
+                    <area
+                        shape="poly"
+                        coords="130,147,200,107,254,219,130,228"
+                        href="https://developer.mozilla.org/docs/Web/HTML"
+                        alt="HTML"
+                    >
+                    <area
+                        shape="poly"
+                        coords="130,147,130,228,6,219,59,107"
+                        href="https://developer.mozilla.org/docs/Web/CSS"
+                        alt="CSS"
+                    >
+                    <area
+                        shape="poly"
+                        coords="130,147,200,107,130,4,59,107"
+                        href="https://developer.mozilla.org/docs/Web/JavaScript"
+                        alt="JavaScript"
+                    >
+                </map>
+                <img
+                    usemap="#infographic"
+                    width="260"
+                    height="232"
+                    src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
+                    alt="MDN infographic"
+                >
+            </section>
+            <section id="video">
+                <h3>&lt;video&gt;</h3>
+                <video
+                    controls
+                    src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+                ></video>
             </section>
         </section>
     </main>
