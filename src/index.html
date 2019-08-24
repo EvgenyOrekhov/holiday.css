@@ -177,6 +177,23 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#embedded-content">Embedded content</a>
+                <ul>
+                    <li>
+                        <a href="#embed">&lt;embed&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#iframe">&lt;iframe&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#object">&lt;object&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#picture">&lt;picture&gt;</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -542,6 +559,56 @@ Example
                     controls
                     src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
                 ></video>
+            </section>
+        </section>
+        <section id="embedded-content">
+            <h2>Embedded content</h2>
+            <section id="embed">
+                <h3>&lt;embed&gt;</h3>
+                <embed
+                    type="video/mp4"
+                    src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+                >
+            </section>
+            <section id="iframe">
+                <h3>&lt;iframe&gt;</h3>
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+                >
+                </iframe>
+            </section>
+            <section id="object">
+                <h3>&lt;object&gt;</h3>
+                <object
+                    type="application/pdf"
+                    data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf"
+                >
+                </object>
+            </section>
+            <section id="pucture">
+                <h3>&lt;pucture&gt;</h3>
+                <picture>
+                    <source
+                        srcset="https://via.placeholder.com/1440x150"
+                        media="(min-width: 1440px)"
+                    >
+                    <source
+                        srcset="https://via.placeholder.com/1024x150"
+                        media="(min-width: 1024px)"
+                    >
+                    <source
+                        srcset="https://via.placeholder.com/768x150"
+                        media="(min-width: 768px)"
+                    >
+                    <source
+                        srcset="https://via.placeholder.com/320x150"
+                        media="(min-width: 320px)"
+                    >
+                    <img
+                        src="https://via.placeholder.com/150"
+                        alt="Placeholder"
+                    >
+                </picture>
             </section>
         </section>
     </main>
