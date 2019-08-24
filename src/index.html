@@ -210,6 +210,44 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#forms">forms</a>
+                <ul>
+                    <li>
+                        <a href="#button">&lt;button&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#datalist">&lt;datalist&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#fieldset-legend">&lt;fieldset&gt;, &lt;legend&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#form">&lt;form&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#input">&lt;input&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#label">&lt;label&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#meter">&lt;meter&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#output">&lt;output&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#progress">&lt;progress&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#select">&lt;select&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#textarea">&lt;textarea&gt;</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -662,6 +700,216 @@ Example
                         </tr>
                     </tfoot>
                 </table>
+            </section>
+        </section>
+        <section id="forms">
+            <h2>Forms</h2>
+            <section id="button">
+                <h3>&lt;button&gt;</h3>
+                <button type="button">Button</button>
+                <button disabled="disabled">Disabled</button>
+                <button type="reset">Reset</button>
+                <button>Submit</button>
+                <button type="submit">Submit</button>
+            </section>
+            <section id="datalist">
+                <h3>&lt;datalist&gt;</h3>
+                <input list="datalist-example">
+                <datalist id="datalist-example">
+                    <option value="Example">
+                    <option value="Example">
+                    <option value="Example">
+                </datalist>
+            </section>
+            <section id="fieldset-legend">
+                <h3>&lt;fieldset&gt;, &lt;fieldset&gt;</h3>
+                <fieldset>
+                    <button type="button">Button</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Example</legend>
+                    <button type="button">Button</button>
+                </fieldset>
+                <fieldset disabled>
+                    <legend>Disabled</legend>
+                    <button type="button">Button</button>
+                </fieldset>
+            </section>
+            <section id="form">
+                <h3>&lt;form&gt;</h3>
+                <form>
+                    <label>
+                        Example
+                        <input>
+                    </label>
+                    <button>Submit</button>
+                </form>
+                <form>
+                    <label>
+                        Required
+                        <input required>
+                    </label>
+                    <button>Submit</button>
+                </form>
+            </section>
+            <section id="input">
+                <h3>&lt;input&gt;</h3>
+                <input>
+            </section>
+            <section id="label">
+                <h3>&lt;label&gt;</h3>
+                <label for="label-example">Example</label>
+                <input id="label-example">
+                <label>
+                    Example
+                    <input>
+                </label>
+            </section>
+            <section id="meter">
+                <h3>&lt;meter&gt;</h3>
+                <meter
+                    value="0"
+                    min="0"
+                    max="100"
+                    low="25"
+                    high="75"
+                    optimum="100"
+                >0%</meter>
+                <meter
+                    value="10"
+                    min="0"
+                    max="100"
+                    low="25"
+                    high="75"
+                    optimum="100"
+                >10%</meter>
+                <meter
+                    value="50"
+                    min="0"
+                    max="100"
+                    low="25"
+                    high="75"
+                    optimum="100"
+                >50%</meter>
+                <meter
+                    value="100"
+                    min="0"
+                    max="100"
+                    low="25"
+                    high="75"
+                    optimum="100"
+                >100%</meter>
+            </section>
+            <section id="output">
+                <h3>&lt;output&gt;</h3>
+                <output>Example</output>
+            </section>
+            <section id="progress">
+                <h3>&lt;progress&gt;</h3>
+                <progress value="0" max="100">0%</progress>
+                <progress value="50" max="100">50%</progress>
+                <progress value="100" max="100">100%</progress>
+            </section>
+            <section id="select">
+                <h3>&lt;select&gt;</h3>
+                <select>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+                <select multiple>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+                <select required>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+                <select multiple required>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+                <select disabled>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+                <select multiple disabled>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <option>Example</option>
+                    <optgroup label="Example">
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                    </optgroup>
+                    <optgroup label="Disabled" disabled>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                        <option>Disabled</option>
+                    </optgroup>
+                </select>
+            </section>
+            <section id="textarea">
+                <h3>&lt;textarea&gt;</h3>
+                <textarea>Example</textarea>
+                <textarea disabled>Disabled</textarea>
+                <textarea placeholder="Placeholder"></textarea>
+                <textarea readonly>Readonly</textarea>
+                <textarea required>Required</textarea>
             </section>
         </section>
     </main>
