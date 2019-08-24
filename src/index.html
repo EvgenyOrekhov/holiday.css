@@ -74,6 +74,92 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#inline-text-semantics">Inline text semantics</a>
+                <ul>
+                    <li>
+                        <a href="#a">&lt;a&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#abbr">&lt;abbr&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#b">&lt;b&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#bdi">&lt;bdi&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#bdo">&lt;bdo&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#br">&lt;br&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#cite">&lt;cite&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#code">&lt;code&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#data">&lt;data&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#dfn">&lt;dfn&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#em">&lt;em&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#i">&lt;i&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#kbd">&lt;kbd&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#mark">&lt;mark&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#q">&lt;q&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#ruby-rb-rp-rt-rtc">&lt;ruby&gt;, &lt;rb&gt;, &lt;rp&gt;, &lt;rt&gt;, &lt;rtc&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#s">&lt;s&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#samp">&lt;samp&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#small">&lt;small&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#span">&lt;span&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#strong">&lt;strong&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#sub">&lt;sub&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#sup">&lt;sup&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#time">&lt;time&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#u">&lt;u&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#var">&lt;var&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#wbr">&lt;wbr&gt;</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -261,6 +347,130 @@ Example
                     </li>
                     <li>Example</li>
                 </ul>
+            </section>
+        </section>
+        <section id="inline-text-semantics">
+            <h2>Inline text semantics</h2>
+            <section id="a">
+                <h3>&lt;a&gt;</h3>
+                <a href="https://example.com">Example</a>
+            </section>
+            <section id="abbr">
+                <h3>&lt;abbr&gt;</h3>
+                <abbr title="Example">Example</abbr>
+            </section>
+            <section id="b">
+                <h3>&lt;b&gt;</h3>
+                <b>Example</b>
+            </section>
+            <section id="bdi">
+                <h3>&lt;bdi&gt;</h3>
+                <bdi>Example</bdi>
+            </section>
+            <section id="bdo">
+                <h3>&lt;bdo&gt;</h3>
+                <bdo dir="rtl">Example</bdo>
+            </section>
+            <section id="br">
+                <h3>&lt;br&gt;</h3>
+                Example<br>
+                Example
+            </section>
+            <section id="cite">
+                <h3>&lt;cite&gt;</h3>
+                <cite>Example</cite>
+            </section>
+            <section id="code">
+                <h3>&lt;code&gt;</h3>
+                <code>Example</code>
+            </section>
+            <section id="data">
+                <h3>&lt;data&gt;</h3>
+                <data value="example">Example</data>
+            </section>
+            <section id="dfn">
+                <h3>&lt;dfn&gt;</h3>
+                <dfn>Example</dfn>
+            </section>
+            <section id="em">
+                <h3>&lt;em&gt;</h3>
+                <em>Example</em>
+            </section>
+            <section id="i">
+                <h3>&lt;i&gt;</h3>
+                <i>Example</i>
+            </section>
+            <section id="kbd">
+                <h3>&lt;kbd&gt;</h3>
+                <kbd>Example</kbd>
+                <br>
+                <kbd><kbd>Example</kbd>+<kbd>Example</kbd></kbd>
+            </section>
+            <section id="mark">
+                <h3>&lt;mark&gt;</h3>
+                <mark>Example</mark>
+            </section>
+            <section id="q">
+                <h3>&lt;q&gt;</h3>
+                <q>Example</q>
+            </section>
+            <section id="ruby-rb-rp-rt-rtc">
+                <h3>&lt;ruby&gt;, &lt;rb&gt;, &lt;rp&gt;, &lt;rt&gt;, &lt;rtc&gt;</h3>
+                <ruby xml:lang="zh-Hant" style="ruby-position: under;">
+                    <rbc>
+                        <rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+                        <rb>來</rb><rp>(</rp><rt>lái</rt><rp>)</rp>
+                        <rb>西</rb><rp>(</rp><rt>xī</rt><rp>)</rp>
+                        <rb>亞</rb><rp>(</rp><rt>yà</rt><rp>)</rp>
+                    </rbc>
+                    <rtc xml:lang="en" style="ruby-position: over;">
+                        <rp>(</rp><rt>Malaysia</rt><rp>)</rp>
+                    </rtc>
+                </ruby>
+            </section>
+            <section id="s">
+                <h3>&lt;s&gt;</h3>
+                <s>Example</s>
+            </section>
+            <section id="samp">
+                <h3>&lt;samp&gt;</h3>
+                <samp>Example</samp>
+            </section>
+            <section id="small">
+                <h3>&lt;small&gt;</h3>
+                <small>Example</small>
+            </section>
+            <section id="span">
+                <h3>&lt;span&gt;</h3>
+                <span>Example</span>
+            </section>
+            <section id="strong">
+                <h3>&lt;strong&gt;</h3>
+                <strong>Example</strong>
+            </section>
+            <section id="sub">
+                <h3>&lt;sub&gt;</h3>
+                <sub>Example</sub>
+            </section>
+            <section id="sup">
+                <h3>&lt;sup&gt;</h3>
+                <sup>Example</sup>
+            </section>
+            <section id="time">
+                <h3>&lt;time&gt;</h3>
+                <time datetime="2004-09-22T16:16:00+1000">September 22, 2004, at 4:16 PM</time>
+            </section>
+            <section id="u">
+                <h3>&lt;u&gt;</h3>
+                <u>Example</u>
+            </section>
+            <section id="var">
+                <h3>&lt;var&gt;</h3>
+                <var>Example</var>
+            </section>
+            <section id="wbr">
+                <h3>&lt;wbr&gt;</h3>
+                Ex<wbr>am<wbr>ple
             </section>
         </section>
     </main>
