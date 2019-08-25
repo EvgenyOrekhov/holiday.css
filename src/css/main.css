@@ -1,0 +1,19 @@
+:disabled {
+    cursor: not-allowed;
+}
+
+[readonly] {
+    cursor: default;
+}
+
+button,
+input {
+    border-radius: 0.25rem;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    padding: 0.5rem;
+}
