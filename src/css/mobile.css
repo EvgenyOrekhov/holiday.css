@@ -30,7 +30,6 @@ label {
     width: 100%;
 }
 
-select[multiple],
 textarea {
     min-height: 8em;
 }
