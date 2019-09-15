@@ -165,3 +165,11 @@ td, th {
 [type="color"] {
     vertical-align: top;
 }
+
+@media (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
