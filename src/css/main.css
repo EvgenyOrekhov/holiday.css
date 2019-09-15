@@ -70,7 +70,9 @@ button:hover:not(:disabled),
     opacity: 0.5;
 }
 
-input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]) {
+input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]),
+meter,
+progress {
     height: 2.25rem;
 }
 
