@@ -152,3 +152,14 @@ table {
 td, th {
     border: 1px solid #b5b5b5;
 }
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+    display: inline;
+    line-height: 2.25rem;
+    vertical-align: top;
+}
+
+[type="color"] {
+    vertical-align: top;
+}
