@@ -188,6 +188,10 @@ dialog {
     border-radius: 0.25rem;
 }
 
+iframe {
+    border: none;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 768px;
