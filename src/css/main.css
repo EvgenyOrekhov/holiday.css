@@ -124,16 +124,12 @@ select:not(:disabled),
 }
 
 summary {
-    border: 1px solid #dbdbdb;
     cursor: pointer;
     height: 2.25rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-}
-
-summary:hover:not(:disabled) {
-    border-color: #b5b5b5;
+    border-radius: 0.25rem;
 }
 
 :invalid:not(form) {
@@ -190,6 +186,19 @@ dialog {
 
 iframe {
     border: none;
+}
+
+details[open] {
+    border: 1px solid #dbdbdb;
+    border-radius: 0.25rem;
+}
+
+details:not([open]) summary {
+    border: 1px solid #dbdbdb;
+}
+
+details:not([open]) summary:hover {
+    border-color: #b5b5b5;
 }
 
 @media (min-width: 768px) {
