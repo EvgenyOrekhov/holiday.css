@@ -218,11 +218,19 @@
                 </ul>
             </li>
             <li>
-                <a href="#forms">forms</a>
+                <a href="#buttons">Buttons</a>
                 <ul>
                     <li>
                         <a href="#button">&lt;button&gt;</a>
                     </li>
+                    <li>
+                        <a href="#button-input">&lt;input&gt;</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#forms">Forms</a>
+                <ul>
                     <li>
                         <a href="#datalist">&lt;datalist&gt;</a>
                     </li>
@@ -763,16 +771,42 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
                 </table>
             </section>
         </section>
-        <section id="forms">
-            <h2>Forms</h2>
+        <section id="buttons">
+            <h2>Buttons</h2>
             <section id="button">
                 <h3>&lt;button&gt;</h3>
                 <button type="button">Button</button>
-                <button disabled="disabled">Disabled</button>
                 <button type="reset">Reset</button>
                 <button>Submit</button>
                 <button type="submit">Submit</button>
+                <button type="button" disabled>Disabled Button</button>
+                <button type="reset" disabled>Disabled Reset</button>
+                <button disabled>Disabled Submit</button>
+                <button type="submit" disabled>Disabled Submit</button>
             </section>
+            <section id="button-input">
+                <h3>&lt;input&gt;</h3>
+                <input type="button" value="Button">
+                <input type="reset">
+                <input type="submit">
+                <input
+                    type="image"
+                    src="https://via.placeholder.com/70x36"
+                    alt="Placeholder"
+                >
+                <input type="button" disabled value="Disabled">
+                <input type="reset" disabled value="Disabled Reset">
+                <input type="submit" disabled value="Disabled Submit">
+                <input
+                    type="image"
+                    disabled
+                    src="https://via.placeholder.com/70x36"
+                    alt="Placeholder"
+                >
+            </section>
+        </section>
+        <section id="forms">
+            <h2>Forms</h2>
             <section id="datalist">
                 <h3>&lt;datalist&gt;</h3>
                 <input list="datalist-example">
@@ -908,8 +942,6 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
                 <input value="Disabled" disabled>
                 <input value="Readonly" readonly>
                 <input value="Required" required>
-                <input type="button" value="Button">
-                <input type="button" disabled value="Disabled">
                 <label>
                     <input type="checkbox">
                     Checkbox
@@ -949,17 +981,6 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
                 <input type="file" disabled>
                 <input type="file" required>
                 <input type="hidden">
-                <input
-                    type="image"
-                    src="https://via.placeholder.com/50x20"
-                    alt="Placeholder"
-                >
-                <input
-                    type="image"
-                    disabled
-                    src="https://via.placeholder.com/50x20"
-                    alt="Placeholder"
-                >
                 <input type="month">
                 <input type="month" disabled>
                 <input type="month" readonly>
@@ -999,13 +1020,11 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
                     max="10"
                     disabled
                 >
-                <input type="reset">
                 <input type="search">
                 <input type="search" value="Example">
                 <input type="search" value="Disabled" disabled>
                 <input type="search" value="Readonly" readonly>
                 <input type="search" value="Required" required>
-                <input type="submit">
                 <input type="tel">
                 <input type="tel" value="+61 2 5550 6077">
                 <input type="tel" value="+61 2 5550 6077" disabled>
