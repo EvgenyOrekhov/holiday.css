@@ -1,5 +1,6 @@
 body {
-    margin: 0.5rem;
+    margin: 0.5rem auto;
+    width: calc(100% - 1rem);
 }
 
 img,
