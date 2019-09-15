@@ -183,6 +183,11 @@ pre code {
     content: "✆ "
 }
 
+dialog {
+    border: none;
+    border-radius: 0.25rem;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 768px;
