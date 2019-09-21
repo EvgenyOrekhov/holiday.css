@@ -65,11 +65,6 @@ button:hover:not(:disabled),
     background-color: #22c65b;
 }
 
-:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-
 input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]),
 meter,
 progress {
@@ -207,6 +202,11 @@ details:first-of-type > summary {
 details:last-of-type,
 details:last-of-type > summary {
     border-radius: 0 0 0.25rem 0.25rem;
+}
+
+:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 @media (min-width: 768px) {
