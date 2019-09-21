@@ -209,6 +209,10 @@ details:last-of-type > summary {
     opacity: 0.5;
 }
 
+:disabled :disabled {
+    opacity: unset;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 768px;
