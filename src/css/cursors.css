@@ -1,0 +1,19 @@
+button,
+summary,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="color"],
+[type="file"],
+label > [type="checkbox"]:not(:disabled),
+label > [type="radio"]:not(:disabled) {
+    cursor: pointer;
+}
+
+[readonly] {
+    cursor: default;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
