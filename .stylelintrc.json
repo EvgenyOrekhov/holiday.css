@@ -1,3 +1,9 @@
 {
-  "extends": "@twinscom/stylelint-config"
+  "extends": "@twinscom/stylelint-config",
+
+  "rules": {
+    "scale-unlimited/declaration-strict-value": null,
+    "selector-max-pseudo-class": null,
+    "selector-max-specificity": null
+  }
 }

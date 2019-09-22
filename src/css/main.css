@@ -35,6 +35,31 @@ button,
     color: #000;
 }
 
+[type="reset"] {
+    background-color: #ff3860;
+    border-color: transparent;
+    color: #fff;
+}
+
+[type="submit"] {
+    background-color: #23d160;
+    border-color: transparent;
+    color: #fff;
+}
+
+[type="color"] {
+    vertical-align: top;
+}
+
+[type="color"],
+[type="file"] {
+    cursor: pointer;
+}
+
+label > [type="color"] {
+    margin-left: 0.25rem;
+}
+
 button:hover:not(:disabled),
 [type="button"]:hover:not(:disabled),
 [type="reset"]:hover:not(:disabled),
@@ -43,21 +68,9 @@ button:hover:not(:disabled),
     border-color: #b5b5b5;
 }
 
-[type="reset"] {
-    background-color: #ff3860;
-    border-color: transparent;
-    color: #fff;
-}
-
 [type="reset"]:hover:not(:disabled) {
     border-color: transparent;
     background-color: #f7375d;
-}
-
-[type="submit"] {
-    background-color: #23d160;
-    border-color: transparent;
-    color: #fff;
 }
 
 [type="submit"]:hover:not(:disabled) {
@@ -75,14 +88,23 @@ select {
     min-height: 2.25rem;
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]),
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not(:invalid),
 textarea,
 select,
 fieldset {
     border: 1px solid #dbdbdb;
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:not(:disabled),
+select:not(:disabled),
+[type="date"]:not(:disabled),
+[type="datetime-local"]:not(:disabled),
+[type="time"]:not(:disabled),
+[type="month"]:not(:disabled),
+[type="week"]:not(:disabled) {
+    background: #fff;
+}
+
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:not(:disabled):not(:invalid),
 textarea:hover:not(:disabled),
 select:hover:not(:disabled) {
     border-color: #b5b5b5;
@@ -100,24 +122,6 @@ label > [type="radio"] {
     cursor: pointer;
 }
 
-[type="color"],
-[type="file"] {
-    cursor: pointer;
-}
-
-label > [type="color"] {
-    margin-left: 0.25rem;
-}
-
-select:not(:disabled),
-[type="date"]:not(:disabled),
-[type="datetime-local"]:not(:disabled),
-[type="time"]:not(:disabled),
-[type="month"]:not(:disabled),
-[type="week"]:not(:disabled) {
-    background: #fff;
-}
-
 summary {
     cursor: pointer;
     height: 2.25rem;
@@ -126,22 +130,12 @@ summary {
     align-items: center;
 }
 
-:invalid:not(form) {
-    border-color: #ff3860 !important;
-    outline-color: #ff3860;
-    border-width: 1px;
-    border-style: solid;
-}
-
-:invalid:not(form):hover:not(:disabled) {
-    border-color: #f7375d !important;
-}
-
 table {
     border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #b5b5b5;
 }
 
@@ -149,10 +143,6 @@ td, th {
 [type="radio"] + label {
     display: inline;
     line-height: 2.25rem;
-    vertical-align: top;
-}
-
-[type="color"] {
     vertical-align: top;
 }
 
@@ -168,11 +158,11 @@ pre code {
 }
 
 [href^="mailto:"]::before {
-    content: "✉ "
+    content: "✉ ";
 }
 
 [href^="tel:"]::before {
-    content: "✆ "
+    content: "✆ ";
 }
 
 dialog {
@@ -184,16 +174,9 @@ iframe {
     border: none;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type */
 details[open] {
     border: 1px solid #dbdbdb;
-}
-
-details:not([open]) summary {
-    border: 1px solid #dbdbdb;
-}
-
-details:not([open]) summary:hover {
-    border-color: #b5b5b5;
 }
 
 details:first-of-type,
@@ -206,13 +189,32 @@ details:last-of-type > summary {
     border-radius: 0 0 0.25rem 0.25rem;
 }
 
+details:not([open]) summary {
+    border: 1px solid #dbdbdb;
+}
+
+details:not([open]) summary:hover {
+    border-color: #b5b5b5;
+}
+
 :disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
 
+:invalid:not(form) {
+    border-color: #ff3860;
+    outline-color: #ff3860;
+    border-width: 1px;
+    border-style: solid;
+}
+
 :disabled :disabled {
     opacity: unset;
+}
+
+:invalid:not(form):hover:not(:disabled) {
+    border-color: #f7375d;
 }
 
 @media (min-width: 768px) {
