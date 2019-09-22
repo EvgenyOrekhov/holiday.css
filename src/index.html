@@ -1,1275 +1,1452 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS framework</title>
+        <meta name="description" content="A class-free CSS framework" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <title>CSS framework</title>
-    <meta name="description" content="A class-free CSS framework">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+            integrity="sha256-N6+kUxTWxpqVK+BrPWt3t4jeOWPtp37RZEbm5n9X+8U="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/mobile.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
-        integrity="sha256-N6+kUxTWxpqVK+BrPWt3t4jeOWPtp37RZEbm5n9X+8U="
-        crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <header>
-        <h1>CSS framework - a class-free CSS framework</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="#content-sectioning">Content sectioning</a>
-                <ul>
-                    <li>
-                        <a href="#address">&lt;address&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#article">&lt;article&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#aside">&lt;aside&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#footer">&lt;footer&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#header">&lt;header&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#h1-h6">&lt;h1&gt;–&lt;h6&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#section">&lt;section&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#text-content">Text content</a>
-                <ul>
-                    <li>
-                        <a href="#blockquote">&lt;blockquote&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#dl-dt-dd">&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#div">&lt;div&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#figure-figcaption">&lt;figure&gt;, &lt;figcaption&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#hr">&lt;hr&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#ol">&lt;ol&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#p">&lt;p&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#pre">&lt;pre&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#ul">&lt;ul&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#inline-text-semantics">Inline text semantics</a>
-                <ul>
-                    <li>
-                        <a href="#a">&lt;a&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#abbr">&lt;abbr&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#b">&lt;b&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#bdi">&lt;bdi&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#bdo">&lt;bdo&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#br">&lt;br&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#cite">&lt;cite&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#code">&lt;code&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#data">&lt;data&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#dfn">&lt;dfn&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#em">&lt;em&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#i">&lt;i&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#kbd">&lt;kbd&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#mark">&lt;mark&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#q">&lt;q&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#s">&lt;s&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#samp">&lt;samp&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#small">&lt;small&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#span">&lt;span&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#strong">&lt;strong&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#sub">&lt;sub&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#sup">&lt;sup&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#time">&lt;time&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#u">&lt;u&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#var">&lt;var&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#wbr">&lt;wbr&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#image-and-multimedia">Image and multimedia</a>
-                <ul>
-                    <li>
-                        <a href="#audio">&lt;audio&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#img">&lt;img&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#map-area">&lt;map&gt;, &lt;area&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#video">&lt;video&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#embedded-content">Embedded content</a>
-                <ul>
-                    <li>
-                        <a href="#embed">&lt;embed&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#iframe">&lt;iframe&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#object">&lt;object&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#picture">&lt;picture&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#demarcating-edits">Demarcating edits</a>
-                <ul>
-                    <li>
-                        <a href="#del">&lt;del&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#ins">&lt;ins&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#table-content">Table content</a>
-                <ul>
-                    <li>
-                        <a href="#table">&lt;table&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#buttons">Buttons</a>
-                <ul>
-                    <li>
-                        <a href="#button">&lt;button&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#button-input">&lt;input&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#forms">Forms</a>
-                <ul>
-                    <li>
-                        <a href="#datalist">&lt;datalist&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#fieldset-legend">&lt;fieldset&gt;, &lt;legend&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#form">&lt;form&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#input">&lt;input&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#label">&lt;label&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#meter">&lt;meter&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#output">&lt;output&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#progress">&lt;progress&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#select">&lt;select&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#textarea">&lt;textarea&gt;</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#interactive-elements">Interactive elements</a>
-                <ul>
-                    <li>
-                        <a href="#details">&lt;details&gt;</a>
-                    </li>
-                    <li>
-                        <a href="#dialog">&lt;dialog&gt;</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section id="content-sectioning">
-            <h2>Content sectioning</h2>
-            <section id="address">
-                <h3>&lt;address&gt;</h3>
-                <address>
-                    Example
-                </address>
-            </section>
-            <section id="article">
-                <h3>&lt;article&gt;</h3>
-                <article>
-                    Example
-                </article>
-            </section>
-            <section id="aside">
-                <h3>&lt;aside&gt;</h3>
-                <aside>
-                    Example
-                </aside>
-            </section>
-            <section id="footer">
-                <h3>&lt;footer&gt;</h3>
-                <footer>
-                    Example
-                </footer>
-            </section>
-            <section id="header">
-                <h3>&lt;header&gt;</h3>
-                <header>
-                    Example
-                </header>
-            </section>
-            <section id="h1-h6">
-                <h3>&lt;h1&gt;–&lt;h6&gt;</h3>
-                <h1>
-                    Example
-                </h1>
-                <h2>
-                    Example
-                </h2>
-                <h3>
-                    Example
-                </h3>
-                <h4>
-                    Example
-                </h4>
-                <h5>
-                    Example
-                </h5>
-                <h6>
-                    Example
-                </h6>
-            </section>
-            <section id="section">
-                <h3>&lt;section&gt;</h3>
-                <section>
-                    Example
+    <body>
+        <header>
+            <h1>CSS framework - a class-free CSS framework</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#content-sectioning">Content sectioning</a>
+                    <ul>
+                        <li>
+                            <a href="#address">&lt;address&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#article">&lt;article&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#aside">&lt;aside&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#footer">&lt;footer&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#header">&lt;header&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#h1-h6">&lt;h1&gt;–&lt;h6&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#section">&lt;section&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#text-content">Text content</a>
+                    <ul>
+                        <li>
+                            <a href="#blockquote">&lt;blockquote&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#dl-dt-dd"
+                                >&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#div">&lt;div&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#figure-figcaption"
+                                >&lt;figure&gt;, &lt;figcaption&gt;</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#hr">&lt;hr&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#ol">&lt;ol&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#p">&lt;p&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#pre">&lt;pre&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#ul">&lt;ul&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#inline-text-semantics">Inline text semantics</a>
+                    <ul>
+                        <li>
+                            <a href="#a">&lt;a&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#abbr">&lt;abbr&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#b">&lt;b&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#bdi">&lt;bdi&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#bdo">&lt;bdo&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#br">&lt;br&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#cite">&lt;cite&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#code">&lt;code&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#data">&lt;data&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#dfn">&lt;dfn&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#em">&lt;em&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#i">&lt;i&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#kbd">&lt;kbd&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#mark">&lt;mark&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#q">&lt;q&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#s">&lt;s&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#samp">&lt;samp&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#small">&lt;small&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#span">&lt;span&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#strong">&lt;strong&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sub">&lt;sub&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sup">&lt;sup&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#time">&lt;time&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#u">&lt;u&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#var">&lt;var&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#wbr">&lt;wbr&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#image-and-multimedia">Image and multimedia</a>
+                    <ul>
+                        <li>
+                            <a href="#audio">&lt;audio&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#img">&lt;img&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#map-area">&lt;map&gt;, &lt;area&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#video">&lt;video&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#embedded-content">Embedded content</a>
+                    <ul>
+                        <li>
+                            <a href="#embed">&lt;embed&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#iframe">&lt;iframe&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#object">&lt;object&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#picture">&lt;picture&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#demarcating-edits">Demarcating edits</a>
+                    <ul>
+                        <li>
+                            <a href="#del">&lt;del&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#ins">&lt;ins&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#table-content">Table content</a>
+                    <ul>
+                        <li>
+                            <a href="#table">&lt;table&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#buttons">Buttons</a>
+                    <ul>
+                        <li>
+                            <a href="#button">&lt;button&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#button-input">&lt;input&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#forms">Forms</a>
+                    <ul>
+                        <li>
+                            <a href="#datalist">&lt;datalist&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fieldset-legend"
+                                >&lt;fieldset&gt;, &lt;legend&gt;</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form">&lt;form&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#input">&lt;input&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#label">&lt;label&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#meter">&lt;meter&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#output">&lt;output&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#progress">&lt;progress&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#select">&lt;select&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#textarea">&lt;textarea&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#interactive-elements">Interactive elements</a>
+                    <ul>
+                        <li>
+                            <a href="#details">&lt;details&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#dialog">&lt;dialog&gt;</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section id="content-sectioning">
+                <h2>Content sectioning</h2>
+                <section id="address">
+                    <h3>&lt;address&gt;</h3>
+                    <address>
+                        Example
+                    </address>
+                </section>
+                <section id="article">
+                    <h3>&lt;article&gt;</h3>
+                    <article>
+                        Example
+                    </article>
+                </section>
+                <section id="aside">
+                    <h3>&lt;aside&gt;</h3>
+                    <aside>
+                        Example
+                    </aside>
+                </section>
+                <section id="footer">
+                    <h3>&lt;footer&gt;</h3>
+                    <footer>
+                        Example
+                    </footer>
+                </section>
+                <section id="header">
+                    <h3>&lt;header&gt;</h3>
+                    <header>
+                        Example
+                    </header>
+                </section>
+                <section id="h1-h6">
+                    <h3>&lt;h1&gt;–&lt;h6&gt;</h3>
+                    <h1>
+                        Example
+                    </h1>
+                    <h2>
+                        Example
+                    </h2>
+                    <h3>
+                        Example
+                    </h3>
+                    <h4>
+                        Example
+                    </h4>
+                    <h5>
+                        Example
+                    </h5>
+                    <h6>
+                        Example
+                    </h6>
+                </section>
+                <section id="section">
+                    <h3>&lt;section&gt;</h3>
+                    <section>
+                        Example
+                    </section>
                 </section>
             </section>
-        </section>
-        <section id="text-content">
-            <h2>Text content</h2>
-            <section id="blockquote">
-                <h3>&lt;blockquote&gt;</h3>
-                <blockquote>
-                    Example
-                </blockquote>
-            </section>
-            <section id="dl-dt-dd">
-                <h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
-                <dl>
-                    <dt>Example</dt>
-                    <dd>Example</dd>
-
-                    <dt>Example</dt>
-                    <dd>Example</dd>
-                    <dd>Example</dd>
-                    <dd>Example</dd>
-
-                    <dt>Example</dt>
-                    <dt>Example</dt>
-                    <dt>Example</dt>
-                    <dd>Example</dd>
-                </dl>
-            </section>
-            <section id="div">
-                <h3>&lt;div&gt;</h3>
-                <div>
-                    Example
-                </div>
-            </section>
-            <section id="figure-figcaption">
-                <h3>&lt;figure&gt;, &lt;figcaption&gt;</h3>
-                <figure>
-                    Example
-                </figure>
-                <figure>
-                    <figcaption>Example</figcaption>
-                    Example
-                </figure>
-                <figure>
-                    Example
-                    <figcaption>Example</figcaption>
-                </figure>
-                <figure>
-                    <figcaption>Example</figcaption>
-                    <img
-                        src="https://via.placeholder.com/150"
-                        alt="Placeholder"
-                    >
-                </figure>
-                <figure>
-                    <img
-                        src="https://via.placeholder.com/150"
-                        alt="Placeholder"
-                    >
-                    <figcaption>Example</figcaption>
-                </figure>
-            </section>
-            <section id="hr">
-                <h3>&lt;hr&gt;</h3>
-                <hr>
-            </section>
-            <section id="ol">
-                <h3>&lt;ol&gt;</h3>
-                <ol>
-                    <li>Example</li>
-                    <li>
+            <section id="text-content">
+                <h2>Text content</h2>
+                <section id="blockquote">
+                    <h3>&lt;blockquote&gt;</h3>
+                    <blockquote>
                         Example
-                        <ol type="I">
-                            <li>Example</li>
-                            <li>
-                                Example
-                                <ol type="a">
-                                    <li>Example</li>
-                                    <li>Example</li>
-                                    <li>Example</li>
-                                </ol>
-                            </li>
-                            <li>Example</li>
-                        </ol>
-                    </li>
-                    <li>Example</li>
-                </ol>
-            </section>
-            <section id="p">
-                <h3>&lt;p&gt;</h3>
-                <p>
-                    Example
-                </p>
-                <p>
-                    Example
-                </p>
-                <p>
-                    Example
-                </p>
-            </section>
-            <section id="pre">
-                <h3>&lt;pre&gt;</h3>
-                <pre>
+                    </blockquote>
+                </section>
+                <section id="dl-dt-dd">
+                    <h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
+                    <dl>
+                        <dt>Example</dt>
+                        <dd>Example</dd>
+
+                        <dt>Example</dt>
+                        <dd>Example</dd>
+                        <dd>Example</dd>
+                        <dd>Example</dd>
+
+                        <dt>Example</dt>
+                        <dt>Example</dt>
+                        <dt>Example</dt>
+                        <dd>Example</dd>
+                    </dl>
+                </section>
+                <section id="div">
+                    <h3>&lt;div&gt;</h3>
+                    <div>
+                        Example
+                    </div>
+                </section>
+                <section id="figure-figcaption">
+                    <h3>&lt;figure&gt;, &lt;figcaption&gt;</h3>
+                    <figure>
+                        Example
+                    </figure>
+                    <figure>
+                        <figcaption>Example</figcaption>
+                        Example
+                    </figure>
+                    <figure>
+                        Example
+                        <figcaption>Example</figcaption>
+                    </figure>
+                    <figure>
+                        <figcaption>Example</figcaption>
+                        <img
+                            src="https://via.placeholder.com/150"
+                            alt="Placeholder"
+                        />
+                    </figure>
+                    <figure>
+                        <img
+                            src="https://via.placeholder.com/150"
+                            alt="Placeholder"
+                        />
+                        <figcaption>Example</figcaption>
+                    </figure>
+                </section>
+                <section id="hr">
+                    <h3>&lt;hr&gt;</h3>
+                    <hr />
+                </section>
+                <section id="ol">
+                    <h3>&lt;ol&gt;</h3>
+                    <ol>
+                        <li>Example</li>
+                        <li>
+                            Example
+                            <ol type="I">
+                                <li>Example</li>
+                                <li>
+                                    Example
+                                    <ol type="a">
+                                        <li>Example</li>
+                                        <li>Example</li>
+                                        <li>Example</li>
+                                    </ol>
+                                </li>
+                                <li>Example</li>
+                            </ol>
+                        </li>
+                        <li>Example</li>
+                    </ol>
+                </section>
+                <section id="p">
+                    <h3>&lt;p&gt;</h3>
+                    <p>
+                        Example
+                    </p>
+                    <p>
+                        Example
+                    </p>
+                    <p>
+                        Example
+                    </p>
+                </section>
+                <section id="pre">
+                    <h3>&lt;pre&gt;</h3>
+                    <pre>
 H   H EEEEE L     L      OOO       W   W  OOO  RRRR  L     DDDD  !!
 H   H E     L     L     O   O      W W W O   O R   R L     D   D !!
 HHHHH EEEEE L     L     O   O      W W W O   O RRRR  L     D   D !!
 H   H E     L     L     O   O  ,,   W W  O   O R   R L     D   D
 H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
-                </pre>
-            </section>
-            <section id="ul">
-                <h3>&lt;ul&gt;</h3>
-                <ul>
-                    <li>Example</li>
-                    <li>
-                        Example
-                        <ul>
-                            <li>Example</li>
-                            <li>
-                                Example
-                                <ul>
-                                    <li>Example</li>
-                                    <li>Example</li>
-                                    <li>Example</li>
-                                </ul>
-                            </li>
-                            <li>Example</li>
-                        </ul>
-                    </li>
-                    <li>Example</li>
-                </ul>
-            </section>
-        </section>
-        <section id="inline-text-semantics">
-            <h2>Inline text semantics</h2>
-            <section id="a">
-                <h3>&lt;a&gt;</h3>
-                <a href="https://example.com">Example</a>
-                <a href="mailto:example@example.com">example@example.com</a>
-                <a href="tel:+61255506077">+61 2 5550 6077</a>
-            </section>
-            <section id="abbr">
-                <h3>&lt;abbr&gt;</h3>
-                <abbr title="Example">Example</abbr>
-            </section>
-            <section id="b">
-                <h3>&lt;b&gt;</h3>
-                <b>Example</b>
-            </section>
-            <section id="bdi">
-                <h3>&lt;bdi&gt;</h3>
-                <bdi>Example</bdi>
-            </section>
-            <section id="bdo">
-                <h3>&lt;bdo&gt;</h3>
-                <bdo dir="rtl">Example</bdo>
-            </section>
-            <section id="br">
-                <h3>&lt;br&gt;</h3>
-                Example<br>
-                Example
-            </section>
-            <section id="cite">
-                <h3>&lt;cite&gt;</h3>
-                <cite>Example</cite>
-            </section>
-            <section id="code">
-                <h3>&lt;code&gt;</h3>
-                <code>Example</code>
-                <pre><code>Long long long long long long long long code within a &lt;pre&gt; tag</code></pre>
-                <pre><code>Short code within a &lt;pre&gt; tag</code></pre>
-            </section>
-            <section id="data">
-                <h3>&lt;data&gt;</h3>
-                <data value="example">Example</data>
-            </section>
-            <section id="dfn">
-                <h3>&lt;dfn&gt;</h3>
-                <dfn>Example</dfn>
-            </section>
-            <section id="em">
-                <h3>&lt;em&gt;</h3>
-                <em>Example</em>
-            </section>
-            <section id="i">
-                <h3>&lt;i&gt;</h3>
-                <i>Example</i>
-            </section>
-            <section id="kbd">
-                <h3>&lt;kbd&gt;</h3>
-                <kbd>Example</kbd>
-                <br>
-                <kbd><kbd>Example</kbd>+<kbd>Example</kbd></kbd>
-            </section>
-            <section id="mark">
-                <h3>&lt;mark&gt;</h3>
-                <mark>Example</mark>
-            </section>
-            <section id="q">
-                <h3>&lt;q&gt;</h3>
-                <q>Example</q>
-            </section>
-            <section id="s">
-                <h3>&lt;s&gt;</h3>
-                <s>Example</s>
-            </section>
-            <section id="samp">
-                <h3>&lt;samp&gt;</h3>
-                <samp>Example</samp>
-            </section>
-            <section id="small">
-                <h3>&lt;small&gt;</h3>
-                <small>Example</small>
-            </section>
-            <section id="span">
-                <h3>&lt;span&gt;</h3>
-                <span>Example</span>
-            </section>
-            <section id="strong">
-                <h3>&lt;strong&gt;</h3>
-                <strong>Example</strong>
-            </section>
-            <section id="sub">
-                <h3>&lt;sub&gt;</h3>
-                <sub>Example</sub>
-            </section>
-            <section id="sup">
-                <h3>&lt;sup&gt;</h3>
-                <sup>Example</sup>
-            </section>
-            <section id="time">
-                <h3>&lt;time&gt;</h3>
-                <time datetime="2004-09-22T16:16:00+1000">September 22, 2004, at 4:16 PM</time>
-            </section>
-            <section id="u">
-                <h3>&lt;u&gt;</h3>
-                <u>Example</u>
-            </section>
-            <section id="var">
-                <h3>&lt;var&gt;</h3>
-                <var>Example</var>
-            </section>
-            <section id="wbr">
-                <h3>&lt;wbr&gt;</h3>
-                Ex<wbr>am<wbr>ple
-            </section>
-        </section>
-        <section id="image-and-multimedia">
-            <h2>Image and multimedia</h2>
-            <section id="audio">
-                <h3>&lt;audio&gt;</h3>
-                <audio
-                    controls
-                    src="https://ccrma.stanford.edu/~jos/mp3/pno-cs.mp3"
-                ></audio>
-            </section>
-            <section id="img">
-                <h3>&lt;img&gt;</h3>
-                <img
-                    src="https://via.placeholder.com/150"
-                    alt="Placeholder"
-                >
-                <img
-                    src="https://via.placeholder.com/4096x2160"
-                    alt="Placeholder"
-                >
-            </section>
-            <section id="map-area">
-                <h3>&lt;map&gt;, &lt;area&gt;</h3>
-                <map name="infographic">
-                    <area
-                        shape="poly"
-                        coords="130,147,200,107,254,219,130,228"
-                        href="https://developer.mozilla.org/docs/Web/HTML"
-                        alt="HTML"
+                </pre
                     >
-                    <area
-                        shape="poly"
-                        coords="130,147,130,228,6,219,59,107"
-                        href="https://developer.mozilla.org/docs/Web/CSS"
-                        alt="CSS"
-                    >
-                    <area
-                        shape="poly"
-                        coords="130,147,200,107,130,4,59,107"
-                        href="https://developer.mozilla.org/docs/Web/JavaScript"
-                        alt="JavaScript"
-                    >
-                </map>
-                <img
-                    usemap="#infographic"
-                    width="260"
-                    height="232"
-                    src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
-                    alt="MDN infographic"
-                >
+                </section>
+                <section id="ul">
+                    <h3>&lt;ul&gt;</h3>
+                    <ul>
+                        <li>Example</li>
+                        <li>
+                            Example
+                            <ul>
+                                <li>Example</li>
+                                <li>
+                                    Example
+                                    <ul>
+                                        <li>Example</li>
+                                        <li>Example</li>
+                                        <li>Example</li>
+                                    </ul>
+                                </li>
+                                <li>Example</li>
+                            </ul>
+                        </li>
+                        <li>Example</li>
+                    </ul>
+                </section>
             </section>
-            <section id="video">
-                <h3>&lt;video&gt;</h3>
-                <video
-                    controls
-                    src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
-                ></video>
-            </section>
-        </section>
-        <section id="embedded-content">
-            <h2>Embedded content</h2>
-            <section id="embed">
-                <h3>&lt;embed&gt;</h3>
-                <embed
-                    type="video/mp4"
-                    src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
-                >
-            </section>
-            <section id="iframe">
-                <h3>&lt;iframe&gt;</h3>
-                <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
-                >
-                </iframe>
-            </section>
-            <section id="object">
-                <h3>&lt;object&gt;</h3>
-                <object
-                    type="application/pdf"
-                    data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf"
-                >
-                </object>
-            </section>
-            <section id="pucture">
-                <h3>&lt;pucture&gt;</h3>
-                <picture>
-                    <source
-                        srcset="https://via.placeholder.com/1440x150"
-                        media="(min-width: 1440px)"
+            <section id="inline-text-semantics">
+                <h2>Inline text semantics</h2>
+                <section id="a">
+                    <h3>&lt;a&gt;</h3>
+                    <a href="https://example.com">Example</a>
+                    <a href="mailto:example@example.com">example@example.com</a>
+                    <a href="tel:+61255506077">+61 2 5550 6077</a>
+                </section>
+                <section id="abbr">
+                    <h3>&lt;abbr&gt;</h3>
+                    <abbr title="Example">Example</abbr>
+                </section>
+                <section id="b">
+                    <h3>&lt;b&gt;</h3>
+                    <b>Example</b>
+                </section>
+                <section id="bdi">
+                    <h3>&lt;bdi&gt;</h3>
+                    <bdi>Example</bdi>
+                </section>
+                <section id="bdo">
+                    <h3>&lt;bdo&gt;</h3>
+                    <bdo dir="rtl">Example</bdo>
+                </section>
+                <section id="br">
+                    <h3>&lt;br&gt;</h3>
+                    Example<br />
+                    Example
+                </section>
+                <section id="cite">
+                    <h3>&lt;cite&gt;</h3>
+                    <cite>Example</cite>
+                </section>
+                <section id="code">
+                    <h3>&lt;code&gt;</h3>
+                    <code>Example</code>
+                    <pre><code>Long long long long long long long long code within a &lt;pre&gt; tag</code></pre>
+                    <pre><code>Short code within a &lt;pre&gt; tag</code></pre>
+                </section>
+                <section id="data">
+                    <h3>&lt;data&gt;</h3>
+                    <data value="example">Example</data>
+                </section>
+                <section id="dfn">
+                    <h3>&lt;dfn&gt;</h3>
+                    <dfn>Example</dfn>
+                </section>
+                <section id="em">
+                    <h3>&lt;em&gt;</h3>
+                    <em>Example</em>
+                </section>
+                <section id="i">
+                    <h3>&lt;i&gt;</h3>
+                    <i>Example</i>
+                </section>
+                <section id="kbd">
+                    <h3>&lt;kbd&gt;</h3>
+                    <kbd>Example</kbd>
+                    <br />
+                    <kbd><kbd>Example</kbd>+<kbd>Example</kbd></kbd>
+                </section>
+                <section id="mark">
+                    <h3>&lt;mark&gt;</h3>
+                    <mark>Example</mark>
+                </section>
+                <section id="q">
+                    <h3>&lt;q&gt;</h3>
+                    <q>Example</q>
+                </section>
+                <section id="s">
+                    <h3>&lt;s&gt;</h3>
+                    <s>Example</s>
+                </section>
+                <section id="samp">
+                    <h3>&lt;samp&gt;</h3>
+                    <samp>Example</samp>
+                </section>
+                <section id="small">
+                    <h3>&lt;small&gt;</h3>
+                    <small>Example</small>
+                </section>
+                <section id="span">
+                    <h3>&lt;span&gt;</h3>
+                    <span>Example</span>
+                </section>
+                <section id="strong">
+                    <h3>&lt;strong&gt;</h3>
+                    <strong>Example</strong>
+                </section>
+                <section id="sub">
+                    <h3>&lt;sub&gt;</h3>
+                    <sub>Example</sub>
+                </section>
+                <section id="sup">
+                    <h3>&lt;sup&gt;</h3>
+                    <sup>Example</sup>
+                </section>
+                <section id="time">
+                    <h3>&lt;time&gt;</h3>
+                    <time datetime="2004-09-22T16:16:00+1000"
+                        >September 22, 2004, at 4:16 PM</time
                     >
-                    <source
-                        srcset="https://via.placeholder.com/1024x150"
-                        media="(min-width: 1024px)"
-                    >
-                    <source
-                        srcset="https://via.placeholder.com/768x150"
-                        media="(min-width: 768px)"
-                    >
-                    <source
-                        srcset="https://via.placeholder.com/320x150"
-                        media="(min-width: 320px)"
-                    >
+                </section>
+                <section id="u">
+                    <h3>&lt;u&gt;</h3>
+                    <u>Example</u>
+                </section>
+                <section id="var">
+                    <h3>&lt;var&gt;</h3>
+                    <var>Example</var>
+                </section>
+                <section id="wbr">
+                    <h3>&lt;wbr&gt;</h3>
+                    Ex<wbr />am<wbr />ple
+                </section>
+            </section>
+            <section id="image-and-multimedia">
+                <h2>Image and multimedia</h2>
+                <section id="audio">
+                    <h3>&lt;audio&gt;</h3>
+                    <audio
+                        controls
+                        src="https://ccrma.stanford.edu/~jos/mp3/pno-cs.mp3"
+                    ></audio>
+                </section>
+                <section id="img">
+                    <h3>&lt;img&gt;</h3>
                     <img
                         src="https://via.placeholder.com/150"
                         alt="Placeholder"
+                    />
+                    <img
+                        src="https://via.placeholder.com/4096x2160"
+                        alt="Placeholder"
+                    />
+                </section>
+                <section id="map-area">
+                    <h3>&lt;map&gt;, &lt;area&gt;</h3>
+                    <map name="infographic">
+                        <area
+                            shape="poly"
+                            coords="130,147,200,107,254,219,130,228"
+                            href="https://developer.mozilla.org/docs/Web/HTML"
+                            alt="HTML"
+                        />
+                        <area
+                            shape="poly"
+                            coords="130,147,130,228,6,219,59,107"
+                            href="https://developer.mozilla.org/docs/Web/CSS"
+                            alt="CSS"
+                        />
+                        <area
+                            shape="poly"
+                            coords="130,147,200,107,130,4,59,107"
+                            href="https://developer.mozilla.org/docs/Web/JavaScript"
+                            alt="JavaScript"
+                        />
+                    </map>
+                    <img
+                        usemap="#infographic"
+                        width="260"
+                        height="232"
+                        src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"
+                        alt="MDN infographic"
+                    />
+                </section>
+                <section id="video">
+                    <h3>&lt;video&gt;</h3>
+                    <video
+                        controls
+                        src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+                    ></video>
+                </section>
+            </section>
+            <section id="embedded-content">
+                <h2>Embedded content</h2>
+                <section id="embed">
+                    <h3>&lt;embed&gt;</h3>
+                    <embed
+                        type="video/mp4"
+                        src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+                    />
+                </section>
+                <section id="iframe">
+                    <h3>&lt;iframe&gt;</h3>
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
                     >
-                </picture>
+                    </iframe>
+                </section>
+                <section id="object">
+                    <h3>&lt;object&gt;</h3>
+                    <object
+                        type="application/pdf"
+                        data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf"
+                    >
+                    </object>
+                </section>
+                <section id="pucture">
+                    <h3>&lt;pucture&gt;</h3>
+                    <picture>
+                        <source
+                            srcset="https://via.placeholder.com/1440x150"
+                            media="(min-width: 1440px)"
+                        />
+                        <source
+                            srcset="https://via.placeholder.com/1024x150"
+                            media="(min-width: 1024px)"
+                        />
+                        <source
+                            srcset="https://via.placeholder.com/768x150"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="https://via.placeholder.com/320x150"
+                            media="(min-width: 320px)"
+                        />
+                        <img
+                            src="https://via.placeholder.com/150"
+                            alt="Placeholder"
+                        />
+                    </picture>
+                </section>
             </section>
-        </section>
-        <section id="demarcating-edits">
-            <h2>Demarcating edits</h2>
-            <section id="del">
-                <h3>&lt;del&gt;</h3>
-                <del>Example</del>
+            <section id="demarcating-edits">
+                <h2>Demarcating edits</h2>
+                <section id="del">
+                    <h3>&lt;del&gt;</h3>
+                    <del>Example</del>
+                </section>
+                <section id="ins">
+                    <h3>&lt;ins&gt;</h3>
+                    <ins>Example</ins>
+                </section>
             </section>
-            <section id="ins">
-                <h3>&lt;ins&gt;</h3>
-                <ins>Example</ins>
+            <section id="table-content">
+                <h2>Table content</h2>
+                <section id="table">
+                    <h3>&lt;table&gt;</h3>
+                    <table>
+                        <caption>
+                            Small table
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>Lorem ipsum</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>Lorem ipsum</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <caption>
+                            Lorem ipsum
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Lorem ipsum</th>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
             </section>
-        </section>
-        <section id="table-content">
-            <h2>Table content</h2>
-            <section id="table">
-                <h3>&lt;table&gt;</h3>
-                <table>
-                    <caption>Small table</caption>
-                    <thead>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <caption>Lorem ipsum</caption>
-                    <thead>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                        </tr>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                        </tr>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Lorem ipsum</th>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-        </section>
-        <section id="buttons">
-            <h2>Buttons</h2>
-            <section id="button">
-                <h3>&lt;button&gt;</h3>
-                <button type="button">Button</button>
-                <button type="reset">Reset</button>
-                <button>Submit</button>
-                <button type="submit">Submit</button>
-                <button type="button" disabled>Disabled Button</button>
-                <button type="reset" disabled>Disabled Reset</button>
-                <button disabled>Disabled Submit</button>
-                <button type="submit" disabled>Disabled Submit</button>
-            </section>
-            <section id="button-input">
-                <h3>&lt;input&gt;</h3>
-                <input type="button" value="Button">
-                <input type="reset">
-                <input type="submit">
-                <input
-                    type="image"
-                    src="https://via.placeholder.com/70x36"
-                    alt="Placeholder"
-                >
-                <input type="button" disabled value="Disabled">
-                <input type="reset" disabled value="Disabled Reset">
-                <input type="submit" disabled value="Disabled Submit">
-                <input
-                    type="image"
-                    disabled
-                    src="https://via.placeholder.com/70x36"
-                    alt="Placeholder"
-                >
-            </section>
-        </section>
-        <section id="forms">
-            <h2>Forms</h2>
-            <section id="datalist">
-                <h3>&lt;datalist&gt;</h3>
-                <input list="datalist-example">
-                <datalist id="datalist-example">
-                    <option value="foo">
-                    <option value="bar">
-                    <option value="baz">
-                </datalist>
-            </section>
-            <section id="fieldset-legend">
-                <h3>&lt;fieldset&gt;, &lt;legend&gt;</h3>
-                <fieldset>
+            <section id="buttons">
+                <h2>Buttons</h2>
+                <section id="button">
+                    <h3>&lt;button&gt;</h3>
                     <button type="button">Button</button>
-                </fieldset>
-                <fieldset>
-                    <legend>Example</legend>
-                    <button type="button">Button</button>
-                </fieldset>
-                <fieldset disabled>
-                    <legend>Disabled</legend>
-                    <button type="button">Button</button>
-                </fieldset>
+                    <button type="reset">Reset</button>
+                    <button>Submit</button>
+                    <button type="submit">Submit</button>
+                    <button type="button" disabled>Disabled Button</button>
+                    <button type="reset" disabled>Disabled Reset</button>
+                    <button disabled>Disabled Submit</button>
+                    <button type="submit" disabled>Disabled Submit</button>
+                </section>
+                <section id="button-input">
+                    <h3>&lt;input&gt;</h3>
+                    <input type="button" value="Button" />
+                    <input type="reset" />
+                    <input type="submit" />
+                    <input
+                        type="image"
+                        src="https://via.placeholder.com/70x36"
+                        alt="Placeholder"
+                    />
+                    <input type="button" disabled value="Disabled" />
+                    <input type="reset" disabled value="Disabled Reset" />
+                    <input type="submit" disabled value="Disabled Submit" />
+                    <input
+                        type="image"
+                        disabled
+                        src="https://via.placeholder.com/70x36"
+                        alt="Placeholder"
+                    />
+                </section>
             </section>
-            <section id="form">
-                <h3>&lt;form&gt;</h3>
-                <form>
+            <section id="forms">
+                <h2>Forms</h2>
+                <section id="datalist">
+                    <h3>&lt;datalist&gt;</h3>
+                    <input list="datalist-example" />
+                    <datalist id="datalist-example">
+                        <option value="foo"> </option>
+                        <option value="bar"> </option>
+                        <option value="baz"> </option>
+                    </datalist>
+                </section>
+                <section id="fieldset-legend">
+                    <h3>&lt;fieldset&gt;, &lt;legend&gt;</h3>
                     <fieldset>
-                        <legend>Checkboxes</legend>
+                        <button type="button">Button</button>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Example</legend>
+                        <button type="button">Button</button>
+                    </fieldset>
+                    <fieldset disabled>
+                        <legend>Disabled</legend>
+                        <button type="button">Button</button>
+                    </fieldset>
+                </section>
+                <section id="form">
+                    <h3>&lt;form&gt;</h3>
+                    <form>
+                        <fieldset>
+                            <legend>Checkboxes</legend>
+                            <label>
+                                <input type="checkbox" />
+                                Checkbox
+                            </label>
+                            <label>
+                                <input type="checkbox" checked />
+                                Checked
+                            </label>
+                            <label>
+                                <input type="checkbox" disabled />
+                                Disabled
+                            </label>
+                            <label>
+                                <input type="checkbox" required />
+                                Required
+                            </label>
+                            <label>
+                                Text
+                                <input />
+                            </label>
+                        </fieldset>
                         <label>
-                            <input type="checkbox">
-                            Checkbox
+                            Text
+                            <input />
                         </label>
                         <label>
-                            <input type="checkbox" checked>
+                            Required
+                            <input required />
+                        </label>
+                        <label>
+                            Color
+                            <input type="color" />
+                        </label>
+                        <label>
+                            File
+                            <input type="file" />
+                        </label>
+                        <label>
+                            <input type="radio" name="example" />
+                            Radio
+                        </label>
+                        <label>
+                            <input type="radio" name="example" checked />
                             Checked
                         </label>
                         <label>
-                            <input type="checkbox" disabled>
+                            <input type="radio" name="example" disabled />
                             Disabled
                         </label>
                         <label>
-                            <input type="checkbox" required>
-                            Required
+                            Range
+                            <input type="range" value="5" min="0" max="10" />
                         </label>
                         <label>
-                            Text
-                            <input>
+                            Select
+                            <select>
+                                <option>Example</option>
+                                <option>Example</option>
+                                <option>Example</option>
+                                <optgroup label="Example">
+                                    <option>Example</option>
+                                    <option>Example</option>
+                                    <option>Example</option>
+                                </optgroup>
+                                <optgroup label="Disabled" disabled>
+                                    <option>Disabled</option>
+                                    <option>Disabled</option>
+                                    <option>Disabled</option>
+                                </optgroup>
+                            </select>
                         </label>
-                    </fieldset>
+                        <label>
+                            Multiple select
+                            <select multiple>
+                                <option>Example</option>
+                                <option>Example</option>
+                                <option>Example</option>
+                                <optgroup label="Example">
+                                    <option>Example</option>
+                                    <option>Example</option>
+                                    <option>Example</option>
+                                </optgroup>
+                                <optgroup label="Disabled" disabled>
+                                    <option>Disabled</option>
+                                    <option>Disabled</option>
+                                    <option>Disabled</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                        <label>
+                            Textarea
+                            <textarea></textarea>
+                        </label>
+                        <button type="reset">Reset</button>
+                        <button>Submit</button>
+                    </form>
+                </section>
+                <section id="input">
+                    <h3>&lt;input&gt;</h3>
+                    <input />
+                    <input type="text" />
+                    <input placeholder="Placeholder" />
+                    <input value="Example" />
+                    <input value="Disabled" disabled />
+                    <input value="Readonly" readonly />
+                    <input value="Required" required />
                     <label>
-                        Text
-                        <input>
+                        <input type="checkbox" />
+                        Checkbox
                     </label>
                     <label>
-                        Required
-                        <input required>
-                    </label>
-                    <label>
-                        Color
-                        <input type="color">
-                    </label>
-                    <label>
-                        File
-                        <input type="file">
-                    </label>
-                    <label>
-                        <input type="radio" name="example">
-                        Radio
-                    </label>
-                    <label>
-                        <input type="radio" name="example" checked>
+                        <input type="checkbox" checked />
                         Checked
                     </label>
                     <label>
-                        <input type="radio" name="example" disabled>
+                        <input type="checkbox" disabled />
                         Disabled
                     </label>
                     <label>
-                        Range
-                        <input
-                            type="range"
-                            value="5"
-                            min="0"
-                            max="10"
-                        >
+                        <input type="checkbox" required />
+                        Required
+                    </label>
+                    <input id="label-after-checkbox-example" type="checkbox" />
+                    <label for="label-after-checkbox-example"
+                        >Label after checkbox</label
+                    >
+                    <input type="color" />
+                    <input type="color" disabled />
+                    <input type="color" required />
+                    <input type="date" />
+                    <input type="date" value="2004-09-22" />
+                    <input type="date" value="2004-09-22" disabled />
+                    <input type="date" value="2004-09-22" readonly />
+                    <input type="date" value="2004-09-22" required />
+                    <input type="datetime-local" />
+                    <input type="datetime-local" value="2004-09-22T16:16:00" />
+                    <input
+                        type="datetime-local"
+                        value="2004-09-22T16:16:00"
+                        disabled
+                    />
+                    <input
+                        type="datetime-local"
+                        value="2004-09-22T16:16:00"
+                        readonly
+                    />
+                    <input
+                        type="datetime-local"
+                        value="2004-09-22T16:16:00"
+                        required
+                    />
+                    <input type="email" />
+                    <input type="email" placeholder="Placeholder" />
+                    <input type="email" value="example@example.com" />
+                    <input value="disabled@example.com" disabled />
+                    <input value="readonly@example.com" readonly />
+                    <input value="required@example.com" required />
+                    <input type="file" />
+                    <input type="file" disabled />
+                    <input type="file" required />
+                    <input type="hidden" />
+                    <input type="month" />
+                    <input type="month" disabled />
+                    <input type="month" readonly />
+                    <input type="month" required />
+                    <input type="number" />
+                    <input type="number" value="42" />
+                    <input type="number" value="42" disabled />
+                    <input type="number" value="42" readonly />
+                    <input type="number" value="42" required />
+                    <input type="password" />
+                    <input type="password" value="Example" />
+                    <input type="password" value="Disabled" disabled />
+                    <input type="password" value="Readonly" readonly />
+                    <input type="password" value="Required" required />
+                    <label>
+                        <input type="radio" name="example" />
+                        Radio
                     </label>
                     <label>
-                        Select
-                        <select>
-                            <option>Example</option>
-                            <option>Example</option>
-                            <option>Example</option>
-                            <optgroup label="Example">
-                                <option>Example</option>
-                                <option>Example</option>
-                                <option>Example</option>
-                            </optgroup>
-                            <optgroup label="Disabled" disabled>
-                                <option>Disabled</option>
-                                <option>Disabled</option>
-                                <option>Disabled</option>
-                            </optgroup>
-                        </select>
+                        <input type="radio" name="example" checked />
+                        Checked
                     </label>
                     <label>
-                        Multiple select
-                        <select multiple>
-                            <option>Example</option>
-                            <option>Example</option>
-                            <option>Example</option>
-                            <optgroup label="Example">
-                                <option>Example</option>
-                                <option>Example</option>
-                                <option>Example</option>
-                            </optgroup>
-                            <optgroup label="Disabled" disabled>
-                                <option>Disabled</option>
-                                <option>Disabled</option>
-                                <option>Disabled</option>
-                            </optgroup>
-                        </select>
+                        <input type="radio" name="example" disabled />
+                        Disabled
                     </label>
+                    <input
+                        id="label-after-radio-example"
+                        type="radio"
+                        name="example"
+                    />
+                    <label for="label-after-radio-example"
+                        >Label after radio</label
+                    >
+                    <input type="range" value="5" min="0" max="10" />
+                    <input type="range" value="5" min="0" max="10" disabled />
+                    <input type="search" />
+                    <input type="search" value="Example" />
+                    <input type="search" value="Disabled" disabled />
+                    <input type="search" value="Readonly" readonly />
+                    <input type="search" value="Required" required />
+                    <input type="tel" />
+                    <input type="tel" value="+61 2 5550 6077" />
+                    <input type="tel" value="+61 2 5550 6077" disabled />
+                    <input type="tel" value="+61 2 5550 6077" readonly />
+                    <input type="tel" value="+61 2 5550 6077" required />
+                    <input type="time" />
+                    <input type="time" value="16:16:00" />
+                    <input type="time" value="16:16:00" disabled />
+                    <input type="time" value="16:16:00" readonly />
+                    <input type="time" value="16:16:00" required />
+                    <input type="url" />
+                    <input type="url" value="https://example.com" />
+                    <input
+                        type="url"
+                        value="https://example.com/disabled"
+                        disabled
+                    />
+                    <input
+                        type="url"
+                        value="https://example.com/readonly"
+                        readonly
+                    />
+                    <input
+                        type="url"
+                        value="https://example.com/required"
+                        required
+                    />
+                    <input type="week" />
+                    <input type="week" value="2004-W39" />
+                    <input type="week" value="2004-W39" disabled />
+                    <input type="week" value="2004-W39" readonly />
+                    <input type="week" value="2004-W39" required />
+                </section>
+                <section id="label">
+                    <h3>&lt;label&gt;</h3>
+                    <label for="label-example">Example</label>
+                    <input id="label-example" />
                     <label>
-                        Textarea
-                        <textarea></textarea>
+                        Example
+                        <input />
                     </label>
-                    <button type="reset">Reset</button>
-                    <button>Submit</button>
-                </form>
+                </section>
+                <section id="meter">
+                    <h3>&lt;meter&gt;</h3>
+                    <meter
+                        value="0"
+                        min="0"
+                        max="100"
+                        low="25"
+                        high="75"
+                        optimum="100"
+                        >0%</meter
+                    >
+                    <meter
+                        value="10"
+                        min="0"
+                        max="100"
+                        low="25"
+                        high="75"
+                        optimum="100"
+                        >10%</meter
+                    >
+                    <meter
+                        value="50"
+                        min="0"
+                        max="100"
+                        low="25"
+                        high="75"
+                        optimum="100"
+                        >50%</meter
+                    >
+                    <meter
+                        value="100"
+                        min="0"
+                        max="100"
+                        low="25"
+                        high="75"
+                        optimum="100"
+                        >100%</meter
+                    >
+                </section>
+                <section id="output">
+                    <h3>&lt;output&gt;</h3>
+                    <output>Example</output>
+                    <output>Example</output>
+                    <output>Example</output>
+                </section>
+                <section id="progress">
+                    <h3>&lt;progress&gt;</h3>
+                    <progress value="0" max="100">0%</progress>
+                    <progress value="50" max="100">50%</progress>
+                    <progress value="100" max="100">100%</progress>
+                </section>
+                <section id="select">
+                    <h3>&lt;select&gt;</h3>
+                    <select>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                    <select multiple>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                    <select required>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                    <select multiple required>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                    <select disabled>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                    <select multiple disabled>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <option>Example</option>
+                        <optgroup label="Example">
+                            <option>Example</option>
+                            <option>Example</option>
+                            <option>Example</option>
+                        </optgroup>
+                        <optgroup label="Disabled" disabled>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+                        </optgroup>
+                    </select>
+                </section>
+                <section id="textarea">
+                    <h3>&lt;textarea&gt;</h3>
+                    <textarea></textarea>
+                    <textarea placeholder="Placeholder"></textarea>
+                    <textarea>Example</textarea>
+                    <textarea disabled>Disabled</textarea>
+                    <textarea readonly>Readonly</textarea>
+                    <textarea required>Required</textarea>
+                </section>
             </section>
-            <section id="input">
-                <h3>&lt;input&gt;</h3>
-                <input>
-                <input type="text">
-                <input placeholder="Placeholder">
-                <input value="Example">
-                <input value="Disabled" disabled>
-                <input value="Readonly" readonly>
-                <input value="Required" required>
-                <label>
-                    <input type="checkbox">
-                    Checkbox
-                </label>
-                <label>
-                    <input type="checkbox" checked>
-                    Checked
-                </label>
-                <label>
-                    <input type="checkbox" disabled>
-                    Disabled
-                </label>
-                <label>
-                    <input type="checkbox" required>
-                    Required
-                </label>
-                <input id="label-after-checkbox-example" type="checkbox">
-                <label for="label-after-checkbox-example">Label after checkbox</label>
-                <input type="color">
-                <input type="color" disabled>
-                <input type="color" required>
-                <input type="date">
-                <input type="date" value="2004-09-22">
-                <input type="date" value="2004-09-22" disabled>
-                <input type="date" value="2004-09-22" readonly>
-                <input type="date" value="2004-09-22" required>
-                <input type="datetime-local">
-                <input type="datetime-local" value="2004-09-22T16:16:00">
-                <input type="datetime-local" value="2004-09-22T16:16:00" disabled>
-                <input type="datetime-local" value="2004-09-22T16:16:00" readonly>
-                <input type="datetime-local" value="2004-09-22T16:16:00" required>
-                <input type="email">
-                <input type="email" placeholder="Placeholder">
-                <input type="email" value="example@example.com">
-                <input value="disabled@example.com" disabled>
-                <input value="readonly@example.com" readonly>
-                <input value="required@example.com" required>
-                <input type="file">
-                <input type="file" disabled>
-                <input type="file" required>
-                <input type="hidden">
-                <input type="month">
-                <input type="month" disabled>
-                <input type="month" readonly>
-                <input type="month" required>
-                <input type="number">
-                <input type="number" value="42">
-                <input type="number" value="42" disabled>
-                <input type="number" value="42" readonly>
-                <input type="number" value="42" required>
-                <input type="password">
-                <input type="password" value="Example">
-                <input type="password" value="Disabled" disabled>
-                <input type="password" value="Readonly" readonly>
-                <input type="password" value="Required" required>
-                <label>
-                    <input type="radio" name="example">
-                    Radio
-                </label>
-                <label>
-                    <input type="radio" name="example" checked>
-                    Checked
-                </label>
-                <label>
-                    <input type="radio" name="example" disabled>
-                    Disabled
-                </label>
-                <input id="label-after-radio-example" type="radio" name="example">
-                <label for="label-after-radio-example">Label after radio</label>
-                <input
-                    type="range"
-                    value="5"
-                    min="0"
-                    max="10"
-                >
-                <input
-                    type="range"
-                    value="5"
-                    min="0"
-                    max="10"
-                    disabled
-                >
-                <input type="search">
-                <input type="search" value="Example">
-                <input type="search" value="Disabled" disabled>
-                <input type="search" value="Readonly" readonly>
-                <input type="search" value="Required" required>
-                <input type="tel">
-                <input type="tel" value="+61 2 5550 6077">
-                <input type="tel" value="+61 2 5550 6077" disabled>
-                <input type="tel" value="+61 2 5550 6077" readonly>
-                <input type="tel" value="+61 2 5550 6077" required>
-                <input type="time">
-                <input type="time" value="16:16:00">
-                <input type="time" value="16:16:00" disabled>
-                <input type="time" value="16:16:00" readonly>
-                <input type="time" value="16:16:00" required>
-                <input type="url">
-                <input type="url" value="https://example.com">
-                <input type="url" value="https://example.com/disabled" disabled>
-                <input type="url" value="https://example.com/readonly" readonly>
-                <input type="url" value="https://example.com/required" required>
-                <input type="week">
-                <input type="week" value="2004-W39">
-                <input type="week" value="2004-W39" disabled>
-                <input type="week" value="2004-W39" readonly>
-                <input type="week" value="2004-W39" required>
+            <section id="interactive-elements">
+                <h2>Interactive elements</h2>
+                <section id="details">
+                    <h3>&lt;details&gt;</h3>
+                    <details>
+                        <summary>Example</summary>
+                        Example
+                    </details>
+                    <details open>
+                        <summary>Example</summary>
+                        Example
+                    </details>
+                    <details>
+                        <summary>Example</summary>
+                        Example
+                    </details>
+                </section>
+                <section id="dialog">
+                    <h3>&lt;dialog&gt;</h3>
+                    <button
+                        type="button"
+                        onclick="document.querySelector('#dialog-example').showModal()"
+                    >
+                        Open dialog
+                    </button>
+                    <dialog id="dialog-example">
+                        Example
+                        <form method="dialog">
+                            <button>Cancel</button>
+                            <button>OK</button>
+                        </form>
+                    </dialog>
+                </section>
             </section>
-            <section id="label">
-                <h3>&lt;label&gt;</h3>
-                <label for="label-example">Example</label>
-                <input id="label-example">
-                <label>
-                    Example
-                    <input>
-                </label>
-            </section>
-            <section id="meter">
-                <h3>&lt;meter&gt;</h3>
-                <meter
-                    value="0"
-                    min="0"
-                    max="100"
-                    low="25"
-                    high="75"
-                    optimum="100"
-                >0%</meter>
-                <meter
-                    value="10"
-                    min="0"
-                    max="100"
-                    low="25"
-                    high="75"
-                    optimum="100"
-                >10%</meter>
-                <meter
-                    value="50"
-                    min="0"
-                    max="100"
-                    low="25"
-                    high="75"
-                    optimum="100"
-                >50%</meter>
-                <meter
-                    value="100"
-                    min="0"
-                    max="100"
-                    low="25"
-                    high="75"
-                    optimum="100"
-                >100%</meter>
-            </section>
-            <section id="output">
-                <h3>&lt;output&gt;</h3>
-                <output>Example</output>
-                <output>Example</output>
-                <output>Example</output>
-            </section>
-            <section id="progress">
-                <h3>&lt;progress&gt;</h3>
-                <progress value="0" max="100">0%</progress>
-                <progress value="50" max="100">50%</progress>
-                <progress value="100" max="100">100%</progress>
-            </section>
-            <section id="select">
-                <h3>&lt;select&gt;</h3>
-                <select>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-                <select multiple>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-                <select required>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-                <select multiple required>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-                <select disabled>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-                <select multiple disabled>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <option>Example</option>
-                    <optgroup label="Example">
-                        <option>Example</option>
-                        <option>Example</option>
-                        <option>Example</option>
-                    </optgroup>
-                    <optgroup label="Disabled" disabled>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-                    </optgroup>
-                </select>
-            </section>
-            <section id="textarea">
-                <h3>&lt;textarea&gt;</h3>
-                <textarea></textarea>
-                <textarea placeholder="Placeholder"></textarea>
-                <textarea>Example</textarea>
-                <textarea disabled>Disabled</textarea>
-                <textarea readonly>Readonly</textarea>
-                <textarea required>Required</textarea>
-            </section>
-        </section>
-        <section id="interactive-elements">
-            <h2>Interactive elements</h2>
-            <section id="details">
-                <h3>&lt;details&gt;</h3>
-                <details>
-                    <summary>Example</summary>
-                    Example
-                </details>
-                <details open>
-                    <summary>Example</summary>
-                    Example
-                </details>
-                <details>
-                    <summary>Example</summary>
-                    Example
-                </details>
-            </section>
-            <section id="dialog">
-                <h3>&lt;dialog&gt;</h3>
-                <button
-                    type="button"
-                    onclick="document.querySelector('#dialog-example').showModal()"
-                >Open dialog</button>
-                <dialog id="dialog-example">
-                    Example
-                    <form method="dialog">
-                        <button>Cancel</button>
-                        <button>OK</button>
-                    </form>
-                </dialog>
-            </section>
-        </section>
-    </main>
-    <footer></footer>
-</body>
-
+        </main>
+        <footer></footer>
+    </body>
 </html>
