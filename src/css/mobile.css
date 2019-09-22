@@ -29,6 +29,12 @@ object {
     width: 100%;
 }
 
+input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]),
+meter,
+progress {
+    height: 2.25rem;
+}
+
 input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]),
 select,
 textarea,
@@ -42,4 +48,15 @@ label {
 
 textarea {
     min-height: 8em;
+}
+
+select {
+    min-height: 2.25rem;
+}
+
+summary {
+    min-height: 2.25rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
