@@ -161,8 +161,9 @@ code {
 }
 
 pre code {
-    display: block;
+    display: inline-block;
     padding: 1rem;
+    min-width: 100%;
 }
 
 [href^="mailto:"]::before {
