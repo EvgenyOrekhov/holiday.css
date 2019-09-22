@@ -5,17 +5,6 @@ select {
     border-radius: 0.25rem;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    padding: 0.5rem;
-}
-
-[type="image"] {
-    vertical-align: bottom;
-}
-
 [type="image"]:hover:not(:disabled) {
     filter: brightness(95%);
 }
@@ -40,14 +29,6 @@ button,
     background-color: #23d160;
     border-color: transparent;
     color: #fff;
-}
-
-[type="color"] {
-    vertical-align: top;
-}
-
-label > [type="color"] {
-    margin-left: 0.25rem;
 }
 
 button:hover:not(:disabled),
@@ -90,17 +71,6 @@ select:hover:not(:disabled) {
     border-color: #b5b5b5;
 }
 
-label {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-label > [type="checkbox"],
-label > [type="radio"] {
-    margin-right: 0.25rem;
-}
-
 table {
     border-collapse: collapse;
 }
@@ -110,20 +80,8 @@ th {
     border: 1px solid #b5b5b5;
 }
 
-[type="checkbox"] + label,
-[type="radio"] + label {
-    display: inline;
-    line-height: 2.25rem;
-    vertical-align: top;
-}
-
 code {
     background-color: #f5f5f5;
-    padding: 0.25rem;
-}
-
-pre code {
-    padding: 1rem;
 }
 
 [href^="mailto:"]::before {

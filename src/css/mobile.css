@@ -16,9 +16,14 @@ pre {
     overflow-x: auto;
 }
 
+code {
+    padding: 0.25rem;
+}
+
 pre code {
     display: inline-block;
     min-width: 100%;
+    padding: 1rem;
 }
 
 audio,
@@ -59,4 +64,41 @@ summary {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    padding: 0.5rem;
+}
+
+[type="image"] {
+    vertical-align: bottom;
+}
+
+[type="color"] {
+    vertical-align: top;
+}
+
+label > [type="color"] {
+    margin-left: 0.25rem;
+}
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+    display: inline;
+    line-height: 2.25rem;
+    vertical-align: top;
+}
+
+label > [type="checkbox"],
+label > [type="radio"] {
+    margin-right: 0.25rem;
 }
