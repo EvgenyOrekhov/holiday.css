@@ -1,0 +1,13 @@
+[href^="mailto:"]::before {
+    content: "✉ ";
+}
+
+[href^="tel:"]::before {
+    content: "✆ ";
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+}

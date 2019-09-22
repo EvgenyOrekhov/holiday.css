@@ -84,14 +84,6 @@ code {
     background-color: #f5f5f5;
 }
 
-[href^="mailto:"]::before {
-    content: "✉ ";
-}
-
-[href^="tel:"]::before {
-    content: "✆ ";
-}
-
 dialog {
     border: none;
     border-radius: 0.25rem;
@@ -141,10 +133,4 @@ details:not([open]) summary:hover {
 
 :invalid:not(form):hover:not(:disabled) {
     border-color: #f7375d;
-}
-
-@media (min-width: 768px) {
-    body {
-        max-width: 768px;
-    }
 }
