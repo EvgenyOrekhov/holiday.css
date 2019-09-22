@@ -1,39 +1,39 @@
 {
-  "name": "css-framework",
-  "version": "1.0.0",
-  "description": "A class-free CSS framework",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "css",
-    "framework",
-    "classless",
-    "class-free"
-  ],
-  "author": "Evgeny Orekhov",
-  "license": "MIT",
-  "devDependencies": {
-    "@twinscom/stylelint-config": "^2.0.0",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.3.0",
-    "prettier": "^1.18.2",
-    "stylelint": "^11.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,css,json,md,html}": [
-      "prettier --write",
-      "git add"
+    "name": "css-framework",
+    "version": "1.0.0",
+    "description": "A class-free CSS framework",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "css",
+        "framework",
+        "classless",
+        "class-free"
     ],
-    "*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
-  }
+    "author": "Evgeny Orekhov",
+    "license": "MIT",
+    "devDependencies": {
+        "@twinscom/stylelint-config": "^2.0.0",
+        "husky": "^3.0.5",
+        "lint-staged": "^9.3.0",
+        "prettier": "^1.18.2",
+        "stylelint": "^11.0.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,css,json,md,html}": [
+            "prettier --write",
+            "git add"
+        ],
+        "*.css": [
+            "stylelint --fix",
+            "git add"
+        ]
+    }
 }
