@@ -4,6 +4,7 @@
     "description": "A class-free CSS framework",
     "main": "index.js",
     "scripts": {
+        "lint": "stylelint 'src/**/*.css'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -15,7 +16,7 @@
     "author": "Evgeny Orekhov",
     "license": "MIT",
     "devDependencies": {
-        "@twinscom/stylelint-config": "^2.0.0",
+        "@twinscom/stylelint-config": "^2.0.1",
         "husky": "^3.0.5",
         "lint-staged": "^9.3.0",
         "prettier": "^1.18.2",
