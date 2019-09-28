@@ -118,6 +118,15 @@ details:not([open]) summary:hover {
     border-color: #b5b5b5;
 }
 
+del {
+    background-color: #ffe7ec;
+}
+
+ins {
+    background-color: #e4faec;
+    text-decoration: none;
+}
+
 /* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
