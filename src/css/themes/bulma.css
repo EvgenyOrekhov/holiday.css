@@ -25,7 +25,8 @@ button,
     color: #fff;
 }
 
-[type="submit"] {
+[type="submit"],
+button:not([type]) {
     background-color: #23d160;
     border-color: transparent;
     color: #fff;
@@ -44,7 +45,8 @@ button:hover:not(:disabled),
     background-color: #f7375d;
 }
 
-[type="submit"]:hover:not(:disabled) {
+[type="submit"]:hover:not(:disabled),
+button:not([type]):hover:not(:disabled) {
     border-color: transparent;
     background-color: #22c65b;
 }
