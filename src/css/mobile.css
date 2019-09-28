@@ -26,6 +26,33 @@ pre code {
     padding: 1rem;
 }
 
+kbd {
+    padding: 0.5rem;
+    min-width: 2.25rem;
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.25rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+kbd kbd {
+    margin: 0;
+    padding: 0;
+    min-width: unset;
+    min-height: unset;
+}
+
+kbd kbd:not(:first-child) {
+    padding-left: 0.25rem;
+}
+
+kbd kbd:not(:last-child) {
+    padding-right: 0.25rem;
+}
+
 audio,
 video,
 embed,
