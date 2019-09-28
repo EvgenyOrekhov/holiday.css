@@ -118,9 +118,13 @@ details:not([open]) summary:hover {
     border-color: #b5b5b5;
 }
 
-:disabled {
+/* stylelint-disable selector-no-qualifying-type */
+:disabled,
+[type="checkbox"][id]:disabled + label[for],
+[type="radio"][id]:disabled + label[for] {
     opacity: 0.5;
 }
+/* stylelint-enable */
 
 :invalid:not(form) {
     border-color: #ff3860;
