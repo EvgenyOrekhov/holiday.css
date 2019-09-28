@@ -4,7 +4,7 @@
     "description": "A class-free CSS framework",
     "main": "index.js",
     "scripts": {
-        "lint": "stylelint 'src/**/*.css'",
+        "lint": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
