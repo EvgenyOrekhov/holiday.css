@@ -102,3 +102,7 @@ label > [type="checkbox"],
 label > [type="radio"] {
     margin-right: 0.25rem;
 }
+
+[type="file"] {
+    padding-top: 0.3rem;
+}
