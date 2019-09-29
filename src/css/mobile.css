@@ -194,3 +194,8 @@ dt {
 dd {
     margin-bottom: 1rem;
 }
+
+li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
