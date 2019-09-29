@@ -133,3 +133,23 @@ label > [type="radio"] {
 [type="file"] {
     padding-top: 0.3rem;
 }
+
+blockquote {
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 2rem;
+}
+
+blockquote > p:first-child {
+    margin-top: 0;
+}
+
+blockquote > p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote > footer {
+    margin-top: 1rem;
+}

@@ -139,6 +139,11 @@ ins {
     text-decoration: none;
 }
 
+blockquote {
+    border-left-color: #dbdbdb;
+    background-color: #f5f5f5;
+}
+
 /* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
