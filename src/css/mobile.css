@@ -158,8 +158,13 @@ blockquote > p:last-child {
     margin-bottom: 0;
 }
 
+footer {
+    text-align: center;
+}
+
 blockquote > footer {
     margin-top: 1rem;
+    text-align: unset;
 }
 
 td,
