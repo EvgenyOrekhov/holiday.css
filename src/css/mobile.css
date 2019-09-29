@@ -171,3 +171,13 @@ td,
 th {
     padding: 0.5rem;
 }
+
+figure,
+figure > figcaption {
+    text-align: center;
+}
+
+/* stylelint-disable-next-line selector-max-universal */
+figure > * {
+    text-align: initial;
+}
