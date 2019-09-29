@@ -86,12 +86,26 @@ label {
     width: 100%;
 }
 
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]),
+textarea {
+    padding: 0.5rem;
+}
+
+[type="date"],
+[type="datetime-local"],
+[type="time"],
+[type="month"],
+[type="week"] {
+    padding: 0.4rem 0.5rem;
+}
+
 textarea {
     min-height: 8em;
 }
 
 select {
     min-height: 2.25rem;
+    padding: 0.45rem 0.5rem;
 }
 
 summary {
