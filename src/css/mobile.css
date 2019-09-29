@@ -69,7 +69,7 @@ object {
     width: 100%;
 }
 
-input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]),
+input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
 meter,
 progress {
     height: 2.25rem;
@@ -130,6 +130,10 @@ button,
     vertical-align: top;
 }
 
+fieldset {
+    padding: 0.75rem;
+}
+
 label > [type="color"] {
     margin-left: 0.25rem;
 }
@@ -138,18 +142,28 @@ label {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 1rem;
+}
+
+legend + label {
+    margin-top: 0;
 }
 
 [type="checkbox"] + label,
 [type="radio"] + label {
-    display: inline;
-    line-height: 2.25rem;
-    vertical-align: top;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    width: unset;
+}
+
+fieldset > label:first-child {
+    margin-top: 0;
 }
 
 label > [type="checkbox"],
 label > [type="radio"] {
     margin-right: 0.25rem;
+    min-height: 1rem;
 }
 
 [type="file"] {
