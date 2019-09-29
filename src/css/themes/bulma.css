@@ -88,7 +88,7 @@ code {
 
 kbd {
     background-color: #f5f5f5;
-    border: 1px solid #b5b5b5;
+    border-color: #b5b5b5;
     border-radius: 0.25rem;
     box-shadow: inset 0 0.2rem 0 #fff, inset 0 0 0 0.2rem #fff;
 }
@@ -101,10 +101,6 @@ kbd kbd {
 dialog {
     border: none;
     border-radius: 0.25rem;
-}
-
-iframe {
-    border: none;
 }
 
 /* stylelint-disable-next-line selector-no-qualifying-type */

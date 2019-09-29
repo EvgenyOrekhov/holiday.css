@@ -36,6 +36,8 @@ kbd {
     margin: 0 0.25rem;
     max-width: 100%;
     overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
 }
 
 kbd kbd {
@@ -43,6 +45,8 @@ kbd kbd {
     padding: 0;
     min-width: unset;
     min-height: unset;
+    border-width: unset;
+    border-style: unset;
 }
 
 kbd kbd:not(:first-child) {
@@ -51,6 +55,10 @@ kbd kbd:not(:first-child) {
 
 kbd kbd:not(:last-child) {
     padding-right: 0.25rem;
+}
+
+iframe {
+    border: none;
 }
 
 audio,
