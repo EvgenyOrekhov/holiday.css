@@ -172,7 +172,12 @@ th {
     padding: 0.5rem;
 }
 
-figure,
+figure {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
 figure > figcaption {
     text-align: center;
 }
