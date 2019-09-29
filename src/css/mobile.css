@@ -161,3 +161,8 @@ blockquote > p:last-child {
 blockquote > footer {
     margin-top: 1rem;
 }
+
+td,
+th {
+    padding: 0.5rem;
+}

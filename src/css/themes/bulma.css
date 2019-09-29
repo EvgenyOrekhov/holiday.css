@@ -77,9 +77,28 @@ table {
     border-collapse: collapse;
 }
 
-td,
-th {
-    border: 1px solid #b5b5b5;
+caption {
+    font-weight: bold;
+}
+
+thead {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+tfoot {
+    border-top: 2px solid #dbdbdb;
+}
+
+thead > tr:not(:first-child),
+tbody > tr:not(:first-child),
+tfoot > tr:not(:first-child) {
+    border-top: 1px solid #dbdbdb;
+}
+
+thead > tr:nth-child(even),
+tbody > tr:nth-child(even),
+tfoot > tr:nth-child(even) {
+    background-color: #fafafa;
 }
 
 code {
