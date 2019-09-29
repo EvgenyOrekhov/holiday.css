@@ -2,7 +2,7 @@
     "name": "css-framework",
     "version": "1.0.0",
     "description": "A class-free CSS framework",
-    "main": "index.js",
+    "main": "dist/css-framework.css",
     "scripts": {
         "lint": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,9 @@
         "framework",
         "classless",
         "class-free"
+    ],
+    "files": [
+        "dist/css-framework.css"
     ],
     "author": "Evgeny Orekhov",
     "license": "MIT",
