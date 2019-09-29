@@ -181,3 +181,11 @@ figure > figcaption {
 figure > * {
     text-align: initial;
 }
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
