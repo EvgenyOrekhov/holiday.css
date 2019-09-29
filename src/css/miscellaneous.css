@@ -1,8 +1,11 @@
-[href^="mailto:"]::before {
+[href^="mailto:"]::before,
+[href^="sms:"]::before {
     content: "✉ ";
 }
 
-[href^="tel:"]::before {
+[href^="tel:"]::before,
+[href^="callto:"]::before,
+[href^="skype:"]::before {
     content: "✆ ";
 }
 
