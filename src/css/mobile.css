@@ -174,10 +174,10 @@ blockquote > p:last-child {
 
 footer {
     text-align: center;
+    margin-top: 1rem;
 }
 
 blockquote > footer {
-    margin-top: 1rem;
     text-align: unset;
 }
 
