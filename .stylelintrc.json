@@ -5,5 +5,7 @@
         "scale-unlimited/declaration-strict-value": null,
         "selector-max-pseudo-class": null,
         "selector-max-specificity": null
-    }
+    },
+
+    "ignoreFiles": ["dist/css-framework.css"]
 }
