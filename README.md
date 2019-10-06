@@ -2,7 +2,7 @@
 
 No classes today! Because it's **holiday**!
 
-## [Demo](https://evgenyorekhov.github.io/css-framework/)
+## [Demo](https://evgenyorekhov.github.io/holiday.css/)
 
 ## What
 
@@ -32,7 +32,7 @@ Sources of inspiration:
 -   https://bulma.io/
 -   https://www.shoelace.style/
 
-## [Changelog](https://github.com/EvgenyOrekhov/css-framework/releases)
+## [Changelog](https://github.com/EvgenyOrekhov/holiday.css/releases)
 
 ## License
 

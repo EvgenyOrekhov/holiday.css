@@ -1,12 +1,12 @@
 {
-    "name": "css-framework",
+    "name": "holiday.css",
     "version": "1.0.0",
-    "description": "A class-free CSS framework",
-    "main": "dist/css-framework.css",
+    "description": "A classless CSS theme",
+    "main": "dist/holiday.css.css",
     "scripts": {
         "lint": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/css-framework.css"
+        "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css"
     },
     "keywords": [
         "css",
@@ -15,7 +15,7 @@
         "class-free"
     ],
     "files": [
-        "dist/css-framework.css"
+        "dist/holiday.css.css"
     ],
     "author": "Evgeny Orekhov",
     "license": "MIT",

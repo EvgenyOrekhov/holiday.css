@@ -8,5 +8,5 @@
         "declaration-colon-newline-after": null
     },
 
-    "ignoreFiles": ["dist/css-framework.css"]
+    "ignoreFiles": ["dist/holiday.css"]
 }
