@@ -142,6 +142,17 @@ details[open],
 details:not([open]) summary {
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+details[open] {
+    padding-top: 0;
+}
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+details[open] summary {
+    margin-bottom: 0.5rem;
 }
 
 details:not([open]) summary:hover {
