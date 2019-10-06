@@ -138,22 +138,10 @@ dialog {
 }
 
 /* stylelint-disable-next-line selector-no-qualifying-type */
-details[open] {
-    border: 1px solid var(--border-color);
-}
-
-details:first-of-type,
-details:first-of-type > summary {
-    border-radius: 0.25rem 0.25rem 0 0;
-}
-
-details:last-of-type,
-details:last-of-type > summary {
-    border-radius: 0 0 0.25rem 0.25rem;
-}
-
+details[open],
 details:not([open]) summary {
     border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
 }
 
 details:not([open]) summary:hover {
