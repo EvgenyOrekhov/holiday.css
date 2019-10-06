@@ -1,7 +1,8 @@
 button,
 input,
 textarea,
-select {
+select,
+fieldset {
     border-radius: 0.25rem;
 }
 
