@@ -2,7 +2,7 @@
     "name": "holiday.css",
     "version": "0.1.0",
     "description": "A classless CSS theme",
-    "main": "dist/holiday.css.css",
+    "main": "dist/holiday.css",
     "scripts": {
         "lint": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +18,7 @@
         "class-free"
     ],
     "files": [
-        "dist/holiday.css.css"
+        "dist/holiday.css"
     ],
     "author": "Evgeny Orekhov",
     "license": "MIT",
