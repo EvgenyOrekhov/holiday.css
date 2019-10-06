@@ -190,6 +190,7 @@ footer {
     margin-top: 1rem;
 }
 
+body > header,
 body > footer {
     text-align: center;
 }
