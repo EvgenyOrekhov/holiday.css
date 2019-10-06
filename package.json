@@ -21,8 +21,8 @@
     "license": "MIT",
     "devDependencies": {
         "@twinscom/stylelint-config": "^2.0.1",
-        "husky": "^3.0.7",
-        "lint-staged": "^9.4.0",
+        "husky": "^3.0.8",
+        "lint-staged": "^9.4.1",
         "modern-normalize": "^0.5.0",
         "prettier": "^1.18.2",
         "stylelint": "^11.0.0"
