@@ -22,6 +22,10 @@ Got tired of complex markup and tons of classes on every element.
 
 ## Quick Start
 
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css" />
+```
+
 ## Compatibility
 
 Tested only with the latest version of Chrome.
