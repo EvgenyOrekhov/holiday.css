@@ -19,6 +19,7 @@ Got tired of complex markup and tons of classes on every element.
 
 -   Makes your page fit even the smallest screens
 -   Adds styles to your buttons, inputs, tables, and other elements
+-   Highlights invalid fields in your forms
 
 ## Quick Start
 
