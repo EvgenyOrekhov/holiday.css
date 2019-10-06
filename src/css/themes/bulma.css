@@ -159,14 +159,9 @@ blockquote {
     background-color: #f5f5f5;
 }
 
-footer {
+body > footer {
     border-top: 1px solid #dbdbdb;
     padding-top: 1rem;
-}
-
-blockquote footer {
-    border-top: unset;
-    padding-top: unset;
 }
 
 /* stylelint-disable selector-no-qualifying-type */
