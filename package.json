@@ -4,8 +4,7 @@
     "description": "A classless CSS theme",
     "main": "dist/holiday.css",
     "scripts": {
-        "lint": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css"
     },
     "keywords": [
@@ -33,7 +32,7 @@
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged",
-            "pre-push": "npm run lint"
+            "pre-push": "npm test"
         }
     },
     "lint-staged": {
