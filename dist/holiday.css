@@ -313,6 +313,7 @@ label > [type="radio"]:not(:disabled) {
 body {
     margin: 0.5rem auto;
     width: calc(100% - 1rem);
+    overflow-wrap: break-word;
 }
 
 img {
