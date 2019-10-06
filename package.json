@@ -7,7 +7,8 @@
     "scripts": {
         "test": "stylelint 'src/**/*.css' && prettier --check '**/*.{js,css,json,md,html}'",
         "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
-        "preversion": "npm run build && git add dist/"
+        "preversion": "npm run build && git add dist/",
+        "postversion": "git push && git push --tags && npm publish"
     },
     "keywords": [
         "css",
