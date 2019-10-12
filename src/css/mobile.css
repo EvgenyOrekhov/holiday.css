@@ -56,6 +56,7 @@ kbd kbd:not(:last-child) {
 
 iframe {
     border: none;
+    width: 100%;
 }
 
 dialog {
@@ -67,30 +68,32 @@ dialog {
 audio,
 video,
 embed,
-iframe,
 object {
     width: 100%;
 }
 
-input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
 meter,
 progress {
     height: 2.25rem;
-}
-
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]),
-select,
-textarea,
-meter,
-progress,
-output,
-label {
     display: block;
     width: 100%;
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]),
-textarea {
+input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]) {
+    height: 2.25rem;
+}
+
+input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="color"]),
+output {
+    display: block;
+    width: 100%;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+input:not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="color"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]) {
     padding: 0.5rem;
 }
 
@@ -104,11 +107,16 @@ textarea {
 
 textarea {
     min-height: 8em;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 select {
     min-height: 2.25rem;
     padding: 0.45rem 0.5rem;
+    display: block;
+    width: 100%;
 }
 
 summary {
@@ -116,13 +124,6 @@ summary {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    padding: 0.5rem;
 }
 
 [type="image"] {
@@ -146,6 +147,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
+    width: 100%;
 }
 
 legend + label {

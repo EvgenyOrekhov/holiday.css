@@ -5,7 +5,8 @@
         "selector-max-pseudo-class": null,
         "selector-max-specificity": null,
 
-        "declaration-colon-newline-after": null
+        "declaration-colon-newline-after": null,
+        "max-line-length": null
     },
 
     "ignoreFiles": ["dist/holiday.css"]
