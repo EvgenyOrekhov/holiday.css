@@ -102,6 +102,7 @@ input:not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="
 [type="time"],
 [type="month"],
 [type="week"] {
+    /* 0.4rem is a hack for mobile Chrome */
     padding: 0.4rem 0.5rem;
 }
 
@@ -114,9 +115,11 @@ textarea {
 
 select {
     min-height: 2.25rem;
-    padding: 0.45rem 0.5rem;
     display: block;
     width: 100%;
+
+    /* "padding: 0.5rem;" messes up the height of selects */
+    padding: 0.45rem 0.5rem;
 }
 
 summary {
@@ -172,6 +175,7 @@ label > [type="radio"] {
 }
 
 [type="file"] {
+    /* Works in Chrome (but poorly), doesn't work in Firefox */
     padding-top: 0.35rem;
 }
 
