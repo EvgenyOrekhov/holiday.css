@@ -5,7 +5,7 @@
     "main": "dist/holiday.css",
     "style": "dist/holiday.css",
     "scripts": {
-        "test": "stylelint src/**/*.css && prettier --check **/*.{js,css,json,md,html}",
+        "test": "stylelint src/**/*.css && prettier --check .",
         "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
         "preversion": "npm run build && git add dist/",
         "postversion": "git push && git push --tags && npm publish"
@@ -29,7 +29,7 @@
         "husky": "^4.2.3",
         "lint-staged": "^10.0.8",
         "modern-normalize": "^0.6.0",
-        "prettier": "^1.19.1",
+        "prettier": "^2.0.1",
         "stylelint": "^13.2.1"
     },
     "husky": {
@@ -39,7 +39,7 @@
         }
     },
     "lint-staged": {
-        "*.{js,css,json,md,html}": "prettier --write",
+        "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
         "*.css": "stylelint --fix"
     }
 }
