@@ -15,7 +15,7 @@ A classless CSS theme. Built on top of [modern-normalize](https://github.com/sin
 
 Got tired of complex markup and tons of classes on every element.
 
-See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs [holiday.css](https://jsfiddle.net/5egfxtLc/1/). 
+See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs [holiday.css](https://jsfiddle.net/5egfxtLc/1/).
 
 ## Features
 
