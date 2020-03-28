@@ -1,25 +1,23 @@
-/*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
-/* Document
-   ========================================================================== */
+/*
+Document
+========
+*/
 
 /**
- * Use a better box model (opinionated).
- */
-
-html {
-	box-sizing: border-box;
-}
+Use a better box model (opinionated).
+*/
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 /**
- * Use a more readable tab size (opinionated).
- */
+Use a more readable tab size (opinionated).
+*/
 
 :root {
 	-moz-tab-size: 4;
@@ -27,69 +25,74 @@ html {
 }
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
 
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-   ========================================================================== */
+/*
+Sections
+========
+*/
 
 /**
- * Remove the margin in all browsers.
- */
+Remove the margin in all browsers.
+*/
 
 body {
 	margin: 0;
 }
 
 /**
- * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
- */
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
 
 body {
 	font-family:
-		-apple-system,
-		BlinkMacSystemFont,
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
 		'Segoe UI',
 		Roboto,
 		Helvetica,
 		Arial,
 		sans-serif,
 		'Apple Color Emoji',
-		'Segoe UI Emoji',
-		'Segoe UI Symbol';
+		'Segoe UI Emoji';
 }
 
-/* Grouping content
-   ========================================================================== */
+/*
+Grouping content
+================
+*/
 
 /**
- * Add the correct height in Firefox.
- */
+Add the correct height in Firefox.
+*/
 
 hr {
 	height: 0;
 }
 
-/* Text-level semantics
-   ========================================================================== */
+/*
+Text-level semantics
+====================
+*/
 
 /**
- * Add the correct text decoration in Chrome, Edge, and Safari.
- */
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
 
 abbr[title] {
 	text-decoration: underline dotted;
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+Add the correct font weight in Edge and Safari.
+*/
 
 b,
 strong {
@@ -97,29 +100,34 @@ strong {
 }
 
 /**
- * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
 
 code,
 kbd,
 samp,
 pre {
-	font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */
+	font-family:
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
 	font-size: 1em; /* 2 */
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+Add the correct font size in all browsers.
+*/
 
 small {
 	font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
- */
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
 
 sub,
 sup {
@@ -137,13 +145,15 @@ sup {
 	top: -0.5em;
 }
 
-/* Forms
-   ========================================================================== */
+/*
+Forms
+=====
+*/
 
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
 
 button,
 input,
@@ -157,9 +167,9 @@ textarea {
 }
 
 /**
- * Remove the inheritance of text transform in Edge and Firefox.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
 
 button,
 select { /* 1 */
@@ -167,8 +177,8 @@ select { /* 1 */
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+Correct the inability to style clickable types in iOS and Safari.
+*/
 
 button,
 [type='button'],
@@ -178,8 +188,8 @@ button,
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+Remove the inner border and padding in Firefox.
+*/
 
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -190,8 +200,8 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+Restore the focus styles unset by the previous rule.
+*/
 
 button:-moz-focusring,
 [type='button']:-moz-focusring,
@@ -201,32 +211,32 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
- */
+Correct the padding in Firefox.
+*/
 
 fieldset {
 	padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
- */
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
 
 legend {
 	padding: 0;
 }
 
 /**
- * Add the correct vertical alignment in Chrome and Firefox.
- */
+Add the correct vertical alignment in Chrome and Firefox.
+*/
 
 progress {
 	vertical-align: baseline;
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Safari.
- */
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
 
 [type='number']::-webkit-inner-spin-button,
 [type='number']::-webkit-outer-spin-button {
@@ -234,9 +244,9 @@ progress {
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
 
 [type='search'] {
 	-webkit-appearance: textfield; /* 1 */
@@ -244,29 +254,31 @@ progress {
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
+Remove the inner padding in Chrome and Safari on macOS.
+*/
 
 [type='search']::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
 
 ::-webkit-file-upload-button {
 	-webkit-appearance: button; /* 1 */
 	font: inherit; /* 2 */
 }
 
-/* Interactive
-   ========================================================================== */
+/*
+Interactive
+===========
+*/
 
 /*
- * Add the correct display in Chrome and Safari.
- */
+Add the correct display in Chrome and Safari.
+*/
 
 summary {
 	display: list-item;
@@ -368,6 +380,7 @@ kbd kbd:not(:last-child) {
 
 iframe {
     border: none;
+    width: 100%;
 }
 
 dialog {
@@ -379,30 +392,32 @@ dialog {
 audio,
 video,
 embed,
-iframe,
 object {
     width: 100%;
 }
 
-input:not([type="button"]):not([type="image"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
 meter,
 progress {
     height: 2.25rem;
-}
-
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]),
-select,
-textarea,
-meter,
-progress,
-output,
-label {
     display: block;
     width: 100%;
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]),
-textarea {
+input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]) {
+    height: 2.25rem;
+}
+
+input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="color"]),
+output {
+    display: block;
+    width: 100%;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+input:not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="color"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]) {
     padding: 0.5rem;
 }
 
@@ -411,30 +426,30 @@ textarea {
 [type="time"],
 [type="month"],
 [type="week"] {
+    /* 0.4rem is a hack for mobile Chrome */
     padding: 0.4rem 0.5rem;
 }
 
 textarea {
     min-height: 8em;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 select {
     min-height: 2.25rem;
+    display: block;
+    width: 100%;
+
+    /* "padding: 0.5rem;" messes up the height of selects */
     padding: 0.45rem 0.5rem;
 }
 
 summary {
     min-height: 2.25rem;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    padding: 0.5rem;
 }
 
 [type="image"] {
@@ -458,6 +473,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
+    width: 100%;
 }
 
 legend + label {
@@ -482,6 +498,7 @@ label > [type="radio"] {
 }
 
 [type="file"] {
+    /* Works in Chrome (but poorly), doesn't work in Firefox */
     padding-top: 0.35rem;
 }
 
