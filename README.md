@@ -1,15 +1,13 @@
 # holiday.css :tada:
 
-[![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
-[![Travis CI build status](https://img.shields.io/travis/EvgenyOrekhov/holiday.css/master.svg?style=flat-square)](https://travis-ci.org/EvgenyOrekhov/holiday.css)
+A minimalist classless CSS theme. Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
-No classes today! Because it's **holiday**!
+[![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
+[![Travis CI build status](https://img.shields.io/travis/com/EvgenyOrekhov/holiday.css/master.svg?style=flat-square)](https://travis-ci.com/EvgenyOrekhov/holiday.css)
+
+> No classes today! Because it's **holiday**!
 
 ## [Demo](https://evgenyorekhov.github.io/holiday.css/)
-
-## What
-
-A classless CSS theme. Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
 ## Why
 
