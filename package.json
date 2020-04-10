@@ -30,7 +30,7 @@
         "lint-staged": "^10.1.2",
         "modern-normalize": "^0.6.0",
         "prettier": "^2.0.4",
-        "stylelint": "^13.3.0"
+        "stylelint": "^13.3.1"
     },
     "husky": {
         "hooks": {
