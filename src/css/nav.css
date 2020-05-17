@@ -69,11 +69,17 @@
         background-position: top;
     }
 
-    nav > ul {
+    /* stylelint-disable-next-line selector-max-universal */
+    nav > * {
         display: none;
     }
 
     nav:hover > ul {
         display: inherit;
+    }
+
+    /* stylelint-disable-next-line selector-max-universal */
+    nav:hover > *:not(ul) {
+        display: unset;
     }
 }
