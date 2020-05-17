@@ -1,0 +1,55 @@
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav > ul > li {
+    padding: 0.5rem;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--background-color);
+    border-radius: 0.25rem;
+    border: 1px solid var(--border-color);
+    margin-left: calc(-0.5rem - 1px);
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    min-width: calc(100% + 2px);
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+/* stylelint-disable-next-line selector-max-compound-selectors, selector-max-type */
+nav ul li ul li ul {
+    min-width: calc(100% + 1rem + 2px);
+    margin-top: 0.75rem;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* stylelint-disable-next-line selector-max-universal */
+nav li > *:not(ul):not(:only-child) {
+    cursor: pointer;
+}
+
+/* stylelint-disable-next-line selector-max-universal */
+nav li > *:not(ul):not(:only-child)::after {
+    content: " ▾";
+}
