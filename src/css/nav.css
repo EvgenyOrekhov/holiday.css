@@ -18,8 +18,8 @@ nav ul li a {
 }
 
 nav ul li ul {
-    display: none;
     position: absolute;
+    left: -9999px;
     z-index: 1;
     background-color: var(--background-color);
     border-radius: 0.25rem;
@@ -40,8 +40,11 @@ nav ul li ul li ul {
     margin-top: 0.75rem;
 }
 
+nav :focus ~ ul,
+nav :focus ~ ul ul,
+nav ul ul:focus-within,
 nav ul li:hover ul {
-    display: block;
+    left: initial;
 }
 
 /* stylelint-disable-next-line selector-max-universal */
