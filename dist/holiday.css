@@ -306,6 +306,10 @@ label > [type="radio"]:not(:disabled) {
     cursor: not-allowed;
 }
 /* stylelint-enable */
+
+abbr {
+    cursor: help;
+}
 [href^="mailto:"]::before,
 [href^="sms:"]::before {
     content: "✉ ";
@@ -582,12 +586,12 @@ li {
         left: -9999px;
         z-index: 1;
         background-color: var(--background-color);
-        border-radius: 0.25rem;
-        border: 1px solid var(--border-color);
-        margin-left: calc(-0.5rem - 1px);
+        border-radius: var(--border-radius);
+        border: var(--border-width) solid var(--border-color);
+        margin-left: calc(-0.5rem - var(--border-width));
         margin-top: 0.5rem;
         padding: 0.25rem 0.5rem;
-        min-width: calc(100% + 2px);
+        min-width: calc(100% + var(--border-width) * 2);
     }
 
     nav ul li ul li {
@@ -596,7 +600,7 @@ li {
 
     /* stylelint-disable-next-line selector-max-compound-selectors, selector-max-type */
     nav ul li ul li ul {
-        min-width: calc(100% + 1rem + 2px);
+        min-width: calc(100% + 1rem + var(--border-width) * 2);
         margin-top: 0.75rem;
     }
 
@@ -621,8 +625,8 @@ li {
 @media not all and (hover: hover) {
     nav {
         padding-top: 2rem;
-        border-radius: 0.25rem;
-        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        border: var(--border-width) solid var(--border-color);
         background-image: url('data:image/svg+xml;utf8,<svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>');
         background-repeat: no-repeat;
         background-position: top;
@@ -654,6 +658,8 @@ li {
     --success-hover-color: #22c65b;
     --danger-text-background-color: #ffe7ec;
     --success-text-background-color: #e4faec;
+    --border-radius: 0.25rem;
+    --border-width: 1px;
 }
 
 button,
@@ -661,7 +667,7 @@ input,
 textarea,
 select,
 fieldset {
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
 }
 
 [type="image"]:hover:not(:disabled) {
@@ -673,7 +679,7 @@ button,
 [type="reset"],
 [type="submit"],
 [type="color"] {
-    border: 1px solid var(--border-color);
+    border: var(--border-width) solid var(--border-color);
     background: var(--background-color);
     color: var(--text-color);
 }
@@ -714,7 +720,7 @@ input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type=
 textarea,
 select,
 fieldset {
-    border: 1px solid var(--border-color);
+    border: var(--border-width) solid var(--border-color);
 }
 
 select:not(:disabled),
@@ -741,17 +747,17 @@ caption {
 }
 
 thead {
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 tfoot {
-    border-top: 2px solid var(--border-color);
+    border-top: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 thead > tr:not(:first-child),
 tbody > tr:not(:first-child),
 tfoot > tr:not(:first-child) {
-    border-top: 1px solid var(--border-color);
+    border-top: var(--border-width) solid var(--border-color);
 }
 
 thead > tr:nth-child(even),
@@ -766,8 +772,8 @@ code {
 
 kbd {
     background-color: var(--highlighted-background-color);
-    border: 1px solid var(--border-hover-color);
-    border-radius: 0.25rem;
+    border: var(--border-width) solid var(--border-hover-color);
+    border-radius: var(--border-radius);
     box-shadow: inset 0 0.2rem 0 var(--background-color),
         inset 0 0 0 0.2rem var(--background-color);
 }
@@ -778,14 +784,14 @@ kbd kbd {
 }
 
 dialog {
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
 }
 
 /* stylelint-disable-next-line selector-no-qualifying-type */
 details[open],
 details:not([open]) summary {
-    border: 1px solid var(--border-color);
-    border-radius: 0.25rem;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
     padding: 0.5rem;
 }
 
@@ -818,12 +824,12 @@ blockquote {
 }
 
 body > footer {
-    border-top: 1px solid var(--border-color);
+    border-top: var(--border-width) solid var(--border-color);
     padding-top: 1rem;
 }
 
 hr {
-    border-width: 1px 0 0;
+    border-width: var(--border-width) 0 0;
     border-style: solid;
     border-color: var(--border-color);
 }
@@ -839,7 +845,7 @@ hr {
 :invalid:not(form) {
     border-color: var(--danger-color);
     outline-color: var(--danger-color);
-    border-width: 1px;
+    border-width: var(--border-width);
     border-style: solid;
 }
 
