@@ -1,6 +1,29 @@
 @media (hover: hover) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
+        background-color: var(--highlighted-background-color);
+        display: flex;
+    }
+
+    body > nav {
+        width: 100vw;
+        position: relative;
+        left: calc(-50vw + 50%);
+    }
+
     nav ul {
         padding-left: 0;
+    }
+
+    body > nav > ul {
+        width: calc(var(--max-body-width) + 2rem);
+        margin: 0.5rem auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     nav ul li {
