@@ -1,5 +1,5 @@
 :root {
-    --max-body-width: 768px;
+    --max-body-width: 48rem;
 }
 
 [href^="mailto:"]::before,
