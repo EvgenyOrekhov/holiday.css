@@ -1,3 +1,7 @@
+:root {
+    --max-body-width: 768px;
+}
+
 [href^="mailto:"]::before,
 [href^="sms:"]::before {
     content: "✉ ";
@@ -9,8 +13,6 @@
     content: "✆ ";
 }
 
-@media (min-width: 768px) {
-    body {
-        max-width: 768px;
-    }
+body {
+    max-width: var(--max-body-width);
 }

@@ -1,5 +1,5 @@
 body {
-    margin: 0.5rem auto;
+    margin: 0 auto 0.5rem;
     width: calc(100% - 1rem);
     overflow-wrap: break-word;
 }
