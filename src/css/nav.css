@@ -4,8 +4,8 @@
     }
 
     nav {
-        border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
-        background-color: var(--highlighted-background-color);
+        border-bottom: var(--border-width) solid var(--border-color);
+        background-color: var(--background-color);
         display: flex;
     }
 
