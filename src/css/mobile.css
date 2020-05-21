@@ -242,3 +242,10 @@ picture {
     display: block;
     text-align: center;
 }
+
+@media (max-width: 50rem) {
+    table {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+    }
+}
