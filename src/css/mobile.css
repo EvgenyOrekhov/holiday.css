@@ -248,4 +248,21 @@ picture {
         width: calc(100% + 1rem);
         margin-left: -0.5rem;
     }
+
+    pre {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    pre code {
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        box-sizing: content-box;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

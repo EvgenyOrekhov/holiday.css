@@ -120,6 +120,7 @@ tfoot > tr:nth-child(even) {
 
 code {
     background-color: var(--highlighted-background-color);
+    border-color: var(--highlighted-background-color);
 }
 
 kbd {
