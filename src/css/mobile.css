@@ -6,6 +6,7 @@ body {
 
 img {
     max-width: 100%;
+    max-height: 100vh;
 }
 
 table {
@@ -232,4 +233,42 @@ dd {
 li {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+picture {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 50rem) {
+    table {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+    }
+
+    video {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+        max-height: 100vh;
+    }
+
+    pre {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    pre code {
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        box-sizing: content-box;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
