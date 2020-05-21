@@ -249,6 +249,12 @@ picture {
         margin-left: -0.5rem;
     }
 
+    video {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+        max-height: 100vh;
+    }
+
     pre {
         width: calc(100% + 1rem);
         margin-left: -0.5rem;
