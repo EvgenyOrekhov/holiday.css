@@ -290,6 +290,7 @@ summary,
 [type="submit"],
 [type="color"],
 [type="file"],
+[type="range"],
 label > [type="checkbox"]:not(:disabled),
 label > [type="radio"]:not(:disabled) {
     cursor: pointer;
