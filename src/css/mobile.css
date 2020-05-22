@@ -1,6 +1,11 @@
+:root {
+    --max-body-width: 48rem;
+}
+
 body {
     margin: 0 auto 0.5rem;
     width: calc(100% - 1rem);
+    max-width: var(--max-body-width);
     overflow-wrap: break-word;
 }
 

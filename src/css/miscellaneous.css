@@ -1,7 +1,3 @@
-:root {
-    --max-body-width: 48rem;
-}
-
 [href^="mailto:"]::before,
 [href^="sms:"]::before {
     content: "✉ ";
@@ -11,8 +7,4 @@
 [href^="callto:"]::before,
 [href^="skype:"]::before {
     content: "✆ ";
-}
-
-body {
-    max-width: var(--max-body-width);
 }
