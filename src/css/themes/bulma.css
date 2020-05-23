@@ -226,7 +226,7 @@ hr {
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
 [type="radio"][id]:disabled + label[for] {
-    opacity: 0.5;
+    opacity: 50%;
 }
 /* stylelint-enable */
 

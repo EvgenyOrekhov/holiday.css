@@ -25,7 +25,7 @@
     "author": "Evgeny Orekhov",
     "license": "MIT",
     "devDependencies": {
-        "@twinscom/stylelint-config": "^2.1.0",
+        "@twinscom/stylelint-config": "^3.0.0",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.6",
         "modern-normalize": "^0.6.0",
