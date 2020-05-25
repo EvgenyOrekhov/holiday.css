@@ -85,31 +85,27 @@ fieldset {
 
 button,
 [type="button"],
-[type="reset"],
-[type="submit"],
 [type="color"] {
     border: var(--border-width) solid var(--border-color);
-    background: var(--background-color);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
 [type="reset"] {
+    border: var(--border-width) solid transparent;
     background-color: var(--danger-color);
-    border-color: transparent;
     color: var(--danger-text-color);
 }
 
 [type="submit"],
 button:not([type]) {
+    border: var(--border-width) solid transparent;
     background-color: var(--success-color);
-    border-color: transparent;
     color: var(--success-text-color);
 }
 
 button:hover:not(:disabled),
 [type="button"]:hover:not(:disabled),
-[type="reset"]:hover:not(:disabled),
-[type="submit"]:hover:not(:disabled),
 [type="color"]:hover:not(:disabled) {
     border-color: var(--border-hover-color);
 }
@@ -145,7 +141,7 @@ select:not(:disabled),
 [type="time"]:not(:disabled),
 [type="month"]:not(:disabled),
 [type="week"]:not(:disabled) {
-    background: var(--background-color);
+    background-color: var(--background-color);
 }
 
 input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):disabled,
