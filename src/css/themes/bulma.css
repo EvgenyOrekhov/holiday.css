@@ -89,7 +89,7 @@ button,
 [type="submit"],
 [type="color"] {
     border: var(--border-width) solid var(--border-color);
-    background: var(--background-color);
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -145,7 +145,7 @@ select:not(:disabled),
 [type="time"]:not(:disabled),
 [type="month"]:not(:disabled),
 [type="week"]:not(:disabled) {
-    background: var(--background-color);
+    background-color: var(--background-color);
 }
 
 input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):disabled,
