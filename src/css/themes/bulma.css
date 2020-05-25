@@ -85,8 +85,6 @@ fieldset {
 
 button,
 [type="button"],
-[type="reset"],
-[type="submit"],
 [type="color"] {
     border: var(--border-width) solid var(--border-color);
     background-color: var(--background-color);
@@ -94,22 +92,20 @@ button,
 }
 
 [type="reset"] {
+    border: var(--border-width) solid transparent;
     background-color: var(--danger-color);
-    border-color: transparent;
     color: var(--danger-text-color);
 }
 
 [type="submit"],
 button:not([type]) {
+    border: var(--border-width) solid transparent;
     background-color: var(--success-color);
-    border-color: transparent;
     color: var(--success-text-color);
 }
 
 button:hover:not(:disabled),
 [type="button"]:hover:not(:disabled),
-[type="reset"]:hover:not(:disabled),
-[type="submit"]:hover:not(:disabled),
 [type="color"]:hover:not(:disabled) {
     border-color: var(--border-hover-color);
 }
