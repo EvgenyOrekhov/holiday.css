@@ -1,3 +1,7 @@
+abbr {
+    cursor: help;
+}
+
 button,
 summary,
 [type="button"],
@@ -22,7 +26,3 @@ label > [type="radio"]:not(:disabled) {
     cursor: not-allowed;
 }
 /* stylelint-enable */
-
-abbr {
-    cursor: help;
-}
