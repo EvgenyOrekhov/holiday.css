@@ -2,8 +2,6 @@
     "extends": "@twinscom/stylelint-config",
 
     "rules": {
-        "alpha-value-notation": "number",
-
         "selector-max-pseudo-class": null,
         "selector-max-specificity": null,
 
