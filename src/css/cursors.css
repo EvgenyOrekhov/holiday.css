@@ -10,8 +10,8 @@ summary,
 [type="color"],
 [type="file"],
 [type="range"],
-label > [type="checkbox"]:not(:disabled),
-label > [type="radio"]:not(:disabled) {
+label > [type="checkbox"]:enabled,
+label > [type="radio"]:enabled {
     cursor: pointer;
 }
 

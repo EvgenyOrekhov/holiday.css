@@ -78,7 +78,7 @@ fieldset {
     border-radius: var(--border-radius);
 }
 
-[type="image"]:hover:not(:disabled) {
+[type="image"]:hover:enabled {
     filter: brightness(95%);
 }
 
@@ -103,19 +103,19 @@ button:not([type]) {
     color: var(--success-text-color);
 }
 
-button:hover:not(:disabled),
-[type="button"]:hover:not(:disabled),
-[type="color"]:hover:not(:disabled) {
+button:hover:enabled,
+[type="button"]:hover:enabled,
+[type="color"]:hover:enabled {
     border-color: var(--border-hover-color);
 }
 
-[type="reset"]:hover:not(:disabled) {
+[type="reset"]:hover:enabled {
     border-color: transparent;
     background-color: var(--danger-hover-color);
 }
 
-[type="submit"]:hover:not(:disabled),
-button:not([type]):hover:not(:disabled) {
+[type="submit"]:hover:enabled,
+button:not([type]):hover:enabled {
     border-color: transparent;
     background-color: var(--success-hover-color);
 }
@@ -134,12 +134,12 @@ fieldset {
     border: var(--border-width) solid var(--border-color);
 }
 
-select:not(:disabled),
-[type="date"]:not(:disabled),
-[type="datetime-local"]:not(:disabled),
-[type="time"]:not(:disabled),
-[type="month"]:not(:disabled),
-[type="week"]:not(:disabled) {
+select:enabled,
+[type="date"]:enabled,
+[type="datetime-local"]:enabled,
+[type="time"]:enabled,
+[type="month"]:enabled,
+[type="week"]:enabled {
     background-color: var(--background-color);
 }
 
@@ -149,9 +149,9 @@ select:disabled {
     background-color: var(--highlighted-background-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:not(:disabled):not(:invalid),
-textarea:hover:not(:disabled),
-select:hover:not(:disabled) {
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:enabled:not(:invalid),
+textarea:hover:enabled,
+select:hover:enabled {
     border-color: var(--border-hover-color);
 }
 
@@ -275,6 +275,6 @@ hr {
     opacity: unset;
 }
 
-:invalid:not(form):hover:not(:disabled) {
+:invalid:not(form):hover:enabled {
     border-color: var(--danger-hover-color);
 }
