@@ -127,7 +127,7 @@ select {
     color: var(--text-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):valid,
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):not(:invalid),
 textarea,
 select,
 fieldset {
@@ -149,7 +149,7 @@ select:disabled {
     background-color: var(--highlighted-background-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:enabled:valid,
+input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:enabled:not(:invalid),
 textarea:hover:enabled,
 select:hover:enabled {
     border-color: var(--border-hover-color);
