@@ -53,20 +53,30 @@ body {
     color: var(--text-color);
 }
 
-a {
+code {
+    background-color: var(--code-background-color);
+    border-color: var(--code-background-color);
+    color: var(--code-text-color);
+}
+
+a,
+a code {
     color: var(--link-color);
     text-decoration: none;
 }
 
-a:visited {
+a:visited,
+a:visited code {
     color: var(--link-visited-color);
 }
 
-a:hover {
+a:hover,
+a:hover code {
     color: var(--link-hover-color);
 }
 
-a:active {
+a:active,
+a:active code {
     color: var(--link-active-color);
 }
 
@@ -181,12 +191,6 @@ thead > tr:nth-child(even),
 tbody > tr:nth-child(even),
 tfoot > tr:nth-child(even) {
     background-color: var(--highlighted-background-color);
-}
-
-code {
-    background-color: var(--code-background-color);
-    border-color: var(--code-background-color);
-    color: var(--code-text-color);
 }
 
 kbd {

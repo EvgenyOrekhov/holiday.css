@@ -2,11 +2,24 @@
     --max-body-width: 48rem;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    margin: 0 auto 0.5rem;
+    margin: 0 auto;
     width: calc(100% - 1rem);
     max-width: var(--max-body-width);
     overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+
+    /* `- 2px` is a hack for getting rid of vertical scroll */
+    min-height: calc(100% - 2px);
+}
+
+main {
+    flex-grow: 1;
 }
 
 img {
@@ -205,6 +218,10 @@ footer {
 body > header,
 body > footer {
     text-align: center;
+}
+
+body > footer {
+    padding-bottom: 1rem;
 }
 
 td,
