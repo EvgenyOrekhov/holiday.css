@@ -72,8 +72,8 @@
     }
 
     /* stylelint-disable-next-line selector-max-universal */
-    nav li > *:not(ul):not(:only-child) {
-        cursor: pointer;
+    nav li > *:not(ul):not(a):not(:only-child) {
+        cursor: default;
     }
 
     /* stylelint-disable-next-line selector-max-universal */
