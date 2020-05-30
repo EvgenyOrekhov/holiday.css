@@ -317,6 +317,13 @@ label > [type="radio"]:enabled {
 
 html {
     height: 100%;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
 }
 
 body {
@@ -326,9 +333,7 @@ body {
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
-
-    /* `- 2px` is a hack for getting rid of vertical scroll */
-    min-height: calc(100% - 2px);
+    min-height: 100%;
 }
 
 main {
@@ -347,6 +352,7 @@ table {
 
 pre {
     overflow-x: auto;
+    line-height: 1.15;
 }
 
 code {
@@ -360,13 +366,13 @@ pre code {
 }
 
 kbd {
-    padding: 0.5rem;
-    min-width: 2.25rem;
-    min-height: 2rem;
+    padding: 0 0.25rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0.25rem;
+    margin: 0 0.1rem;
     max-width: 100%;
     overflow: hidden;
 }
