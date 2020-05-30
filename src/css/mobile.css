@@ -4,6 +4,13 @@
 
 html {
     height: 100%;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
 }
 
 body {
@@ -34,6 +41,7 @@ table {
 
 pre {
     overflow-x: auto;
+    line-height: 1.15;
 }
 
 code {
