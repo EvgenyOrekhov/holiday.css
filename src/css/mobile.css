@@ -20,9 +20,7 @@ body {
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
-
-    /* `- 2px` is a hack for getting rid of vertical scroll */
-    min-height: calc(100% - 2px);
+    min-height: 100%;
 }
 
 main {
