@@ -1,45 +1,45 @@
 {
-    "name": "holiday.css",
-    "version": "0.7.0",
-    "description": "A classless CSS theme",
-    "main": "dist/holiday.css",
-    "style": "dist/holiday.css",
-    "scripts": {
-        "test": "stylelint src/**/*.css && prettier --check .",
-        "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
-        "preversion": "npm run build && git add dist/",
-        "postversion": "git push && git push --tags && npm publish"
-    },
-    "keywords": [
-        "css",
-        "css-theme",
-        "css-framework",
-        "framework",
-        "classless",
-        "classless-theme",
-        "class-free"
-    ],
-    "files": [
-        "dist/holiday.css"
-    ],
-    "author": "Evgeny Orekhov",
-    "license": "MIT",
-    "devDependencies": {
-        "@twinscom/stylelint-config": "^3.0.1",
-        "husky": "^4.2.5",
-        "lint-staged": "^10.2.7",
-        "modern-normalize": "^0.6.0",
-        "prettier": "^2.0.5",
-        "stylelint": "^13.5.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "pre-push": "npm test"
-        }
-    },
-    "lint-staged": {
-        "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
-        "*.css": "stylelint --fix"
+  "name": "holiday.css",
+  "version": "0.7.0",
+  "description": "A classless CSS theme",
+  "main": "dist/holiday.css",
+  "style": "dist/holiday.css",
+  "scripts": {
+    "test": "stylelint src/**/*.css && prettier --check .",
+    "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
+    "preversion": "npm run build && git add dist/",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "keywords": [
+    "css",
+    "css-theme",
+    "css-framework",
+    "framework",
+    "classless",
+    "classless-theme",
+    "class-free"
+  ],
+  "files": [
+    "dist/holiday.css"
+  ],
+  "author": "Evgeny Orekhov",
+  "license": "MIT",
+  "devDependencies": {
+    "@twinscom/stylelint-config": "^3.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "modern-normalize": "^0.6.0",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
+    "*.css": "stylelint --fix"
+  }
 }

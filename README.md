@@ -17,9 +17,9 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs [holiday.css]
 
 ## Features
 
--   Makes your page fit even the smallest screens
--   Adds styles to your buttons, inputs, tables, and other elements
--   Highlights invalid fields in your forms
+- Makes your page fit even the smallest screens
+- Adds styles to your buttons, inputs, tables, and other elements
+- Highlights invalid fields in your forms
 
 ## Quick Start
 
@@ -35,10 +35,10 @@ Tested only with the latest version of Chrome.
 
 Sources of inspiration:
 
--   https://mblode.github.io/marx/
--   https://www.cssbed.com/
--   https://bulma.io/
--   https://www.shoelace.style/
+- https://mblode.github.io/marx/
+- https://www.cssbed.com/
+- https://bulma.io/
+- https://www.shoelace.style/
 
 ## [Changelog](https://github.com/EvgenyOrekhov/holiday.css/releases)
 

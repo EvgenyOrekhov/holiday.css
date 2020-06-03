@@ -1,20 +1,20 @@
 name: CI
 
 on:
-    push:
-        branches:
-            - master
-    pull_request:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
-    Percy:
-        runs-on: ubuntu-latest
+  Percy:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
 
-            - uses: percy/snapshot-action@v0.1.1
-              with:
-                  build-directory: "src/"
-              env:
-                  PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - uses: percy/snapshot-action@v0.1.1
+        with:
+          build-directory: "src/"
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
