@@ -2,6 +2,8 @@
   "extends": "@twinscom/stylelint-config",
 
   "rules": {
+    "indentation": 2,
+
     "selector-max-pseudo-class": null,
     "selector-max-specificity": null,
 

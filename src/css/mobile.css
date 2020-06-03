@@ -1,117 +1,117 @@
 :root {
-    --max-body-width: 48rem;
+  --max-body-width: 48rem;
 }
 
 html {
-    height: 100%;
-    line-height: 1.4;
+  height: 100%;
+  line-height: 1.4;
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1.15;
+  line-height: 1.15;
 }
 
 body {
-    margin: 0 auto;
-    width: calc(100% - 1rem);
-    max-width: var(--max-body-width);
-    overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  margin: 0 auto;
+  width: calc(100% - 1rem);
+  max-width: var(--max-body-width);
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 table {
-    display: block;
-    overflow-x: auto;
+  display: block;
+  overflow-x: auto;
 }
 
 pre {
-    overflow-x: auto;
-    line-height: 1.15;
+  overflow-x: auto;
+  line-height: 1.15;
 }
 
 code {
-    padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 pre code {
-    display: inline-block;
-    min-width: 100%;
-    padding: 1rem;
+  display: inline-block;
+  min-width: 100%;
+  padding: 1rem;
 }
 
 kbd {
-    padding: 0 0.25rem;
-    min-width: 1.5rem;
-    min-height: 1.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0.1rem;
-    max-width: 100%;
-    overflow: hidden;
+  padding: 0 0.25rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 kbd kbd {
-    margin: 0;
-    padding: 0;
-    min-width: unset;
-    min-height: unset;
+  margin: 0;
+  padding: 0;
+  min-width: unset;
+  min-height: unset;
 }
 
 kbd kbd:not(:first-child) {
-    padding-left: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 kbd kbd:not(:last-child) {
-    padding-right: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 iframe {
-    border: none;
-    width: 100%;
+  border: none;
+  width: 100%;
 }
 
 dialog {
-    border: none;
-    overflow-y: auto;
-    max-height: calc(100% - 1rem);
+  border: none;
+  overflow-y: auto;
+  max-height: calc(100% - 1rem);
 }
 
 audio,
 video,
 embed,
 object {
-    width: 100%;
+  width: 100%;
 }
 
 meter,
 progress {
-    height: 2.25rem;
-    display: block;
-    width: 100%;
+  height: 2.25rem;
+  display: block;
+  width: 100%;
 }
 
 input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]) {
-    height: 2.25rem;
+  height: 2.25rem;
 }
 
 input:not([type="button"]):not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="color"]),
 output {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 button,
@@ -119,7 +119,7 @@ button,
 [type="reset"],
 [type="submit"],
 input:not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="color"]):not([type="file"]):not([type="date"]):not([type="datetime-local"]):not([type="time"]):not([type="month"]):not([type="week"]):not([type="range"]) {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 [type="date"],
@@ -127,176 +127,176 @@ input:not([type="checkbox"]):not([type="image"]):not([type="radio"]):not([type="
 [type="time"],
 [type="month"],
 [type="week"] {
-    /* 0.4rem is a hack for mobile Chrome */
-    padding: 0.4rem 0.5rem;
+  /* 0.4rem is a hack for mobile Chrome */
+  padding: 0.4rem 0.5rem;
 }
 
 textarea {
-    min-height: 8em;
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
+  min-height: 8em;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 select {
-    min-height: 2.25rem;
-    display: block;
-    width: 100%;
+  min-height: 2.25rem;
+  display: block;
+  width: 100%;
 
-    /* "padding: 0.5rem;" messes up the height of selects */
-    padding: 0.45rem 0.5rem;
+  /* "padding: 0.5rem;" messes up the height of selects */
+  padding: 0.45rem 0.5rem;
 }
 
 summary {
-    min-height: 2.25rem;
-    display: flex;
-    align-items: center;
+  min-height: 2.25rem;
+  display: flex;
+  align-items: center;
 }
 
 [type="image"] {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 [type="color"] {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 fieldset {
-    padding: 0.75rem;
+  padding: 0.75rem;
 }
 
 label > [type="color"] {
-    margin-left: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 label {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1rem;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 legend + label {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 [type="checkbox"] + label,
 [type="radio"] + label {
-    display: inline-flex;
-    vertical-align: text-bottom;
-    width: unset;
+  display: inline-flex;
+  vertical-align: text-bottom;
+  width: unset;
 }
 
 fieldset > label:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 label > [type="checkbox"],
 label > [type="radio"] {
-    margin-right: 0.25rem;
-    min-height: 1rem;
+  margin-right: 0.25rem;
+  min-height: 1rem;
 }
 
 [type="file"] {
-    /* Works in Chrome (but poorly), doesn't work in Firefox */
-    padding-top: 0.35rem;
+  /* Works in Chrome (but poorly), doesn't work in Firefox */
+  padding-top: 0.35rem;
 }
 
 blockquote {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1rem 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 2rem;
 }
 
 blockquote > p:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 blockquote > p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 footer {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 body > header,
 body > footer {
-    text-align: center;
+  text-align: center;
 }
 
 body > footer {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 td,
 th {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 figure {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 figure > figcaption {
-    text-align: center;
+  text-align: center;
 }
 
 /* stylelint-disable-next-line selector-max-universal */
 figure > * {
-    text-align: initial;
+  text-align: initial;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 picture {
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    display: block;
-    text-align: center;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 50rem) {
-    table {
-        width: calc(100% + 1rem);
-        margin-left: -0.5rem;
-    }
+  table {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+  }
 
-    video {
-        width: calc(100% + 1rem);
-        margin-left: -0.5rem;
-        max-height: 100vh;
-    }
+  video {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    max-height: 100vh;
+  }
 
-    pre {
-        width: calc(100% + 1rem);
-        margin-left: -0.5rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
+  pre {
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 
-    pre code {
-        border-left: 0.5rem solid transparent;
-        border-right: 0.5rem solid transparent;
-        box-sizing: content-box;
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  pre code {
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    box-sizing: content-box;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

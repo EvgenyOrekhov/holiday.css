@@ -1,5 +1,5 @@
 abbr {
-    cursor: help;
+  cursor: help;
 }
 
 button,
@@ -12,17 +12,17 @@ summary,
 [type="range"],
 label > [type="checkbox"]:enabled,
 label > [type="radio"]:enabled {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 [readonly] {
-    cursor: default;
+  cursor: default;
 }
 
 /* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
 [type="radio"][id]:disabled + label[for] {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 /* stylelint-enable */
