@@ -24,7 +24,7 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs [holiday.css]
 ## Quick Start
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.0" />
 ```
 
 ## Compatibility
