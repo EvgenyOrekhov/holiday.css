@@ -9,7 +9,7 @@
     "test": "stylelint src/**/*.css && prettier --check .",
     "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
     "build:site": "eleventy --pathprefix='/holiday.css/'",
-    "update-version-in-files": "cross-env-shell 'replace-in-files --regex=holiday\\.css@\\d+\\.\\d+\\.\\d+ --replacement=holiday.css@$npm_package_version README.md src/template.html src/usage.html'",
+    "update-version-in-files": "cross-env-shell 'replace-in-files --regex=holiday\\.css@\\d+\\.\\d+\\.\\d+ --replacement=holiday.css@$npm_package_version README.md site/**'",
     "preversion": "npm run build && npm run update-version-in-files && git add dist/ src/ README.md",
     "postversion": "git push && git push --tags && npm publish"
   },
