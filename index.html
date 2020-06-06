@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>holiday.css - a minimalist classless CSS theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.0"
+    />
+  </head>
+
+  <body>
+    <header><h1>holiday.css</h1></header>
+    <nav>
+      <ul>
+        <li><a href="/holiday.css/">Home</a></li>
+        <li><a href="/holiday.css/usage/">Usage</a></li>
+        <li><a href="/holiday.css/template/">Quickstart Template</a></li>
+        <li><a href="/holiday.css/customization/">Customization</a></li>
+        <li><a href="/holiday.css/kitchen-sink/">Kitchen Sink</a></li>
+        <li><a href="/holiday.css/acknowledgements/">Acknowledgements</a></li>
+        <li>
+          <a href="https://github.com/EvgenyOrekhov/holiday.css">GitHub</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+<blockquote>
+<p>No classes today! Because it's <strong>holiday</strong>!</p>
+</blockquote>
+<p>A minimalist classless CSS theme.</p>
+<h2>What makes holiday.css different</h2>
+<p>There are <a href="https://dohliam.github.io/dropin-minimal-css/">dozens</a> of classless
+CSS themes out there, but none of them satisified all of my needs.</p>
+<p>So I built my own.</p>
+<p>These are the features that make <strong>holiday.css</strong> stand out:</p>
+<ul>
+<li>makes your page fit even the smallest screens, no more broken <code>&lt;body&gt;</code> width
+due to wide tables</li>
+<li>supports all
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types"><code>&lt;input&gt;</code> types</a></li>
+<li>highlights invalid fields in your forms (that's right, no JS needed for that!)</li>
+<li>makes your <code>&lt;nav&gt;</code> look nice, turns your nested <code>&lt;ul&gt;</code> lists into <strong>accessible
+dropdowns</strong> (making <kbd>Tab</kbd> work with dropdowns in plain CSS was really
+tricky!)</li>
+<li>uses <strong>dark mode</strong> for those who prefer it</li>
+<li>built with <strong>pure CSS</strong></li>
+<li>only <strong>~3.5 KB</strong> (minified and gzipped)</li>
+</ul>
+<h2>Rationale</h2>
+<p>I got tired of complex markup and tons of classes on every element.</p>
+<p>Consider the following form example from the
+<a href="https://getbootstrap.com/docs/4.5/components/forms/#overview">official Bootstrap documentation</a>:</p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+    &lt;input
+      type=&quot;email&quot;
+      class=&quot;form-control&quot;
+      id=&quot;exampleInputEmail1&quot;
+      aria-describedby=&quot;emailHelp&quot;
+    /&gt;
+    &lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;
+      We'll never share your email with anyone else.
+    &lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group form-check&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;exampleCheck1&quot; /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleCheck1&quot;&gt;Check me out&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Notice that there are extra <code>&lt;div&gt;</code> wrappers and a ton of classes.</p>
+<p>Now compare it to the simplest possible markup <strong>that looks as awesome when you
+use holiday.css</strong>:</p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;label&gt;
+    Email address
+    &lt;input type=&quot;email&quot; aria-describedby=&quot;emailHelp&quot; /&gt;
+    &lt;small id=&quot;emailHelp&quot;&gt;
+      We'll never share your email with anyone else.
+    &lt;/small&gt;
+  &lt;/label&gt;
+  &lt;label&gt;
+    Password
+    &lt;input type=&quot;password&quot; /&gt;
+  &lt;/label&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt;
+    Check me out
+  &lt;/label&gt;
+  &lt;footer&gt;
+    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;/footer&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Result:</p>
+<form>
+  <label>
+    Email address
+    <input type="email" aria-describedby="emailHelp" />
+    <small id="emailHelp">
+      We'll never share your email with anyone else.
+    </small>
+  </label>
+  <label>
+    Password
+    <input type="password" />
+  </label>
+  <label>
+    <input type="checkbox" />
+    Check me out
+  </label>
+  <footer>
+    <button type="submit">Submit</button>
+  </footer>
+</form>
+<h2>Contribute</h2>
+<p>Have a problem? Don't like how something looks? Want to help?</p>
+<p>Feel free to help make <strong>holiday.css</strong> even better!</p>
+<p><a href="https://github.com/EvgenyOrekhov/holiday.css">Source code</a></p>
+<h2>Future</h2>
+<p>I plan to extract a subset of styles into a separate stylesheet for use as a
+base for web apps.</p>
+
+    </main>
+    <footer>
+      Created by
+      <a href="https://github.com/EvgenyOrekhov">Evgeny Orekhov</a>
+    </footer>
+  </body>
+</html>
