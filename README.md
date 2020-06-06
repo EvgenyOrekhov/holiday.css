@@ -1,6 +1,7 @@
 # holiday.css :tada:
 
-A minimalist classless CSS theme. Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize).
+A minimalist classless CSS theme. Built on top of
+[modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
 [![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
 [![Travis CI build status](https://img.shields.io/travis/com/EvgenyOrekhov/holiday.css/master.svg?style=flat-square)](https://travis-ci.com/EvgenyOrekhov/holiday.css)
@@ -13,7 +14,8 @@ A minimalist classless CSS theme. Built on top of [modern-normalize](https://git
 
 Got tired of complex markup and tons of classes on every element.
 
-See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs [holiday.css](https://jsfiddle.net/5egfxtLc/1/).
+See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
+[holiday.css](https://jsfiddle.net/5egfxtLc/1/).
 
 ## Features
 
