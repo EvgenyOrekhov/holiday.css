@@ -1,5 +1,5 @@
 module.exports = {
   dir: {
-    input: "docs",
+    input: "site",
   },
 };
