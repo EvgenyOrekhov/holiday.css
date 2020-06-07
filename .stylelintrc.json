@@ -2,13 +2,8 @@
   "extends": "@twinscom/stylelint-config",
 
   "rules": {
-    "indentation": 2,
-
     "selector-max-pseudo-class": null,
-    "selector-max-specificity": null,
-
-    "declaration-colon-newline-after": null,
-    "max-line-length": null
+    "selector-max-specificity": null
   },
 
   "ignoreFiles": ["dist/holiday.css"]
