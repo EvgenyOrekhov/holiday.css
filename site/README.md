@@ -119,7 +119,7 @@ Have a problem? Don't like how something looks? Want to help?
 
 Feel free to help make **holiday.css** even better!
 
-[Source code](https://github.com/EvgenyOrekhov/holiday.css)
+[Source code on GitHub](https://github.com/EvgenyOrekhov/holiday.css)
 
 ## Future
 
