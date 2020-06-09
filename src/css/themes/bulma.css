@@ -257,6 +257,8 @@ details {
 summary {
   border: var(--border-width) solid transparent;
   border-radius: var(--border-radius);
+  margin-left: calc(var(--border-width) * -1);
+  margin-right: calc(var(--border-width) * -1);
 }
 
 summary:hover {
