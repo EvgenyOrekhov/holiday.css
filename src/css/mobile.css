@@ -151,11 +151,6 @@ details {
   padding: 0.5rem;
 }
 
-summary {
-  display: flex;
-  align-items: center;
-}
-
 [type="image"] {
   vertical-align: bottom;
 }
