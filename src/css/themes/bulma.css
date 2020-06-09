@@ -323,6 +323,11 @@ hr {
   box-shadow: 0 0 0.2rem 0.1rem var(--danger-hover-color);
 }
 
+/* Firefox hack */
+:invalid:not([type="checkbox"]):not(:focus) {
+  box-shadow: none;
+}
+
 :invalid:not(form):hover:enabled {
   border-color: var(--danger-hover-color);
 }
