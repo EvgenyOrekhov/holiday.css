@@ -151,6 +151,11 @@ details {
   padding: 0.5rem;
 }
 
+summary {
+  margin: -0.5rem;
+  padding: 0.5rem;
+}
+
 [type="image"] {
   vertical-align: bottom;
 }
