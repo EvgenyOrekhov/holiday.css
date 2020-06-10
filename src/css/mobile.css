@@ -147,10 +147,13 @@ select {
   padding: 0.45rem 0.5rem;
 }
 
+details {
+  padding: 0.5rem;
+}
+
 summary {
-  min-height: 2.25rem;
-  display: flex;
-  align-items: center;
+  margin: -0.5rem;
+  padding: 0.5rem;
 }
 
 [type="image"] {
