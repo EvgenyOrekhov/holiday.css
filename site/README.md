@@ -20,7 +20,7 @@ You can use it for:
 Just add this to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.3" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.4" />
 ```
 
 ## What makes holiday.css different
