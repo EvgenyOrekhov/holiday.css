@@ -8,6 +8,21 @@ permalink: "/"
 
 A minimalist classless CSS theme.
 
+This very site is a demo of **holiday.css**. It uses semantic HTML markup and no
+CSS classes.
+
+You can use it for:
+
+- a project site (just like this one)
+- a blog
+- an "About me" site
+
+Just add this to your `<head>`:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.3" />
+```
+
 ## What makes holiday.css different
 
 There are [dozens](https://dohliam.github.io/dropin-minimal-css/) of classless

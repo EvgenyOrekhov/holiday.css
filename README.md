@@ -1,27 +1,34 @@
 # holiday.css :tada:
 
-A minimalist classless CSS theme. Built on top of
-[modern-normalize](https://github.com/sindresorhus/modern-normalize).
-
 [![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
 [![Travis CI build status](https://img.shields.io/travis/com/EvgenyOrekhov/holiday.css/master.svg?style=flat-square)](https://travis-ci.com/EvgenyOrekhov/holiday.css)
 
 > No classes today! Because it's **holiday**!
 
+A minimalist classless CSS theme.
+
 ## [Demo](https://evgenyorekhov.github.io/holiday.css/)
 
 ## Why
 
-Got tired of complex markup and tons of classes on every element.
+I got tired of complex markup and tons of classes on every element.
 
 See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
 [holiday.css](https://jsfiddle.net/5egfxtLc/1/).
 
 ## Features
 
-- Makes your page fit even the smallest screens
-- Adds styles to your buttons, inputs, tables, and other elements
-- Highlights invalid fields in your forms
+- makes your page fit even the smallest screens, no more broken `<body>` width
+  due to wide tables
+- supports all
+  [`<input>` types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types)
+- highlights invalid fields in your forms (that's right, no JS needed for that!)
+- makes your `<nav>` look nice, turns your nested `<ul>` lists into **accessible
+  dropdowns** (making <kbd>Tab</kbd> work with dropdowns in plain CSS was really
+  tricky!)
+- uses **dark mode** for those who prefer it
+- built with **pure CSS**
+- only **~3.5 KB** (minified and gzipped)
 
 ## Quick Start
 
@@ -29,18 +36,18 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.7.3" />
 ```
 
-## Compatibility
+## Browser compatibility
 
-Tested only with the latest version of Chrome.
+Tested on latest Chrome and Firefox.
 
 ## Acknowledgements
 
 Sources of inspiration:
 
-- https://mblode.github.io/marx/
-- https://www.cssbed.com/
-- https://bulma.io/
-- https://www.shoelace.style/
+- [Shoelace.css](https://www.shoelace.style/)
+- [Marx](https://mblode.github.io/marx/)
+- [Bulma](https://bulma.io/)
+- [CSS Bed](https://www.cssbed.com/)
 
 ## [Changelog](https://github.com/EvgenyOrekhov/holiday.css/releases)
 
