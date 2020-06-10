@@ -1,7 +1,6 @@
 # holiday.css :tada:
 
 [![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
-[![Travis CI build status](https://img.shields.io/travis/com/EvgenyOrekhov/holiday.css/master.svg?style=flat-square)](https://travis-ci.com/EvgenyOrekhov/holiday.css)
 
 > No classes today! Because it's **holiday**!
 
