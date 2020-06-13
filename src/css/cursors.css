@@ -19,10 +19,8 @@ label > [type="radio"]:enabled {
   cursor: default;
 }
 
-/* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
 [type="radio"][id]:disabled + label[for] {
   cursor: not-allowed;
 }
-/* stylelint-enable */

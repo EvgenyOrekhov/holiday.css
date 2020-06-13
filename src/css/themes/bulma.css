@@ -151,25 +151,83 @@ button:not([type]):hover:enabled {
   background-color: var(--success-hover-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]),
+input:not([type]),
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="hidden"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 textarea,
 select {
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):focus:not(:invalid) {
-  outline: none;
-  /* stylelint-disable-next-line declaration-no-important */
-  border-color: var(--border-hover-color) !important;
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
+input:not([type]):disabled,
+input[type="date"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="email"]:disabled,
+input[type="hidden"]:disabled,
+input[type="month"]:disabled,
+input[type="number"]:disabled,
+input[type="password"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="text"]:disabled,
+input[type="time"]:disabled,
+input[type="url"]:disabled,
+input[type="week"]:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: var(--highlighted-background-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):not(:invalid),
-textarea,
-select,
+input:not([type]):not(:invalid),
+input[type="date"]:not(:invalid),
+input[type="datetime-local"]:not(:invalid),
+input[type="email"]:not(:invalid),
+input[type="hidden"]:not(:invalid),
+input[type="month"]:not(:invalid),
+input[type="number"]:not(:invalid),
+input[type="password"]:not(:invalid),
+input[type="search"]:not(:invalid),
+input[type="tel"]:not(:invalid),
+input[type="text"]:not(:invalid),
+input[type="time"]:not(:invalid),
+input[type="url"]:not(:invalid),
+input[type="week"]:not(:invalid),
+textarea:not(:invalid),
+select:not(:invalid),
 fieldset {
   border: var(--border-width) solid var(--border-color);
+}
+
+input:not([type]):not(:invalid):focus,
+input[type="date"]:not(:invalid):focus,
+input[type="datetime-local"]:not(:invalid):focus,
+input[type="email"]:not(:invalid):focus,
+input[type="hidden"]:not(:invalid):focus,
+input[type="image"]:not(:invalid):focus,
+input[type="month"]:not(:invalid):focus,
+input[type="number"]:not(:invalid):focus,
+input[type="password"]:not(:invalid):focus,
+input[type="search"]:not(:invalid):focus,
+input[type="tel"]:not(:invalid):focus,
+input[type="text"]:not(:invalid):focus,
+input[type="time"]:not(:invalid):focus,
+input[type="url"]:not(:invalid):focus,
+input[type="week"]:not(:invalid):focus {
+  outline: none;
+  border-color: var(--border-hover-color);
+  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
 select:enabled,
@@ -181,12 +239,6 @@ select:enabled,
   background-color: var(--background-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):not([type="range"]):disabled,
-textarea:disabled,
-select:disabled {
-  background-color: var(--highlighted-background-color);
-}
-
 textarea:focus,
 select:focus {
   outline: none;
@@ -194,9 +246,23 @@ select:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-input:not([type="button"]):not([type="checkbox"]):not([type="color"]):not([type="image"]):not([type="radio"]):not([type="reset"]):not([type="submit"]):not([type="file"]):hover:enabled:not(:invalid),
-textarea:hover:enabled,
-select:hover:enabled {
+input:not([type]):enabled:not(:invalid):hover,
+input[type="date"]:enabled:not(:invalid):hover,
+input[type="datetime-local"]:enabled:not(:invalid):hover,
+input[type="email"]:enabled:not(:invalid):hover,
+input[type="hidden"]:enabled:not(:invalid):hover,
+input[type="month"]:enabled:not(:invalid):hover,
+input[type="number"]:enabled:not(:invalid):hover,
+input[type="password"]:enabled:not(:invalid):hover,
+input[type="range"]:enabled:not(:invalid):hover,
+input[type="search"]:enabled:not(:invalid):hover,
+input[type="tel"]:enabled:not(:invalid):hover,
+input[type="text"]:enabled:not(:invalid):hover,
+input[type="time"]:enabled:not(:invalid):hover,
+input[type="url"]:enabled:not(:invalid):hover,
+input[type="week"]:enabled:not(:invalid):hover,
+textarea:enabled:not(:invalid):hover,
+select:enabled:not(:invalid):hover {
   border-color: var(--border-hover-color);
 }
 
@@ -270,7 +336,6 @@ summary:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-/* stylelint-disable-next-line selector-no-qualifying-type */
 details[open] summary {
   margin-bottom: 0.5rem;
 }
@@ -300,13 +365,11 @@ hr {
   border-color: var(--border-color);
 }
 
-/* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
 [type="radio"][id]:disabled + label[for] {
   opacity: 0.5;
 }
-/* stylelint-enable */
 
 :invalid:not(form) {
   border-color: var(--danger-color);
