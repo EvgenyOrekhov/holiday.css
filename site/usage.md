@@ -112,14 +112,6 @@ body::before {
 }
 ```
 
-### Use `<button>` inside `<a>` to create button links
-
-```html
-<a href="#"><button type="button">Button link</button></a>
-```
-
-Result: <a href="#"><button type="button">Button link</button></a>
-
 ### Use Unicode
 
 ```html
