@@ -104,51 +104,18 @@ progress {
   width: 100%;
 }
 
-input:not([type]),
-input[type="color"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="file"],
-input[type="hidden"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
+input[type="color"] {
+  height: 2.25rem;
+  vertical-align: top;
+}
+
+input[type="range"] {
+  display: block;
+  width: 100%;
   height: 2.25rem;
 }
 
-input:not([type]),
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="file"],
-input[type="hidden"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-output {
-  display: block;
-  width: 100%;
-}
-
 button,
-[type="button"],
-[type="reset"],
-[type="submit"],
 input:not([type]),
 input[type="button"],
 input[type="email"],
@@ -161,16 +128,37 @@ input[type="submit"],
 input[type="tel"],
 input[type="text"],
 input[type="url"] {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
   padding: 0.5rem;
 }
 
-[type="date"],
-[type="datetime-local"],
-[type="time"],
-[type="month"],
-[type="week"] {
+input[type="file"] {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+
+  /* Works in Chrome (but poorly), doesn't work in Firefox */
+  padding-top: 0.35rem;
+}
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="month"],
+input[type="week"] {
+  display: block;
+  width: 100%;
+  height: 2.25rem;
+
   /* 0.4rem is a hack for mobile Chrome */
   padding: 0.4rem 0.5rem;
+}
+
+output {
+  display: block;
+  width: 100%;
 }
 
 textarea {
@@ -198,19 +186,15 @@ summary {
   padding: 0.5rem;
 }
 
-[type="image"] {
+input[type="image"] {
   vertical-align: bottom;
-}
-
-[type="color"] {
-  vertical-align: top;
 }
 
 fieldset {
   padding: 0.75rem;
 }
 
-label > [type="color"] {
+label > input[type="color"] {
   margin-left: 0.25rem;
 }
 
@@ -226,8 +210,8 @@ legend + label {
   margin-top: 0;
 }
 
-[type="checkbox"] + label,
-[type="radio"] + label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   display: inline-flex;
   vertical-align: text-bottom;
   width: unset;
@@ -237,15 +221,10 @@ fieldset > label:first-child {
   margin-top: 0;
 }
 
-label > [type="checkbox"],
-label > [type="radio"] {
+label > input[type="checkbox"],
+label > input[type="radio"] {
   margin-right: 0.25rem;
   min-height: 1rem;
-}
-
-[type="file"] {
-  /* Works in Chrome (but poorly), doesn't work in Firefox */
-  padding-top: 0.35rem;
 }
 
 blockquote {
@@ -266,12 +245,12 @@ footer {
   margin-top: 1rem;
 }
 
-body > header,
-body > footer {
+body > header {
   text-align: center;
 }
 
 body > footer {
+  text-align: center;
   padding-bottom: 1rem;
 }
 
