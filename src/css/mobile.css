@@ -116,15 +116,18 @@ input[type="range"] {
 }
 
 button,
-input:not([type]),
 input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  padding: 0.5rem;
+}
+
+input:not([type]),
 input[type="email"],
 input[type="hidden"],
 input[type="number"],
 input[type="password"],
-input[type="reset"],
 input[type="search"],
-input[type="submit"],
 input[type="tel"],
 input[type="text"],
 input[type="url"] {
