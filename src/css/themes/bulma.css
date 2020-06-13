@@ -80,33 +80,49 @@ a:active code {
   color: var(--link-active-color);
 }
 
-button,
-input,
-textarea,
-select,
-fieldset {
+button {
   border-radius: var(--border-radius);
-}
-
-[type="image"]:hover:enabled {
-  filter: brightness(95%);
-}
-
-button,
-[type="button"],
-[type="color"] {
   border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-[type="reset"] {
+textarea,
+select {
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+fieldset {
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--border-color);
+}
+
+input {
+  border-radius: var(--border-radius);
+}
+
+input[type="image"]:hover:enabled {
+  filter: brightness(95%);
+}
+
+input[type="button"],
+input[type="color"] {
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button[type="reset"],
+input[type="reset"] {
   border: var(--border-width) solid transparent;
   background-color: var(--danger-color);
   color: var(--danger-text-color);
 }
 
-[type="submit"],
+button[type="submit"],
+input[type="submit"],
 button:not([type]) {
   border: var(--border-width) solid transparent;
   background-color: var(--success-color);
@@ -114,38 +130,42 @@ button:not([type]) {
 }
 
 button:focus,
-[type="button"]:focus,
-[type="color"]:focus {
+input[type="button"]:focus,
+input[type="color"]:focus {
   outline: none;
   border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
 button:hover:enabled,
-[type="button"]:hover:enabled,
-[type="color"]:hover:enabled {
+input[type="button"]:hover:enabled,
+input[type="color"]:hover:enabled {
   border-color: var(--border-hover-color);
 }
 
-[type="reset"]:focus {
+button[type="reset"]:focus,
+input[type="reset"]:focus {
   outline: none;
   border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-[type="reset"]:hover:enabled {
+button[type="reset"]:hover:enabled,
+input[type="reset"]:hover:enabled {
   border-color: transparent;
   background-color: var(--danger-hover-color);
 }
 
-[type="submit"]:focus,
+button[type="submit"]:focus,
+input[type="submit"]:focus,
 button:not([type]):focus {
   outline: none;
   border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-[type="submit"]:hover:enabled,
+button[type="submit"]:hover:enabled,
+input[type="submit"]:hover:enabled,
 button:not([type]):hover:enabled {
   border-color: transparent;
   background-color: var(--success-hover-color);
@@ -164,9 +184,7 @@ input[type="tel"],
 input[type="text"],
 input[type="time"],
 input[type="url"],
-input[type="week"],
-textarea,
-select {
+input[type="week"] {
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -205,9 +223,17 @@ input[type="time"]:not(:invalid),
 input[type="url"]:not(:invalid),
 input[type="week"]:not(:invalid),
 textarea:not(:invalid),
-select:not(:invalid),
-fieldset {
+select:not(:invalid) {
   border: var(--border-width) solid var(--border-color);
+}
+
+select:enabled,
+input[type="date"]:enabled,
+input[type="datetime-local"]:enabled,
+input[type="time"]:enabled,
+input[type="month"]:enabled,
+input[type="week"]:enabled {
+  background-color: var(--background-color);
 }
 
 input:not([type]):not(:invalid):focus,
@@ -228,15 +254,6 @@ input[type="week"]:not(:invalid):focus {
   outline: none;
   border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
-}
-
-select:enabled,
-[type="date"]:enabled,
-[type="datetime-local"]:enabled,
-[type="time"]:enabled,
-[type="month"]:enabled,
-[type="week"]:enabled {
-  background-color: var(--background-color);
 }
 
 textarea:focus,
@@ -366,8 +383,8 @@ hr {
 }
 
 :disabled,
-[type="checkbox"][id]:disabled + label[for],
-[type="radio"][id]:disabled + label[for] {
+input[type="checkbox"][id]:disabled + label[for],
+input[type="radio"][id]:disabled + label[for] {
   opacity: 0.5;
 }
 
