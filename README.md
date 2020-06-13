@@ -26,6 +26,9 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
 - makes your `<nav>` look nice, turns your nested `<ul>` lists into **accessible
   dropdowns** (making <kbd>Tab</kbd> work with dropdowns in plain CSS was really
   tricky!)
+- doesn't waste precious horizontal space on mobile screens for `<picture>`,
+  `video`, `<table>`, and `<pre>` by ignoring body margins and filling 100% of
+  screen width
 - uses **dark mode** for those who prefer it
 - built with **pure CSS**
 - only **~3.5 KB** (minified and gzipped)
