@@ -398,14 +398,14 @@ input[type="radio"][id]:disabled + label[for] {
   opacity: unset;
 }
 
-:invalid:not(input[type="checkbox"]):focus {
+:invalid:not([type="checkbox"]):focus {
   outline: none;
   border-color: var(--danger-hover-color);
   box-shadow: 0 0 0.2rem 0.05rem var(--danger-hover-color);
 }
 
 /* Firefox hack */
-:invalid:not(input[type="checkbox"]):not(:focus) {
+:invalid:not([type="checkbox"]):not(:focus) {
   box-shadow: none;
 }
 
