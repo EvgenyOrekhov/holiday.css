@@ -151,6 +151,7 @@ button:not([type]):hover:enabled {
   background-color: var(--success-hover-color);
 }
 
+input:not([type]),
 input[type="date"],
 input[type="datetime-local"],
 input[type="email"],
@@ -170,6 +171,7 @@ select {
   color: var(--text-color);
 }
 
+input:not([type]):disabled,
 input[type="date"]:disabled,
 input[type="datetime-local"]:disabled,
 input[type="email"]:disabled,
@@ -188,6 +190,7 @@ select:disabled {
   background-color: var(--highlighted-background-color);
 }
 
+input:not([type]):not(:invalid),
 input[type="date"]:not(:invalid),
 input[type="datetime-local"]:not(:invalid),
 input[type="email"]:not(:invalid),
@@ -207,6 +210,7 @@ fieldset {
   border: var(--border-width) solid var(--border-color);
 }
 
+input:not([type]):not(:invalid):focus,
 input[type="date"]:not(:invalid):focus,
 input[type="datetime-local"]:not(:invalid):focus,
 input[type="email"]:not(:invalid):focus,
@@ -242,6 +246,7 @@ select:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
+input:not([type]):enabled:not(:invalid):hover,
 input[type="date"]:enabled:not(:invalid):hover,
 input[type="datetime-local"]:enabled:not(:invalid):hover,
 input[type="email"]:enabled:not(:invalid):hover,

@@ -104,6 +104,7 @@ progress {
   width: 100%;
 }
 
+input:not([type]),
 input[type="color"],
 input[type="date"],
 input[type="datetime-local"],
@@ -123,6 +124,7 @@ input[type="week"] {
   height: 2.25rem;
 }
 
+input:not([type]),
 input[type="date"],
 input[type="datetime-local"],
 input[type="email"],
@@ -147,6 +149,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"],
+input:not([type]),
 input[type="button"],
 input[type="email"],
 input[type="hidden"],
