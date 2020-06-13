@@ -6,10 +6,10 @@
   "style": "dist/holiday.css",
   "scripts": {
     "start": "eleventy --serve",
-    "test": "stylelint src/**/*.css && prettier --check .",
+    "test": "stylelint 'src/**/*.css' && prettier --check .",
     "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
     "build:site": "eleventy --pathprefix='/holiday.css/'",
-    "preversion": "npm run build && cross-env-shell 'replace-in-files --regex=holiday\\.css@\\d+\\.\\d+\\.\\d+ --replacement=holiday.css@$npm_package_version README.md site/**' && git add dist/ site/ README.md",
+    "preversion": "npm run build && replace 'holiday\\.css@\\d+\\.\\d+\\.\\d+' holiday.css@$npm_package_version README.md site/ -r --preview && git add dist/ site/ README.md",
     "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
@@ -34,7 +34,7 @@
     "lint-staged": "^10.2.10",
     "modern-normalize": "^0.6.0",
     "prettier": "^2.0.5",
-    "replace-in-files-cli": "^0.3.1",
+    "replace": "^1.2.0",
     "stylelint": "^13.6.0"
   },
   "husky": {
