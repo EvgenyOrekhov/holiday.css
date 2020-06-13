@@ -11,11 +11,13 @@ A minimalist classless CSS theme.
 This very site is a demo of **holiday.css**. It uses semantic HTML markup and no
 CSS classes.
 
-You can use it for:
+You can use it as is for:
 
 - a project site (just like this one)
 - a blog
 - an "About me" site
+
+Or you can use it as a base and build upon it.
 
 Just add this to your `<head>`:
 
