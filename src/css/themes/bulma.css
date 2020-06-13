@@ -270,7 +270,6 @@ summary:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-/* stylelint-disable-next-line selector-no-qualifying-type */
 details[open] summary {
   margin-bottom: 0.5rem;
 }
@@ -300,13 +299,11 @@ hr {
   border-color: var(--border-color);
 }
 
-/* stylelint-disable selector-no-qualifying-type */
 :disabled,
 [type="checkbox"][id]:disabled + label[for],
 [type="radio"][id]:disabled + label[for] {
   opacity: 0.5;
 }
-/* stylelint-enable */
 
 :invalid:not(form) {
   border-color: var(--danger-color);
