@@ -48,7 +48,25 @@
   }
 }
 
-body {
+input {
+  border-radius: var(--border-radius);
+}
+
+body,
+input:not([type]),
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="hidden"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -80,7 +98,8 @@ a:active code {
   color: var(--link-active-color);
 }
 
-button {
+button,
+dialog {
   border-radius: var(--border-radius);
   border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
@@ -94,13 +113,16 @@ select {
   color: var(--text-color);
 }
 
-fieldset {
+fieldset,
+details {
   border-radius: var(--border-radius);
   border: var(--border-width) solid var(--border-color);
 }
 
-input {
+summary {
+  border: var(--border-width) solid transparent;
   border-radius: var(--border-radius);
+  margin: calc(-0.5rem - var(--border-width));
 }
 
 input[type="image"]:hover:enabled {
@@ -127,66 +149,6 @@ button:not([type]) {
   border: var(--border-width) solid transparent;
   background-color: var(--success-color);
   color: var(--success-text-color);
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="color"]:focus {
-  outline: none;
-  border-color: var(--border-hover-color);
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
-}
-
-button:hover:enabled,
-input[type="button"]:hover:enabled,
-input[type="color"]:hover:enabled {
-  border-color: var(--border-hover-color);
-}
-
-button[type="reset"]:focus,
-input[type="reset"]:focus {
-  outline: none;
-  border-color: var(--border-hover-color);
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
-}
-
-button[type="reset"]:hover:enabled,
-input[type="reset"]:hover:enabled {
-  border-color: transparent;
-  background-color: var(--danger-hover-color);
-}
-
-button[type="submit"]:focus,
-input[type="submit"]:focus,
-button:not([type]):focus {
-  outline: none;
-  border-color: var(--border-hover-color);
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
-}
-
-button[type="submit"]:hover:enabled,
-input[type="submit"]:hover:enabled,
-button:not([type]):hover:enabled {
-  border-color: transparent;
-  background-color: var(--success-hover-color);
-}
-
-input:not([type]),
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="hidden"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
 
 input:not([type]):disabled,
@@ -236,6 +198,14 @@ input[type="week"]:enabled {
   background-color: var(--background-color);
 }
 
+button:focus,
+input[type="button"]:focus,
+input[type="color"]:focus,
+button[type="reset"]:focus,
+input[type="reset"]:focus,
+button[type="submit"]:focus,
+input[type="submit"]:focus,
+button:not([type]):focus,
 input:not([type]):not(:invalid):focus,
 input[type="date"]:not(:invalid):focus,
 input[type="datetime-local"]:not(:invalid):focus,
@@ -250,19 +220,18 @@ input[type="tel"]:not(:invalid):focus,
 input[type="text"]:not(:invalid):focus,
 input[type="time"]:not(:invalid):focus,
 input[type="url"]:not(:invalid):focus,
-input[type="week"]:not(:invalid):focus {
-  outline: none;
-  border-color: var(--border-hover-color);
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
-}
-
+input[type="week"]:not(:invalid):focus,
 textarea:focus,
-select:focus {
+select:focus,
+summary:focus {
   outline: none;
   border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
+button:hover:enabled,
+input[type="button"]:hover:enabled,
+input[type="color"]:hover:enabled,
 input:not([type]):enabled:not(:invalid):hover,
 input[type="date"]:enabled:not(:invalid):hover,
 input[type="datetime-local"]:enabled:not(:invalid):hover,
@@ -279,8 +248,22 @@ input[type="time"]:enabled:not(:invalid):hover,
 input[type="url"]:enabled:not(:invalid):hover,
 input[type="week"]:enabled:not(:invalid):hover,
 textarea:enabled:not(:invalid):hover,
-select:enabled:not(:invalid):hover {
+select:enabled:not(:invalid):hover,
+summary:hover {
   border-color: var(--border-hover-color);
+}
+
+button[type="reset"]:hover:enabled,
+input[type="reset"]:hover:enabled {
+  border-color: transparent;
+  background-color: var(--danger-hover-color);
+}
+
+button[type="submit"]:hover:enabled,
+input[type="submit"]:hover:enabled,
+button:not([type]):hover:enabled {
+  border-color: transparent;
+  background-color: var(--success-hover-color);
 }
 
 table {
@@ -305,6 +288,7 @@ tfoot > tr:not(:first-child) {
   border-top: var(--border-width) solid var(--border-color);
 }
 
+/* stylelint-disable-next-line plugin/stylelint-group-selectors */
 thead > tr:nth-child(even),
 tbody > tr:nth-child(even),
 tfoot > tr:nth-child(even) {
@@ -323,34 +307,6 @@ kbd kbd {
   box-shadow: inset 0 -0.2rem 0 0 var(--background-color),
     inset 0 0.2rem 0 0 var(--background-color);
   border-radius: 0;
-}
-
-dialog {
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-details {
-  border: var(--border-width) solid var(--border-color);
-  border-radius: var(--border-radius);
-}
-
-summary {
-  border: var(--border-width) solid transparent;
-  border-radius: var(--border-radius);
-  margin: calc(-0.5rem - var(--border-width));
-}
-
-summary:hover {
-  border-color: var(--border-hover-color);
-}
-
-summary:focus {
-  outline: none;
-  border-color: var(--border-hover-color);
-  box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
 details[open] summary {
