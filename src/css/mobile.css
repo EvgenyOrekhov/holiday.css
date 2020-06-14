@@ -97,6 +97,7 @@ object {
   width: 100%;
 }
 
+input[type="range"],
 meter,
 progress {
   height: 2.25rem;
@@ -109,12 +110,9 @@ input[type="color"] {
   vertical-align: top;
 }
 
-input[type="range"] {
-  display: block;
-  width: 100%;
-  height: 2.25rem;
-}
-
+td,
+th,
+details,
 button,
 input[type="button"],
 input[type="reset"],
@@ -180,10 +178,6 @@ select {
   padding: 0.45rem 0.5rem;
 }
 
-details {
-  padding: 0.5rem;
-}
-
 summary {
   margin: -0.5rem;
   padding: 0.5rem;
@@ -209,7 +203,9 @@ label {
   width: 100%;
 }
 
-legend + label {
+blockquote > p:first-child,
+legend + label,
+fieldset > label:first-child {
   margin-top: 0;
 }
 
@@ -218,10 +214,6 @@ input[type="radio"] + label {
   display: inline-flex;
   vertical-align: text-bottom;
   width: unset;
-}
-
-fieldset > label:first-child {
-  margin-top: 0;
 }
 
 label > input[type="checkbox"],
@@ -236,10 +228,6 @@ blockquote {
   padding: 1rem 2rem;
 }
 
-blockquote > p:first-child {
-  margin-top: 0;
-}
-
 blockquote > p:last-child {
   margin-bottom: 0;
 }
@@ -248,6 +236,7 @@ footer {
   margin-top: 1rem;
 }
 
+figure > figcaption,
 body > header {
   text-align: center;
 }
@@ -257,18 +246,9 @@ body > footer {
   padding-bottom: 1rem;
 }
 
-td,
-th {
-  padding: 0.5rem;
-}
-
 figure {
   margin-left: 0;
   margin-right: 0;
-  text-align: center;
-}
-
-figure > figcaption {
   text-align: center;
 }
 

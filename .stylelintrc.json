@@ -1,7 +1,10 @@
 {
   "extends": "@twinscom/stylelint-config",
 
+  "plugins": ["stylelint-group-selectors"],
+
   "rules": {
+    "plugin/stylelint-group-selectors": true,
     "no-duplicate-selectors": [true, { "disallowInList": true }],
 
     "selector-max-pseudo-class": null,
