@@ -31,7 +31,7 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
   screen width
 - uses **dark mode** for those who prefer it
 - built with **pure CSS**
-- only **~3.5 KB** (minified and gzipped)
+- only **~4 KB** (minified and gzipped)
 
 ## Quick Start
 
