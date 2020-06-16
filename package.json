@@ -1,6 +1,6 @@
 {
   "name": "holiday.css",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "A classless CSS theme",
   "main": "dist/holiday.css",
   "style": "dist/holiday.css",
