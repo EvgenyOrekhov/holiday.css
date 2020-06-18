@@ -4,14 +4,14 @@ abbr {
 
 button,
 summary,
-[type="button"],
-[type="reset"],
-[type="submit"],
-[type="color"],
-[type="file"],
-[type="range"],
-label > [type="checkbox"]:enabled,
-label > [type="radio"]:enabled {
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="color"],
+input[type="file"],
+input[type="range"],
+label > input[type="checkbox"]:enabled,
+label > input[type="radio"]:enabled {
   cursor: pointer;
 }
 
@@ -20,7 +20,7 @@ label > [type="radio"]:enabled {
 }
 
 :disabled,
-[type="checkbox"][id]:disabled + label[for],
-[type="radio"][id]:disabled + label[for] {
+input[type="checkbox"][id]:disabled + label[for],
+input[type="radio"][id]:disabled + label[for] {
   cursor: not-allowed;
 }
