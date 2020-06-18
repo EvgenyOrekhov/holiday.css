@@ -45,6 +45,8 @@ These are the features that make **holiday.css** stand out:
 - doesn't waste precious horizontal space on mobile screens for `<picture>`,
   `video`, `<table>`, and `<pre>` by ignoring body margins and filling 100% of
   screen width
+- keeps selector specificity as low as possible, so you could easily extend it
+  with CSS classes without using `!important`
 - uses **dark mode** for those who prefer it
 - built with **pure CSS**
 - only **~4 KB** (minified and gzipped)

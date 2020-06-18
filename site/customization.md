@@ -60,3 +60,49 @@ your needs:
   }
 }
 ```
+
+## Can I use classes?
+
+Of course! Go ahead and create some!
+
+```css
+.big-neon-button {
+  padding: 1rem;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #fff;
+  background-color: #202124;
+}
+
+.big-neon-button:enabled:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  border-color: #fff;
+}
+```
+
+```html
+<button type="button" class="big-neon-button">PARTY TIME</button>
+```
+
+Result:
+
+<button type="button" class="big-neon-button">PARTY TIME</button>
+
+<style>
+  .big-neon-button {
+    padding: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202124;
+  }
+
+  .big-neon-button:enabled:hover {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+      border-color: #fff;
+  }
+</style>
+
+Or go ahead and use something like [Tailwind CSS](https://tailwindcss.com/), if
+you are into that kind of thing 😉
