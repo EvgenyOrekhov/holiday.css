@@ -6,7 +6,6 @@
   "rules": {
     "plugin/stylelint-group-selectors": true,
     "no-duplicate-selectors": [true, { "disallowInList": true }],
-    "selector-no-qualifying-type": true,
 
     "selector-max-pseudo-class": null,
     "selector-max-specificity": null
