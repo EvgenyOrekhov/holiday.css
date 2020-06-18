@@ -57,14 +57,14 @@ input {
 }
 
 body {
-  background-color: var(--background-color);
   color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 code {
+  color: var(--code-text-color);
   background-color: var(--code-background-color);
   border-color: var(--code-background-color);
-  color: var(--code-text-color);
 }
 
 a,
@@ -92,22 +92,22 @@ button,
 dialog,
 textarea,
 select {
-  border-radius: var(--border-radius);
-  border: var(--border-width) solid var(--border-color);
-  background-color: var(--background-color);
   color: var(--text-color);
+  background-color: var(--background-color);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 fieldset,
 details {
-  border-radius: var(--border-radius);
   border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 summary {
+  margin: calc(-0.5rem - var(--border-width));
   border: var(--border-width) solid transparent;
   border-radius: var(--border-radius);
-  margin: calc(-0.5rem - var(--border-width));
 }
 
 input:not([type]),
@@ -126,22 +126,22 @@ input:not([type]),
 [type="week"],
 [type="button"],
 [type="color"] {
-  border: var(--border-width) solid var(--border-color);
-  background-color: var(--background-color);
   color: var(--text-color);
+  background-color: var(--background-color);
+  border: var(--border-width) solid var(--border-color);
 }
 
 [type="reset"] {
-  border: var(--border-width) solid transparent;
-  background-color: var(--danger-color);
   color: var(--danger-text-color);
+  background-color: var(--danger-color);
+  border: var(--border-width) solid transparent;
 }
 
 [type="submit"],
 button:not([type]) {
-  border: var(--border-width) solid transparent;
-  background-color: var(--success-color);
   color: var(--success-text-color);
+  background-color: var(--success-color);
+  border: var(--border-width) solid transparent;
 }
 
 input:not([type]):disabled,
@@ -196,8 +196,8 @@ input:not([type]):focus,
 textarea:focus,
 select:focus,
 summary:focus {
-  outline: none;
   border-color: var(--border-hover-color);
+  outline: none;
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
@@ -230,14 +230,14 @@ summary:hover {
 }
 
 [type="reset"]:enabled:hover {
-  border-color: transparent;
   background-color: var(--danger-hover-color);
+  border-color: transparent;
 }
 
 [type="submit"]:enabled:hover,
 button:not([type]):enabled:hover {
-  border-color: transparent;
   background-color: var(--success-hover-color);
+  border-color: transparent;
 }
 
 table {
@@ -278,9 +278,9 @@ kbd {
 
 kbd kbd {
   border: unset;
+  border-radius: 0;
   box-shadow: inset 0 -0.2rem 0 0 var(--background-color),
     inset 0 0.2rem 0 0 var(--background-color);
-  border-radius: 0;
 }
 
 [open] summary {
@@ -292,24 +292,24 @@ del {
 }
 
 ins {
-  background-color: var(--success-text-background-color);
   text-decoration: none;
+  background-color: var(--success-text-background-color);
 }
 
 blockquote {
-  border-left: 0.5rem solid var(--border-color);
   background-color: var(--highlighted-background-color);
+  border-left: 0.5rem solid var(--border-color);
 }
 
 body > footer {
-  border-top: var(--border-width) solid var(--border-color);
   padding-top: 1rem;
+  border-top: var(--border-width) solid var(--border-color);
 }
 
 hr {
-  border-width: var(--border-width) 0 0;
-  border-style: solid;
   border-color: var(--border-color);
+  border-style: solid;
+  border-width: var(--border-width) 0 0;
 }
 
 :disabled,
@@ -320,8 +320,8 @@ hr {
 
 :invalid:not(form) {
   border-color: var(--danger-color);
-  border-width: var(--border-width);
   border-style: solid;
+  border-width: var(--border-width);
 }
 
 :disabled :disabled {
@@ -329,8 +329,8 @@ hr {
 }
 
 :invalid:not([type="checkbox"]):focus {
-  outline: none;
   border-color: var(--danger-hover-color);
+  outline: none;
   box-shadow: 0 0 0.2rem 0.05rem var(--danger-hover-color);
 }
 

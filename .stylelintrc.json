@@ -1,5 +1,5 @@
 {
-  "extends": "@twinscom/stylelint-config",
+  "extends": ["@twinscom/stylelint-config", "stylelint-config-recess-order"],
 
   "plugins": ["stylelint-group-selectors"],
 
