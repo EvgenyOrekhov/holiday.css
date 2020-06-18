@@ -339,6 +339,7 @@ hr {
   box-shadow: none;
 }
 
+/* stylelint-disable-next-line selector-max-pseudo-class */
 :invalid:not(form):enabled:hover {
   border-color: var(--danger-hover-color);
 }

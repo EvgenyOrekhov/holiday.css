@@ -7,8 +7,11 @@
     "plugin/stylelint-group-selectors": true,
     "no-duplicate-selectors": [true, { "disallowInList": true }],
 
-    "selector-max-pseudo-class": null,
-    "selector-max-specificity": null
+    "max-nesting-depth": 1,
+    "selector-max-attribute": 3,
+    "selector-max-class": 0,
+    "selector-max-pseudo-class": 3,
+    "selector-max-specificity": "0,4,0"
   },
 
   "ignoreFiles": ["dist/holiday.css"]
