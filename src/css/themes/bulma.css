@@ -201,13 +201,13 @@ summary:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-[type="image"]:hover:enabled {
+[type="image"]:enabled:hover {
   filter: brightness(95%);
 }
 
-button:hover:enabled,
-[type="button"]:hover:enabled,
-[type="color"]:hover:enabled,
+button:enabled:hover,
+[type="button"]:enabled:hover,
+[type="color"]:enabled:hover,
 input:not([type]):enabled:hover,
 [type="date"]:enabled:hover,
 [type="datetime-local"]:enabled:hover,
@@ -229,13 +229,13 @@ summary:hover {
   border-color: var(--border-hover-color);
 }
 
-[type="reset"]:hover:enabled {
+[type="reset"]:enabled:hover {
   border-color: transparent;
   background-color: var(--danger-hover-color);
 }
 
-[type="submit"]:hover:enabled,
-button:not([type]):hover:enabled {
+[type="submit"]:enabled:hover,
+button:not([type]):enabled:hover {
   border-color: transparent;
   background-color: var(--success-hover-color);
 }
@@ -339,6 +339,6 @@ hr {
   box-shadow: none;
 }
 
-:invalid:not(form):hover:enabled {
+:invalid:not(form):enabled:hover {
   border-color: var(--danger-hover-color);
 }
