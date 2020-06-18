@@ -47,11 +47,7 @@
     --link-active-color: #fff;
   }
 
-  input[type="date"]::-webkit-calendar-picker-indicator,
-  input[type="datetime-local"]::-webkit-calendar-picker-indicator,
-  input[type="month"]::-webkit-calendar-picker-indicator,
-  input[type="time"]::-webkit-calendar-picker-indicator,
-  input[type="week"]::-webkit-calendar-picker-indicator {
+  input::-webkit-calendar-picker-indicator {
     filter: invert();
   }
 }
@@ -60,21 +56,7 @@ input {
   border-radius: var(--border-radius);
 }
 
-body,
-input:not([type]),
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="hidden"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
+body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -107,16 +89,11 @@ a:active code {
 }
 
 button,
-dialog {
-  border-radius: var(--border-radius);
-  border: var(--border-width) solid var(--border-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
+dialog,
 textarea,
 select {
   border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -133,26 +110,34 @@ summary {
   margin: calc(-0.5rem - var(--border-width));
 }
 
-input[type="image"]:hover:enabled {
-  filter: brightness(95%);
-}
-
-input[type="button"],
-input[type="color"] {
+input:not([type]),
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="hidden"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+[type="button"],
+[type="color"] {
   border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-button[type="reset"],
-input[type="reset"] {
+[type="reset"] {
   border: var(--border-width) solid transparent;
   background-color: var(--danger-color);
   color: var(--danger-text-color);
 }
 
-button[type="submit"],
-input[type="submit"],
+[type="submit"],
 button:not([type]) {
   border: var(--border-width) solid transparent;
   background-color: var(--success-color);
@@ -160,75 +145,54 @@ button:not([type]) {
 }
 
 input:not([type]):disabled,
-input[type="date"]:disabled,
-input[type="datetime-local"]:disabled,
-input[type="email"]:disabled,
-input[type="hidden"]:disabled,
-input[type="month"]:disabled,
-input[type="number"]:disabled,
-input[type="password"]:disabled,
-input[type="search"]:disabled,
-input[type="tel"]:disabled,
-input[type="text"]:disabled,
-input[type="time"]:disabled,
-input[type="url"]:disabled,
-input[type="week"]:disabled,
+[type="date"]:disabled,
+[type="datetime-local"]:disabled,
+[type="email"]:disabled,
+[type="hidden"]:disabled,
+[type="month"]:disabled,
+[type="number"]:disabled,
+[type="password"]:disabled,
+[type="search"]:disabled,
+[type="tel"]:disabled,
+[type="text"]:disabled,
+[type="time"]:disabled,
+[type="url"]:disabled,
+[type="week"]:disabled,
 textarea:disabled,
 select:disabled {
   background-color: var(--highlighted-background-color);
 }
 
-input:not([type]):not(:invalid),
-input[type="date"]:not(:invalid),
-input[type="datetime-local"]:not(:invalid),
-input[type="email"]:not(:invalid),
-input[type="hidden"]:not(:invalid),
-input[type="month"]:not(:invalid),
-input[type="number"]:not(:invalid),
-input[type="password"]:not(:invalid),
-input[type="search"]:not(:invalid),
-input[type="tel"]:not(:invalid),
-input[type="text"]:not(:invalid),
-input[type="time"]:not(:invalid),
-input[type="url"]:not(:invalid),
-input[type="week"]:not(:invalid),
-textarea:not(:invalid),
-select:not(:invalid) {
-  border: var(--border-width) solid var(--border-color);
-}
-
 select:enabled,
-input[type="date"]:enabled,
-input[type="datetime-local"]:enabled,
-input[type="time"]:enabled,
-input[type="month"]:enabled,
-input[type="week"]:enabled {
+[type="date"]:enabled,
+[type="datetime-local"]:enabled,
+[type="time"]:enabled,
+[type="month"]:enabled,
+[type="week"]:enabled {
   background-color: var(--background-color);
 }
 
 button:focus,
-input[type="button"]:focus,
-input[type="color"]:focus,
-button[type="reset"]:focus,
-input[type="reset"]:focus,
-button[type="submit"]:focus,
-input[type="submit"]:focus,
+[type="button"]:focus,
+[type="color"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus,
 button:not([type]):focus,
-input:not([type]):not(:invalid):focus,
-input[type="date"]:not(:invalid):focus,
-input[type="datetime-local"]:not(:invalid):focus,
-input[type="email"]:not(:invalid):focus,
-input[type="hidden"]:not(:invalid):focus,
-input[type="image"]:not(:invalid):focus,
-input[type="month"]:not(:invalid):focus,
-input[type="number"]:not(:invalid):focus,
-input[type="password"]:not(:invalid):focus,
-input[type="search"]:not(:invalid):focus,
-input[type="tel"]:not(:invalid):focus,
-input[type="text"]:not(:invalid):focus,
-input[type="time"]:not(:invalid):focus,
-input[type="url"]:not(:invalid):focus,
-input[type="week"]:not(:invalid):focus,
+input:not([type]):focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="hidden"]:focus,
+[type="image"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus,
 textarea:focus,
 select:focus,
 summary:focus {
@@ -237,39 +201,41 @@ summary:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-button:hover:enabled,
-input[type="button"]:hover:enabled,
-input[type="color"]:hover:enabled,
-input:not([type]):enabled:not(:invalid):hover,
-input[type="date"]:enabled:not(:invalid):hover,
-input[type="datetime-local"]:enabled:not(:invalid):hover,
-input[type="email"]:enabled:not(:invalid):hover,
-input[type="hidden"]:enabled:not(:invalid):hover,
-input[type="month"]:enabled:not(:invalid):hover,
-input[type="number"]:enabled:not(:invalid):hover,
-input[type="password"]:enabled:not(:invalid):hover,
-input[type="range"]:enabled:not(:invalid):hover,
-input[type="search"]:enabled:not(:invalid):hover,
-input[type="tel"]:enabled:not(:invalid):hover,
-input[type="text"]:enabled:not(:invalid):hover,
-input[type="time"]:enabled:not(:invalid):hover,
-input[type="url"]:enabled:not(:invalid):hover,
-input[type="week"]:enabled:not(:invalid):hover,
-textarea:enabled:not(:invalid):hover,
-select:enabled:not(:invalid):hover,
+[type="image"]:enabled:hover {
+  filter: brightness(95%);
+}
+
+button:enabled:hover,
+[type="button"]:enabled:hover,
+[type="color"]:enabled:hover,
+input:not([type]):enabled:hover,
+[type="date"]:enabled:hover,
+[type="datetime-local"]:enabled:hover,
+[type="email"]:enabled:hover,
+[type="hidden"]:enabled:hover,
+[type="month"]:enabled:hover,
+[type="number"]:enabled:hover,
+[type="password"]:enabled:hover,
+[type="range"]:enabled:hover,
+[type="search"]:enabled:hover,
+[type="tel"]:enabled:hover,
+[type="text"]:enabled:hover,
+[type="time"]:enabled:hover,
+[type="url"]:enabled:hover,
+[type="week"]:enabled:hover,
+textarea:enabled:hover,
+select:enabled:hover,
 summary:hover {
   border-color: var(--border-hover-color);
 }
 
-button[type="reset"]:hover:enabled,
-input[type="reset"]:hover:enabled {
+[type="reset"]:enabled:hover {
   border-color: transparent;
   background-color: var(--danger-hover-color);
 }
 
-button[type="submit"]:hover:enabled,
-input[type="submit"]:hover:enabled,
-button:not([type]):hover:enabled {
+[type="submit"]:enabled:hover,
+button:not([type]):enabled:hover {
   border-color: transparent;
   background-color: var(--success-hover-color);
 }
@@ -317,7 +283,7 @@ kbd kbd {
   border-radius: 0;
 }
 
-details[open] summary {
+[open] summary {
   margin-bottom: 0.5rem;
 }
 
@@ -347,8 +313,8 @@ hr {
 }
 
 :disabled,
-input[type="checkbox"][id]:disabled + label[for],
-input[type="radio"][id]:disabled + label[for] {
+[type="checkbox"][id]:disabled + [for],
+[type="radio"][id]:disabled + [for] {
   opacity: 0.5;
 }
 
@@ -373,6 +339,6 @@ input[type="radio"][id]:disabled + label[for] {
   box-shadow: none;
 }
 
-:invalid:not(form):hover:enabled {
+:invalid:not(form):enabled:hover {
   border-color: var(--danger-hover-color);
 }
