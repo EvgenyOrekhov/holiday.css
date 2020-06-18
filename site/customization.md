@@ -74,6 +74,7 @@ Of course! Go ahead and create some!
   background-color: #202124;
 }
 
+.big-neon-button:focus,
 .big-neon-button:enabled:hover {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
@@ -98,6 +99,7 @@ Result:
     background-color: #202124;
   }
 
+  .big-neon-button:focus,
   .big-neon-button:enabled:hover {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
       border-color: #fff;
