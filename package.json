@@ -31,11 +31,11 @@
     "@twinscom/stylelint-config": "^4.1.0",
     "cross-env": "^7.0.2",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.10",
+    "lint-staged": "^10.2.11",
     "modern-normalize": "^0.6.0",
     "prettier": "^2.0.5",
     "replace": "^1.2.0",
-    "stylelint": "^13.6.0",
+    "stylelint": "^13.6.1",
     "stylelint-group-selectors": "^1.0.7"
   },
   "husky": {
