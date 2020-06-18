@@ -19,6 +19,7 @@ label > [type="radio"]:enabled {
   cursor: default;
 }
 
+/* stylelint-disable-next-line selector-max-specificity */
 :disabled,
 [type="checkbox"][id]:disabled + [for],
 [type="radio"][id]:disabled + [for] {

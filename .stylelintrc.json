@@ -11,7 +11,7 @@
     "selector-max-attribute": 3,
     "selector-max-class": 0,
     "selector-max-pseudo-class": 3,
-    "selector-max-specificity": "0,4,0"
+    "selector-max-specificity": "0,3,0"
   },
 
   "ignoreFiles": ["dist/holiday.css"]

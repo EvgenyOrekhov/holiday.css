@@ -205,6 +205,7 @@ summary:focus {
   filter: brightness(95%);
 }
 
+/* stylelint-disable-next-line selector-max-specificity */
 button:enabled:hover,
 [type="button"]:enabled:hover,
 [type="color"]:enabled:hover,
@@ -234,6 +235,7 @@ summary:hover {
   border-color: transparent;
 }
 
+/* stylelint-disable-next-line selector-max-specificity */
 [type="submit"]:enabled:hover,
 button:not([type]):enabled:hover {
   background-color: var(--success-hover-color);
@@ -312,6 +314,7 @@ hr {
   border-width: var(--border-width) 0 0;
 }
 
+/* stylelint-disable-next-line selector-max-specificity */
 :disabled,
 [type="checkbox"][id]:disabled + [for],
 [type="radio"][id]:disabled + [for] {
@@ -339,7 +342,7 @@ hr {
   box-shadow: none;
 }
 
-/* stylelint-disable-next-line selector-max-pseudo-class */
+/* stylelint-disable-next-line selector-max-pseudo-class, selector-max-specificity */
 :invalid:not(form):enabled:hover {
   border-color: var(--danger-hover-color);
 }
