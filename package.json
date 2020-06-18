@@ -36,6 +36,7 @@
     "prettier": "^2.0.5",
     "replace": "^1.2.0",
     "stylelint": "^13.6.1",
+    "stylelint-config-recess-order": "^2.0.4",
     "stylelint-group-selectors": "^1.0.7"
   },
   "husky": {

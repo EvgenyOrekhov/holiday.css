@@ -14,13 +14,13 @@ h3 {
 }
 
 body {
-  margin: 0 auto;
-  width: calc(100% - 1rem);
-  max-width: var(--max-body-width);
-  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
+  width: calc(100% - 1rem);
+  max-width: var(--max-body-width);
   min-height: 100%;
+  margin: 0 auto;
+  overflow-wrap: break-word;
 }
 
 main {
@@ -53,22 +53,22 @@ pre code {
 }
 
 kbd {
-  padding: 0 0.25rem;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0.1rem;
+  min-width: 1.5rem;
   max-width: 100%;
+  min-height: 1.5rem;
+  padding: 0 0.25rem;
+  margin: 0 0.1rem;
   overflow: hidden;
 }
 
 kbd kbd {
-  margin: 0;
-  padding: 0;
   min-width: unset;
   min-height: unset;
+  padding: 0;
+  margin: 0;
 }
 
 kbd kbd:not(:first-child) {
@@ -80,14 +80,14 @@ kbd kbd:not(:last-child) {
 }
 
 iframe {
-  border: none;
   width: 100%;
+  border: none;
 }
 
 dialog {
-  border: none;
-  overflow-y: auto;
   max-height: calc(100% - 1rem);
+  overflow-y: auto;
+  border: none;
 }
 
 audio,
@@ -100,9 +100,9 @@ object {
 [type="range"],
 meter,
 progress {
-  height: 2.25rem;
   display: block;
   width: 100%;
+  height: 2.25rem;
 }
 
 [type="color"] {
@@ -163,24 +163,24 @@ output {
 }
 
 textarea {
-  min-height: 8em;
   display: block;
   width: 100%;
+  min-height: 8em;
   padding: 0.5rem;
 }
 
 select {
-  min-height: 2.25rem;
   display: block;
   width: 100%;
+  min-height: 2.25rem;
 
   /* "padding: 0.5rem;" messes up the height of selects */
   padding: 0.45rem 0.5rem;
 }
 
 summary {
-  margin: -0.5rem;
   padding: 0.5rem;
+  margin: -0.5rem;
 }
 
 [type="image"] {
@@ -199,8 +199,8 @@ label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 1rem;
   width: 100%;
+  margin-top: 1rem;
 }
 
 legend + label {
@@ -210,8 +210,8 @@ legend + label {
 [type="checkbox"] + label,
 [type="radio"] + label {
   display: inline-flex;
-  vertical-align: text-bottom;
   width: unset;
+  vertical-align: text-bottom;
 }
 
 /* stylelint-disable-next-line plugin/stylelint-group-selectors */
@@ -222,14 +222,14 @@ fieldset > label:first-child {
 
 label > [type="checkbox"],
 label > [type="radio"] {
-  margin-right: 0.25rem;
   min-height: 1rem;
+  margin-right: 0.25rem;
 }
 
 blockquote {
-  margin-left: 0;
-  margin-right: 0;
   padding: 1rem 2rem;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 blockquote > p:last-child {
@@ -246,13 +246,13 @@ body > header {
 }
 
 body > footer {
-  text-align: center;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 figure {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
   text-align: center;
 }
 
@@ -275,10 +275,10 @@ li {
 }
 
 picture {
-  width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
   display: block;
+  width: 100vw;
   text-align: center;
 }
 
@@ -290,24 +290,24 @@ picture {
 
   video {
     width: calc(100% + 1rem);
-    margin-left: -0.5rem;
     max-height: 100vh;
+    margin-left: -0.5rem;
   }
 
   pre {
     width: calc(100% + 1rem);
-    margin-left: -0.5rem;
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
   }
 
   pre code {
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
     box-sizing: content-box;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    border-right: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
   }
 }
