@@ -77,6 +77,42 @@ your needs:</p>
   }
 }
 </code></pre>
+<h2>Can I use classes?</h2>
+<p>Of course! Go ahead and create some!</p>
+<pre><code class="language-css">.big-neon-button {
+  padding: 1rem;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #fff;
+  background-color: #202124;
+}
+
+.big-neon-button:enabled:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  border-color: #fff;
+}
+</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;big-neon-button&quot;&gt;PARTY TIME&lt;/button&gt;
+</code></pre>
+<p>Result:</p>
+<p><button type="button" class="big-neon-button">PARTY TIME</button></p>
+<style>
+  .big-neon-button {
+    padding: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202124;
+  }
+
+  .big-neon-button:enabled:hover {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+      border-color: #fff;
+  }
+</style>
+<p>Or go ahead and use something like <a href="https://tailwindcss.com/">Tailwind CSS</a>, if
+you are into that kind of thing 😉</p>
 
     </main>
     <footer>
