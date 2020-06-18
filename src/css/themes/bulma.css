@@ -56,21 +56,7 @@ input {
   border-radius: var(--border-radius);
 }
 
-body,
-input:not([type]),
-[type="date"],
-[type="datetime-local"],
-[type="email"],
-[type="hidden"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"] {
+body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -103,16 +89,11 @@ a:active code {
 }
 
 button,
-dialog {
-  border-radius: var(--border-radius);
-  border: var(--border-width) solid var(--border-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
+dialog,
 textarea,
 select {
   border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--border-color);
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -129,10 +110,20 @@ summary {
   margin: calc(-0.5rem - var(--border-width));
 }
 
-[type="image"]:hover:enabled {
-  filter: brightness(95%);
-}
-
+input:not([type]),
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="hidden"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
 [type="button"],
 [type="color"] {
   border: var(--border-width) solid var(--border-color);
@@ -172,25 +163,6 @@ select:disabled {
   background-color: var(--highlighted-background-color);
 }
 
-input:not([type]):not(:invalid),
-[type="date"]:not(:invalid),
-[type="datetime-local"]:not(:invalid),
-[type="email"]:not(:invalid),
-[type="hidden"]:not(:invalid),
-[type="month"]:not(:invalid),
-[type="number"]:not(:invalid),
-[type="password"]:not(:invalid),
-[type="search"]:not(:invalid),
-[type="tel"]:not(:invalid),
-[type="text"]:not(:invalid),
-[type="time"]:not(:invalid),
-[type="url"]:not(:invalid),
-[type="week"]:not(:invalid),
-textarea:not(:invalid),
-select:not(:invalid) {
-  border: var(--border-width) solid var(--border-color);
-}
-
 select:enabled,
 [type="date"]:enabled,
 [type="datetime-local"]:enabled,
@@ -206,21 +178,21 @@ button:focus,
 [type="reset"]:focus,
 [type="submit"]:focus,
 button:not([type]):focus,
-input:not([type]):not(:invalid):focus,
-[type="date"]:not(:invalid):focus,
-[type="datetime-local"]:not(:invalid):focus,
-[type="email"]:not(:invalid):focus,
-[type="hidden"]:not(:invalid):focus,
-[type="image"]:not(:invalid):focus,
-[type="month"]:not(:invalid):focus,
-[type="number"]:not(:invalid):focus,
-[type="password"]:not(:invalid):focus,
-[type="search"]:not(:invalid):focus,
-[type="tel"]:not(:invalid):focus,
-[type="text"]:not(:invalid):focus,
-[type="time"]:not(:invalid):focus,
-[type="url"]:not(:invalid):focus,
-[type="week"]:not(:invalid):focus,
+input:not([type]):focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="hidden"]:focus,
+[type="image"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus,
 textarea:focus,
 select:focus,
 summary:focus {
@@ -229,26 +201,30 @@ summary:focus {
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
+[type="image"]:hover:enabled {
+  filter: brightness(95%);
+}
+
 button:hover:enabled,
 [type="button"]:hover:enabled,
 [type="color"]:hover:enabled,
-input:not([type]):enabled:not(:invalid):hover,
-[type="date"]:enabled:not(:invalid):hover,
-[type="datetime-local"]:enabled:not(:invalid):hover,
-[type="email"]:enabled:not(:invalid):hover,
-[type="hidden"]:enabled:not(:invalid):hover,
-[type="month"]:enabled:not(:invalid):hover,
-[type="number"]:enabled:not(:invalid):hover,
-[type="password"]:enabled:not(:invalid):hover,
-[type="range"]:enabled:not(:invalid):hover,
-[type="search"]:enabled:not(:invalid):hover,
-[type="tel"]:enabled:not(:invalid):hover,
-[type="text"]:enabled:not(:invalid):hover,
-[type="time"]:enabled:not(:invalid):hover,
-[type="url"]:enabled:not(:invalid):hover,
-[type="week"]:enabled:not(:invalid):hover,
-textarea:enabled:not(:invalid):hover,
-select:enabled:not(:invalid):hover,
+input:not([type]):enabled:hover,
+[type="date"]:enabled:hover,
+[type="datetime-local"]:enabled:hover,
+[type="email"]:enabled:hover,
+[type="hidden"]:enabled:hover,
+[type="month"]:enabled:hover,
+[type="number"]:enabled:hover,
+[type="password"]:enabled:hover,
+[type="range"]:enabled:hover,
+[type="search"]:enabled:hover,
+[type="tel"]:enabled:hover,
+[type="text"]:enabled:hover,
+[type="time"]:enabled:hover,
+[type="url"]:enabled:hover,
+[type="week"]:enabled:hover,
+textarea:enabled:hover,
+select:enabled:hover,
 summary:hover {
   border-color: var(--border-hover-color);
 }
