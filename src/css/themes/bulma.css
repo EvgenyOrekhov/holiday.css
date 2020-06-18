@@ -47,11 +47,7 @@
     --link-active-color: #fff;
   }
 
-  [type="date"]::-webkit-calendar-picker-indicator,
-  [type="datetime-local"]::-webkit-calendar-picker-indicator,
-  [type="month"]::-webkit-calendar-picker-indicator,
-  [type="time"]::-webkit-calendar-picker-indicator,
-  [type="week"]::-webkit-calendar-picker-indicator {
+  input::-webkit-calendar-picker-indicator {
     filter: invert();
   }
 }
