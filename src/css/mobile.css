@@ -97,7 +97,7 @@ object {
   width: 100%;
 }
 
-input[type="range"],
+[type="range"],
 meter,
 progress {
   height: 2.25rem;
@@ -105,7 +105,7 @@ progress {
   width: 100%;
 }
 
-input[type="color"] {
+[type="color"] {
   height: 2.25rem;
   vertical-align: top;
 }
@@ -114,28 +114,28 @@ td,
 th,
 details,
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   padding: 0.5rem;
 }
 
 input:not([type]),
-input[type="email"],
-input[type="hidden"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"] {
+[type="email"],
+[type="hidden"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"] {
   display: block;
   width: 100%;
   height: 2.25rem;
   padding: 0.5rem;
 }
 
-input[type="file"] {
+[type="file"] {
   display: block;
   width: 100%;
   height: 2.25rem;
@@ -144,11 +144,11 @@ input[type="file"] {
   padding-top: 0.35rem;
 }
 
-input[type="date"],
-input[type="datetime-local"],
-input[type="time"],
-input[type="month"],
-input[type="week"] {
+[type="date"],
+[type="datetime-local"],
+[type="time"],
+[type="month"],
+[type="week"] {
   display: block;
   width: 100%;
   height: 2.25rem;
@@ -183,7 +183,7 @@ summary {
   padding: 0.5rem;
 }
 
-input[type="image"] {
+[type="image"] {
   vertical-align: bottom;
 }
 
@@ -191,7 +191,7 @@ fieldset {
   padding: 0.75rem;
 }
 
-label > input[type="color"] {
+label > [type="color"] {
   margin-left: 0.25rem;
 }
 
@@ -203,21 +203,25 @@ label {
   width: 100%;
 }
 
-blockquote > p:first-child,
-legend + label,
-fieldset > label:first-child {
+legend + label {
   margin-top: 0;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+[type="checkbox"] + label,
+[type="radio"] + label {
   display: inline-flex;
   vertical-align: text-bottom;
   width: unset;
 }
 
-label > input[type="checkbox"],
-label > input[type="radio"] {
+/* stylelint-disable-next-line plugin/stylelint-group-selectors */
+blockquote > p:first-child,
+fieldset > label:first-child {
+  margin-top: 0;
+}
+
+label > [type="checkbox"],
+label > [type="radio"] {
   margin-right: 0.25rem;
   min-height: 1rem;
 }
