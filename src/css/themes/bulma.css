@@ -311,7 +311,7 @@ kbd kbd {
   border-radius: 0;
 }
 
-details[open] summary {
+[open] summary {
   margin-bottom: 0.5rem;
 }
 
@@ -341,8 +341,8 @@ hr {
 }
 
 :disabled,
-[type="checkbox"][id]:disabled + label[for],
-[type="radio"][id]:disabled + label[for] {
+[type="checkbox"][id]:disabled + [for],
+[type="radio"][id]:disabled + [for] {
   opacity: 0.5;
 }
 

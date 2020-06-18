@@ -20,7 +20,7 @@ label > [type="radio"]:enabled {
 }
 
 :disabled,
-[type="checkbox"][id]:disabled + label[for],
-[type="radio"][id]:disabled + label[for] {
+[type="checkbox"][id]:disabled + [for],
+[type="radio"][id]:disabled + [for] {
   cursor: not-allowed;
 }
