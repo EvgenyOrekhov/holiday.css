@@ -8,8 +8,8 @@ permalink: "/"
 
 A minimalist classless CSS theme.
 
-This very site is a demo of **holiday.css**. It uses semantic HTML markup and no
-CSS classes.
+This very site is a demo of **holiday.css** (with a little help from
+[Prism](https://prismjs.com/)). It uses semantic HTML markup and no CSS classes.
 
 You can use it as is for:
 
