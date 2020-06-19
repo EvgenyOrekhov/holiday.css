@@ -38,6 +38,13 @@ table {
 }
 
 pre {
+  padding: 1rem;
+
+  /* Prism hack */
+  /* stylelint-disable declaration-no-important */
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  /* stylelint-enable */
   overflow-x: auto;
   line-height: 1.15;
 }
@@ -47,9 +54,7 @@ code {
 }
 
 pre code {
-  display: inline-block;
-  min-width: 100%;
-  padding: 1rem;
+  padding: unset;
 }
 
 kbd {
@@ -282,6 +287,14 @@ picture {
   text-align: center;
 }
 
+/* highlight.js hack */
+/* stylelint-disable-next-line selector-max-class */
+.hljs {
+  /* stylelint-disable-next-line declaration-no-important */
+  padding: 1rem !important;
+  margin: -1rem;
+}
+
 @media (max-width: 50rem) {
   table {
     width: calc(100% + 1rem);
@@ -296,18 +309,23 @@ picture {
 
   pre {
     width: calc(100% + 1rem);
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    margin-left: -0.5rem;
+
+    /* !important is Prism hack */
+    /* stylelint-disable declaration-no-important */
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    margin-left: -0.5rem !important;
+    /* stylelint-enable */
   }
 
-  pre code {
-    box-sizing: content-box;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
-    border-right: 0.5rem solid transparent;
-    border-left: 0.5rem solid transparent;
+  /* highlight.js hack */
+  /* stylelint-disable-next-line selector-max-class */
+  .hljs {
+    /* stylelint-disable declaration-no-important */
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    /* stylelint-enable */
+
+    margin: -1rem -0.5rem;
   }
 }

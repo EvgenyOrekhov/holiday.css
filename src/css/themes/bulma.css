@@ -61,10 +61,13 @@ body {
   background-color: var(--background-color);
 }
 
+pre {
+  background-color: var(--code-background-color);
+}
+
 code {
   color: var(--code-text-color);
   background-color: var(--code-background-color);
-  border-color: var(--code-background-color);
 }
 
 a,
