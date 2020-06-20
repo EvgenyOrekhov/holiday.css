@@ -7,7 +7,7 @@
 
 A minimalist classless CSS theme.
 
-## [Demo](https://evgenyorekhov.github.io/holiday.css/)
+## [Demo](https://holidaycss.js.org/)
 
 ## Why
 
