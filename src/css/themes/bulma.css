@@ -63,6 +63,10 @@ body {
 
 pre {
   background-color: var(--code-background-color);
+
+  /* Prism Dracula theme hack */
+  /* stylelint-disable-next-line declaration-no-important */
+  border-radius: 0 !important;
 }
 
 code {
