@@ -11,3 +11,4 @@ Sources of inspiration:
 - [Marx](https://mblode.github.io/marx/)
 - [Bulma](https://bulma.io/)
 - [CSS Bed](https://www.cssbed.com/)
+- [new.css](https://newcss.net/)
