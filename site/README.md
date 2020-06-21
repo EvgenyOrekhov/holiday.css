@@ -145,5 +145,6 @@ Feel free to help make **holiday.css** even better!
 
 ## Future
 
-I plan to extract a subset of styles into a separate stylesheet for use as a
-base for web apps.
+- Add theme support
+- Extract a subset of styles into a separate stylesheet for use as a base for
+  web apps
