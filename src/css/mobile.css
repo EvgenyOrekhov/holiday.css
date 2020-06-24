@@ -62,7 +62,7 @@ kbd {
   align-items: center;
   justify-content: center;
   min-width: 1.5rem;
-  max-width: 100%;
+  max-width: calc(100% - 0.1rem * 2);
   min-height: 1.5rem;
   padding: 0 0.25rem;
   margin: 0 0.1rem;
