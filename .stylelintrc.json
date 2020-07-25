@@ -1,12 +1,7 @@
 {
-  "extends": ["@twinscom/stylelint-config", "stylelint-config-recess-order"],
-
-  "plugins": ["stylelint-group-selectors"],
+  "extends": ["@twinscom/stylelint-config"],
 
   "rules": {
-    "plugin/stylelint-group-selectors": true,
-    "no-duplicate-selectors": [true, { "disallowInList": true }],
-
     "max-nesting-depth": 1,
     "selector-max-attribute": 3,
     "selector-max-class": 0,
