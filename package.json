@@ -30,7 +30,7 @@
     "@11ty/eleventy": "^0.11.0",
     "@twinscom/stylelint-config": "^5.0.0",
     "cross-env": "^7.0.2",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
     "modern-normalize": "^1.0.0",
     "prettier": "^2.1.1",
