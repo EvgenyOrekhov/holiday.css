@@ -31,7 +31,7 @@
     "@twinscom/stylelint-config": "^5.0.0",
     "cross-env": "^7.0.2",
     "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.4.2",
     "modern-normalize": "^1.0.0",
     "prettier": "^2.1.2",
     "replace": "^1.2.0",
