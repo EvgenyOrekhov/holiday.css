@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: percy/snapshot-action@v0.1.1
+      - uses: percy/snapshot-action@v0.1.2
         with:
           build-directory: "src/"
         env:
