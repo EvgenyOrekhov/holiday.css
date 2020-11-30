@@ -33,7 +33,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.5.2",
     "modern-normalize": "^1.0.0",
-    "prettier": "^2.2.0",
+    "prettier": "^2.2.1",
     "replace": "^1.2.0",
     "stylelint": "^13.8.0"
   },
