@@ -28,12 +28,12 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@twinscom/stylelint-config": "^5.3.0",
+    "@twinscom/stylelint-config": "^5.4.0",
     "cross-env": "^7.0.3",
     "husky": "^4.3.8",
     "lint-staged": "^11.0.0",
     "modern-normalize": "^1.0.0",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "replace": "^1.2.1",
     "stylelint": "^13.13.1"
   },
