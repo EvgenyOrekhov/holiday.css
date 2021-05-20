@@ -10,7 +10,8 @@
     "build": "cat node_modules/modern-normalize/modern-normalize.css src/css/*.css src/css/themes/bulma.css > dist/holiday.css",
     "build:site": "eleventy",
     "preversion": "npm run build && cross-env-shell 'replace \"holiday\\.css@\\d+\\.\\d+\\.\\d+\" holiday.css@$npm_package_version README.md site/ -r' && git add dist/ site/ README.md",
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags && npm publish",
+    "prepare": "husky install"
   },
   "keywords": [
     "css",
@@ -36,12 +37,6 @@
     "prettier": "^2.3.0",
     "replace": "^1.2.1",
     "stylelint": "^13.13.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
   },
   "lint-staged": {
     "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
