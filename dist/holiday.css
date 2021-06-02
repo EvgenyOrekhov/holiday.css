@@ -818,10 +818,6 @@ picture {
     --link-hover-color: #fff;
     --link-active-color: #fff;
   }
-
-  input::-webkit-calendar-picker-indicator {
-    filter: invert();
-  }
 }
 
 input {
