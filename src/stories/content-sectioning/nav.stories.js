@@ -51,7 +51,7 @@ withUl.storyName = "with <ul>";
 
 export const justA = () => (
   <nav>
-    <a href="#">Just a link without a list</a>
+    <a href="#">Just a link without a list</a>{" "}
     <a href="#">Another link without a list</a>
   </nav>
 );
