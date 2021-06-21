@@ -145,8 +145,8 @@ Result:
     <input />
   </label>
   <footer>
-    <button type="reset">Reset</button>
     <button>Submit</button>
+    <button type="reset">Reset</button>
   </footer>
 </form>
 ```
@@ -159,7 +159,7 @@ Result:
     <input />
   </label>
   <footer>
-    <button type="reset">Reset</button>
     <button>Submit</button>
+    <button type="reset">Reset</button>
   </footer>
 </form>
