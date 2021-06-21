@@ -27,7 +27,7 @@ export const mapArea = () => (
       />
     </map>
     <img
-      usemap="#infographic"
+      useMap="#infographic"
       width="260"
       height="232"
       src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info2.png"

@@ -5,7 +5,7 @@ export default {
 };
 
 export const time = () => (
-  <time datetime="2004-09-22T16:16:00+1000">
+  <time dateTime="2004-09-22T16:16:00+1000">
     September 22, 2004, at 4:16 PM
   </time>
 );
