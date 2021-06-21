@@ -216,6 +216,7 @@ legend + label {
 [type="radio"] + label {
   display: inline-flex;
   width: unset;
+  vertical-align: text-bottom;
 }
 
 /* stylelint-disable-next-line plugin/stylelint-group-selectors */
