@@ -36,15 +36,34 @@ export default {
         defaultValue: { summary: "false" },
       },
     },
+    indeterminate: {
+      type: { name: "boolean", required: false },
+      table: {
+        type: { summary: "boolean" },
+        defaultValue: { summary: "false" },
+      },
+    },
   },
 };
 
-const Template = (args) => (
-  <label>
-    <input type="checkbox" {...args} />
-    Checkbox
-  </label>
-);
+const Template = (args) => {
+  const { indeterminate, ...rest } = args;
+
+  return (
+    <label>
+      <input
+        type="checkbox"
+        ref={(element) => {
+          if (element) {
+            element.indeterminate = indeterminate;
+          }
+        }}
+        {...rest}
+      />
+      Checkbox
+    </label>
+  );
+};
 
 export const unchecked = Template.bind({});
 
@@ -61,6 +80,14 @@ checked.args = {
   defaultChecked: true,
 };
 
+export const indeterminate = Template.bind({});
+
+indeterminate.storyName = "indeterminate";
+indeterminate.args = {
+  type: "checkbox",
+  indeterminate: true,
+};
+
 export const disabledUnchecked = Template.bind({});
 
 disabledUnchecked.storyName = "disabled unchecked";
@@ -75,6 +102,15 @@ disabledChecked.storyName = "disabled checked";
 disabledChecked.args = {
   type: "checkbox",
   defaultChecked: true,
+  disabled: true,
+};
+
+export const disabledIndeterminate = Template.bind({});
+
+disabledIndeterminate.storyName = "disabled indeterminate";
+disabledIndeterminate.args = {
+  type: "checkbox",
+  indeterminate: true,
   disabled: true,
 };
 
