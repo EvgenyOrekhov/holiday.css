@@ -4,11 +4,10 @@ export default {
   title: "Buttons/<input>",
   argTypes: {
     type: {
-      type: { name: "string", required: false },
+      type: { name: "string", required: true },
       options: ["button", "reset", "submit", "image"],
       table: {
         type: { summary: "string" },
-        defaultValue: { summary: "submit" },
       },
       control: {
         type: "select",
