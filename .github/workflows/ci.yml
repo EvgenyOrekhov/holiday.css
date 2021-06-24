@@ -32,3 +32,13 @@ jobs:
           build-directory: "src/"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
+  Percy Storybook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: percy/storybook-action@v0.1.6
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
