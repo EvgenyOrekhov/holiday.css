@@ -33,7 +33,7 @@ jobs:
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
-  Percy Storybook:
+  Percy_Storybook:
     runs-on: ubuntu-latest
 
     steps:
