@@ -1,0 +1,7 @@
+/* stylelint-disable selector-max-class */
+
+.sb-show-main.sb-main-padded {
+  display: flex;
+  padding: unset;
+  margin: 0 auto;
+}

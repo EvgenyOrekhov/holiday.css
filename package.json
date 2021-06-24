@@ -11,7 +11,9 @@
     "build:site": "eleventy",
     "preversion": "npm run build && cross-env-shell 'replace \"holiday\\.css@\\d+\\.\\d+\\.\\d+\" holiday.css@$npm_package_version README.md site/ -r' && git add dist/ site/ README.md",
     "postversion": "git push && git push --tags && npm publish",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "css",
@@ -29,17 +31,26 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
     "@twinscom/stylelint-config": "^5.4.0",
+    "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "modern-normalize": "^1.1.0",
     "prettier": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "replace": "^1.2.1",
     "stylelint": "^13.13.1"
   },
   "lint-staged": {
     "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
     "*.css": "stylelint --fix"
-  }
+  },
+  "dependencies": {}
 }
