@@ -609,6 +609,7 @@ picture {
   left: calc(-50vw + 50%);
   display: block;
   width: 100vw;
+  max-height: 100vh;
   text-align: center;
 }
 
