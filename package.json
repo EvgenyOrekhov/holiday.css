@@ -13,7 +13,8 @@
     "postversion": "git push && git push --tags && npm publish",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "keywords": [
     "css",
@@ -38,6 +39,7 @@
     "@storybook/react": "^6.2.9",
     "@twinscom/stylelint-config": "^5.4.0",
     "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.2",
     "cross-env": "^7.0.3",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
