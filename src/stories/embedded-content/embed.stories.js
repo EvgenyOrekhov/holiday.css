@@ -2,6 +2,11 @@ import React from "react";
 
 export default {
   title: "Embedded content/<embed>",
+  parameters: {
+    chromatic: {
+      viewports: [320, 1200],
+    },
+  },
 };
 
 export const embed = () => (

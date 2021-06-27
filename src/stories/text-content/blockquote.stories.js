@@ -2,6 +2,11 @@ import React from "react";
 
 export default {
   title: "Text content/<blockquote>",
+  parameters: {
+    chromatic: {
+      viewports: [320, 1200],
+    },
+  },
 };
 
 export const justText = () => <blockquote>Just text</blockquote>;

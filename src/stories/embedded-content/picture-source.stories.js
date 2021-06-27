@@ -2,6 +2,11 @@ import React from "react";
 
 export default {
   title: "Embedded content/<picture>, <source>",
+  parameters: {
+    chromatic: {
+      viewports: [320, 1200],
+    },
+  },
 };
 
 export const equalOrNarrowerThanScreen = () => (

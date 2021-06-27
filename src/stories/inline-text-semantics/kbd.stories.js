@@ -212,3 +212,8 @@ export const bugTests = () => (
 );
 
 bugTests.storyName = "bug tests";
+bugTests.parameters = {
+  chromatic: {
+    viewports: [320, 1200],
+  },
+};

@@ -2,6 +2,11 @@ import React from "react";
 
 export default {
   title: "Table content/<table>",
+  parameters: {
+    chromatic: {
+      viewports: [320, 1200],
+    },
+  },
 };
 
 export const small = () => (

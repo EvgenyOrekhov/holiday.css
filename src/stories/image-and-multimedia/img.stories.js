@@ -15,3 +15,8 @@ export const big = () => (
 );
 
 big.storyName = "big";
+big.parameters = {
+  chromatic: {
+    viewports: [320, 1200],
+  },
+};

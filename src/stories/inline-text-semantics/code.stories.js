@@ -2,6 +2,11 @@ import React from "react";
 
 export default {
   title: "Inline text semantics/<code>",
+  parameters: {
+    chromatic: {
+      viewports: [320, 1200],
+    },
+  },
 };
 
 export const code = () => <code>Example</code>;
