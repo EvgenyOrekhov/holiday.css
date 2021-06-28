@@ -36,7 +36,7 @@
     "@storybook/addon-actions": "^6.3.0",
     "@storybook/addon-essentials": "^6.3.0",
     "@storybook/addon-links": "^6.3.0",
-    "@storybook/react": "^6.3.0",
+    "@storybook/react": "^6.3.1",
     "@twinscom/stylelint-config": "^5.4.0",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.9.2",
