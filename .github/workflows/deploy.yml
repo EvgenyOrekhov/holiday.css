@@ -12,14 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v2
         with:
           node-version: "14.x"
 
       - run: npm ci
       - run: "npm run build:site"
 
-      - uses: peaceiris/actions-gh-pages@v3.8.0
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site/
