@@ -163,3 +163,12 @@ Result:
     <button type="reset">Reset</button>
   </footer>
 </form>
+
+### Use `holiday-css-light` and `holiday-css-dark` classes to override light/dark mode preference
+
+```html
+<html class="holiday-css-light"></html>
+```
+
+Note: it has to be `<html>`, and not `<body>` or any other element, so that the
+browser would apply the correct color theme to its UI elements, like scrollbars.
