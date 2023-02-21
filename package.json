@@ -42,6 +42,7 @@
     "chromatic": "^6.17.0",
     "cross-env": "^7.0.3",
     "highlight.js": "^11.7.0",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "modern-normalize": "^1.1.0",
@@ -56,5 +57,8 @@
     "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
     "*.css": "stylelint --fix"
   },
-  "dependencies": {}
+  "engines": {
+    "node": "^16.19.1",
+    "npm": "^8.19.3"
+  }
 }
