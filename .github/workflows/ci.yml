@@ -27,6 +27,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: npx percy snapshot src/
+      - run: npx @percy/cli snapshot src/
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
