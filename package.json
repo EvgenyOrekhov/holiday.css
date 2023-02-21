@@ -37,7 +37,7 @@
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/react": "^6.5.16",
-    "@twinscom/stylelint-config": "^6.0.2",
+    "@twinscom/stylelint-config": "^8.0.0",
     "babel-loader": "^9.1.2",
     "chromatic": "^6.17.0",
     "cross-env": "^7.0.3",
@@ -50,7 +50,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "replace": "^1.2.1",
-    "stylelint": "^14.3.0"
+    "stylelint": "14.16.1"
   },
   "lint-staged": {
     "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
