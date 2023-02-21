@@ -1,3 +1,4 @@
 dist/
 _site/
+storybook-static/
 /.husky/_/

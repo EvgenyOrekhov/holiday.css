@@ -338,15 +338,15 @@ hr {
   opacity: unset;
 }
 
+/* Firefox hack */
+:invalid:not([type="checkbox"], :focus) {
+  box-shadow: none;
+}
+
 :invalid:not([type="checkbox"]):focus {
   border-color: var(--danger-hover-color);
   outline: none;
   box-shadow: 0 0 0.2rem 0.05rem var(--danger-hover-color);
-}
-
-/* Firefox hack */
-:invalid:not([type="checkbox"]):not(:focus) {
-  box-shadow: none;
 }
 
 /* stylelint-disable-next-line selector-max-pseudo-class, selector-max-specificity */

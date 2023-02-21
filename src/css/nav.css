@@ -72,12 +72,12 @@
   }
 
   /* stylelint-disable-next-line selector-max-universal */
-  nav li > *:not(ul):not(a):not(:only-child) {
+  nav li > *:not(ul, a, :only-child) {
     cursor: default;
   }
 
   /* stylelint-disable-next-line selector-max-universal */
-  nav li > *:not(ul):not(:only-child)::after {
+  nav li > *:not(ul, :only-child)::after {
     content: " ▾";
   }
 }
