@@ -13,6 +13,11 @@ your needs:
 
 ```css
 :root {
+  --max-body-width: 48rem;
+
+  --border-radius: 0.25rem;
+  --border-width: 1px;
+
   --border-color: #dbdbdb;
   --border-hover-color: #b5b5b5;
   --background-color: #fff;
@@ -26,8 +31,6 @@ your needs:
   --success-hover-color: #3ec46d;
   --danger-text-background-color: #fde0e6;
   --success-text-background-color: #effaf3;
-  --border-radius: 0.25rem;
-  --border-width: 1px;
   --code-text-color: #f14668;
   --code-background-color: #f5f5f5;
   --link-color: #3273dc;
