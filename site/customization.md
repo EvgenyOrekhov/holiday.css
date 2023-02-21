@@ -111,6 +111,15 @@ your needs:
 }
 ```
 
+## Dark mode manual override
+
+You can override dark mode manually by adding `.holiday-css-light` or
+`.holiday-css-dark` to the `<html>` element.
+
+Note: it has to be `<html>`, and not `<body>` or any other element, so that the
+browser would apply the correct color theme for its UI elements, like
+scrollbars.
+
 ## Can I use classes?
 
 Of course! Go ahead and create some!
