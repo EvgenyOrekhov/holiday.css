@@ -11,7 +11,7 @@ export const small = () => (
 small.storyName = "small";
 
 export const big = () => (
-  <img src="https://via.placeholder.com/4096x2160" alt="Placeholder" />
+  <img src="https://via.placeholder.com/2048x1080" alt="Placeholder" />
 );
 
 big.storyName = "big";
