@@ -13,56 +13,68 @@ your needs:
 
 ```css
 :root {
+  /* Sizes */
   --max-body-width: 48rem;
-
   --border-radius: 0.25rem;
   --border-width: 1px;
 
-  --border-color: #dbdbdb;
-  --border-hover-color: #b5b5b5;
-  --background-color: #fff;
-  --highlighted-background-color: #f5f5f5;
-  --text-color: #363636;
-  --danger-color: #f14668;
-  --danger-text-color: #fff;
-  --danger-hover-color: #f03a5f;
-  --success-color: #48c774;
-  --success-text-color: #fff;
-  --success-hover-color: #3ec46d;
-  --danger-text-background-color: #fde0e6;
-  --success-text-background-color: #effaf3;
-  --code-text-color: #f14668;
-  --code-background-color: #f5f5f5;
-  --link-color: #3273dc;
-  --link-visited-color: #b86bff;
-  --link-hover-color: #363636;
-  --link-active-color: #363636;
-}
+  /* Light mode colors */
+  --light-border-color: #dbdbdb;
+  --light-border-hover-color: #b5b5b5;
+  --light-background-color: #fff;
+  --light-highlighted-background-color: #f5f5f5;
+  --light-text-color: #363636;
+  --light-danger-color: #f14668;
+  --light-danger-text-color: #fff;
+  --light-danger-hover-color: #f03a5f;
+  --light-success-color: #48c774;
+  --light-success-text-color: #fff;
+  --light-success-hover-color: #3ec46d;
+  --light-danger-text-background-color: #fde0e6;
+  --light-success-text-background-color: #effaf3;
+  --light-code-text-color: #f14668;
+  --light-code-background-color: #f5f5f5;
+  --light-link-color: #3273dc;
+  --light-link-visited-color: #b86bff;
+  --light-link-hover-color: #363636;
+  --light-link-active-color: #363636;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --border-color: #5f6267;
-    --border-hover-color: #bcbebd;
-    --background-color: #202124;
-    --highlighted-background-color: #292b2e;
-    --text-color: #fff;
-    --danger-color: #770018;
-    --danger-text-color: #fff;
-    --danger-hover-color: #6b0015;
-    --success-color: #006624;
-    --success-text-color: #fff;
-    --success-hover-color: #006122;
-    --danger-text-background-color: #770018;
-    --success-text-background-color: #006624;
-    --code-text-color: #f1a0b0;
-    --code-background-color: #292b2e;
-    --link-color: #90b3ed;
-    --link-visited-color: #cb93ff;
-    --link-hover-color: #fff;
-    --link-active-color: #fff;
-  }
+  /* Dark mode colors */
+  --dark-border-color: #5f6267;
+  --dark-border-hover-color: #bcbebd;
+  --dark-background-color: #202124;
+  --dark-highlighted-background-color: #292b2e;
+  --dark-text-color: #fff;
+  --dark-danger-color: #770018;
+  --dark-danger-text-color: #fff;
+  --dark-danger-hover-color: #6b0015;
+  --dark-success-color: #006624;
+  --dark-success-text-color: #fff;
+  --dark-success-hover-color: #006122;
+  --dark-danger-text-background-color: #770018;
+  --dark-success-text-background-color: #006624;
+  --dark-code-text-color: #f1a0b0;
+  --dark-code-background-color: #292b2e;
+  --dark-link-color: #90b3ed;
+  --dark-link-visited-color: #cb93ff;
+  --dark-link-hover-color: #fff;
+  --dark-link-active-color: #fff;
 }
 ```
+
+## Dark mode manual override
+
+You can override dark mode manually by adding `holiday-css-light` or
+`holiday-css-dark` class to your `<html>` element.
+
+Example:
+
+```html
+<html class="holiday-css-light"></html>
+```
+
+Note: it has to be `<html>`, and not `<body>` or any other element, so that the
+browser would apply the correct color theme to its UI elements, like scrollbars.
 
 ## Can I use classes?
 
