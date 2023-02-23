@@ -48,6 +48,23 @@
   &lt;footer&gt;&lt;/footer&gt;
 &lt;/body&gt;
 </code></pre>
+<h3>Use <code>aria-current=&quot;page&quot;</code> to highlight current link</h3>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>Result:</p>
+<nav>
+  <ul>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#" aria-current="page">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
 <h3>Use nested <code>&lt;ul&gt;</code> inside <code>&lt;nav&gt;</code> to create dropdown menus</h3>
 <pre><code class="language-html">&lt;nav&gt;
   &lt;ul&gt;
