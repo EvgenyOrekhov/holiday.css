@@ -420,6 +420,7 @@ hr {
 
 /* stylelint-disable-next-line selector-max-specificity */
 :disabled,
+[aria-disabled="true"],
 [type="checkbox"][id]:disabled + [for],
 [type="radio"][id]:disabled + [for] {
   opacity: 0.5;
@@ -431,7 +432,8 @@ hr {
   border-width: var(--border-width);
 }
 
-:disabled :disabled {
+:disabled :disabled,
+[aria-disabled="true"] [aria-disabled="true"] {
   opacity: unset;
 }
 

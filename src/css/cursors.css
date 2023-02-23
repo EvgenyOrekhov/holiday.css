@@ -21,6 +21,7 @@ label > [type="radio"]:enabled {
 
 /* stylelint-disable-next-line selector-max-specificity */
 :disabled,
+[aria-disabled="true"],
 [type="checkbox"][id]:disabled + [for],
 [type="radio"][id]:disabled + [for] {
   cursor: not-allowed;
