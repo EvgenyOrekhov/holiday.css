@@ -1601,5 +1601,35 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
       Created by
       <a href="https://github.com/EvgenyOrekhov">Evgeny Orekhov</a>
     </footer>
+
+    <!-- dark-mode-toggle -->
+    <dark-mode-toggle
+      permanent
+      style="position: absolute; top: 0; border: 0; left: 1rem"
+    ></dark-mode-toggle>
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+    <script>
+      const toggle = document.querySelector("dark-mode-toggle");
+
+      // Set or remove the mode classes the first time:
+      if (toggle.mode === "dark") {
+        document.documentElement.classList.add("holiday-css-dark");
+      } else if (toggle.mode === "light") {
+        document.documentElement.classList.add("holiday-css-light");
+      }
+
+      // Listen for toggle changes (which includes `prefers-color-scheme`
+      // changes) and toggle the `dark` class accordingly:
+      toggle.addEventListener("colorschemechange", () => {
+        document.documentElement.classList.toggle(
+          "holiday-css-dark",
+          toggle.mode === "dark"
+        );
+        document.documentElement.classList.toggle(
+          "holiday-css-light",
+          toggle.mode === "light"
+        );
+      });
+    </script>
   </body>
 </html>
