@@ -7,6 +7,9 @@ export default {
 export const a = () => (
   <>
     <a href="#">Example</a>{" "}
+    <a href="#">
+      Example with <code>code</code>
+    </a>{" "}
     <a href="mailto:example@example.com">example@example.com</a>{" "}
     <a href="tel:+61255506077">+61 2 5550 6077</a>
   </>

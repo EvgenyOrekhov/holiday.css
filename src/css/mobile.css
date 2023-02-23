@@ -266,7 +266,13 @@ figure > * {
   text-align: initial;
 }
 
-dt {
+dt,
+[aria-current="page"],
+[aria-current="step"],
+[aria-current="location"],
+[aria-current="date"],
+[aria-current="time"],
+[aria-current="true"] {
   font-weight: bold;
 }
 

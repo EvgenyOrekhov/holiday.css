@@ -182,8 +182,11 @@ a:visited code {
   color: var(--link-visited-color);
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type */
 a:hover,
-a:hover code {
+a:hover code,
+a[aria-current="page"],
+a[aria-current="page"] code {
   color: var(--link-hover-color);
 }
 

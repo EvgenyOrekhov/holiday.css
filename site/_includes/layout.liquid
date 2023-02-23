@@ -23,13 +23,13 @@
     <header><h1>holiday.css</h1></header>
     <nav>
       <ul>
-        <li><a href="{{ "/" | url }}">Home</a></li>
-        <li><a href="{{ "/usage/" | url }}">Usage</a></li>
-        <li><a href="{{ "/customization/" | url }}">Customization</a></li>
-        <li><a href="{{ "/template/" | url }}">Quickstart Template</a></li>
-        <li><a href="{{ "/kitchen-sink/" | url }}">Kitchen Sink</a></li>
+        <li><a href="{{ "/" | url }}" {% if page.url == "/" %} aria-current="page" {% endif %}>Home</a></li>
+        <li><a href="{{ "/usage/" | url }}" {% if page.url == "/usage/" %} aria-current="page" {% endif %}>Usage</a></li>
+        <li><a href="{{ "/customization/" | url }}" {% if page.url == "/customization/" %} aria-current="page" {% endif %}>Customization</a></li>
+        <li><a href="{{ "/template/" | url }}" {% if page.url == "/template/" %} aria-current="page" {% endif %}>Quickstart Template</a></li>
+        <li><a href="{{ "/kitchen-sink/" | url }}" {% if page.url == "/kitchen-sink/" %} aria-current="page" {% endif %}>Kitchen Sink</a></li>
         <li><a href="https://master--60d4b39b36bc1d003b029b44.chromatic.com/" target="_blank" rel="noopener noreferrer">Storybook</a></li>
-        <li><a href="{{ "/acknowledgements/" | url }}">Acknowledgements</a></li>
+        <li><a href="{{ "/acknowledgements/" | url }}" {% if page.url == "/acknowledgements/" %} aria-current="page" {% endif %}>Acknowledgements</a></li>
       </ul>
     </nav>
     <main>
