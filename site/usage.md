@@ -28,6 +28,28 @@ Starting afresh? Use [Quickstart Template]({{ "/template/" | url }}).
 </body>
 ```
 
+### Use `aria-current="page"` to highlight current link
+
+```html
+<nav>
+  <ul>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#" aria-current="page">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+```
+
+Result:
+
+<nav>
+  <ul>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#" aria-current="page">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+
 ### Use nested `<ul>` inside `<nav>` to create dropdown menus
 
 ```html
