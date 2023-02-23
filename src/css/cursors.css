@@ -25,3 +25,11 @@ label > [type="radio"]:enabled {
 [type="radio"][id]:disabled + [for] {
   cursor: not-allowed;
 }
+
+[draggable="true"] {
+  cursor: grab;
+}
+
+[draggable="true"]:active {
+  cursor: grabbing;
+}
