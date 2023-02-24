@@ -5,7 +5,7 @@
 
 > No classes today! Because it's **holiday**!
 
-A minimalist classless CSS theme with dark mode support.
+A minimalist classless CSS theme with dark mode support. Only 5 KB.
 
 ## [Demo](https://holidaycss.js.org/)
 

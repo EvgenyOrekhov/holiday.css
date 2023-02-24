@@ -1,12 +1,12 @@
 ---
-title: a minimalist classless CSS theme with dark mode support
+title: a minimalist classless CSS theme with dark mode support. Only 5 KB.
 layout: layout
 permalink: "/"
 ---
 
 > No classes today! Because it's **holiday**!
 
-A minimalist classless CSS theme with dark mode support.
+A minimalist classless CSS theme with dark mode support. Only 5 KB.
 
 This very site is a demo of **holiday.css** (with a little help from
 [Prism](https://prismjs.com/)). It uses semantic HTML markup and no CSS classes.
