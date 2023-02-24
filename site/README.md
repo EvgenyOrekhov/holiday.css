@@ -47,9 +47,9 @@ These are the features that make **holiday.css** stand out:
   screen width
 - keeps selector specificity as low as possible, so you could easily extend it
   with CSS classes without using `!important`
-- uses **dark mode** for those who prefer it
+- supports **dark mode** out of the box
 - built with **pure CSS**
-- only **~4 KB** (minified and gzipped)
+- only **~5 KB** (minified and gzipped)
 
 ## Rationale
 

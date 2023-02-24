@@ -31,9 +31,9 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
   screen width
 - keeps selector specificity as low as possible, so you could easily extend it
   with CSS classes without using `!important`
-- uses **dark mode** for those who prefer it
+- supports **dark mode** out of the box
 - built with **pure CSS**
-- only **~4 KB** (minified and gzipped)
+- only **~5 KB** (minified and gzipped)
 
 ## Quick Start
 
