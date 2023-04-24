@@ -12,8 +12,8 @@
     "version": "npm run build && cross-env-shell 'replace \"holiday\\.css@\\d+\\.\\d+\\.\\d+\" holiday.css@$npm_package_version README.md site/ -r' && git add dist/ site/ README.md",
     "postversion": "git push && git push --tags && npm publish",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "keywords": [
@@ -31,26 +31,29 @@
   "author": "Evgeny Orekhov",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@babel/core": "^7.21.0",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/react": "^6.5.16",
+    "@11ty/eleventy": "^2.0.1",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@storybook/addon-actions": "^7.0.7",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/react-webpack5": "^7.0.7",
     "@twinscom/stylelint-config": "^8.0.0",
     "babel-loader": "^9.1.2",
-    "chromatic": "^6.17.0",
+    "chromatic": "^6.17.3",
     "cross-env": "^7.0.3",
     "highlight.js": "^11.7.0",
-    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-plugin": "^5.5.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.1",
     "modern-normalize": "^1.1.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.8",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "replace": "^1.2.1",
+    "storybook": "^7.0.7",
     "stylelint": "14.16.1"
   },
   "lint-staged": {
@@ -58,7 +61,7 @@
     "*.css": "stylelint --fix"
   },
   "engines": {
-    "node": "^16.19.1",
-    "npm": "^8.19.3"
+    "node": "^18.16.0",
+    "npm": "^9.5.1"
   }
 }
