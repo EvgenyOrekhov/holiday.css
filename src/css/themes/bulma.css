@@ -93,7 +93,6 @@
   }
 }
 
-/* stylelint-disable-next-line selector-max-class */
 .holiday-css-light {
   color-scheme: light;
 
@@ -119,7 +118,6 @@
   --link-active-color: var(--light-link-active-color);
 }
 
-/* stylelint-disable-next-line selector-max-class */
 .holiday-css-dark {
   color-scheme: dark;
 
@@ -157,8 +155,7 @@ body {
 pre {
   background-color: var(--code-background-color);
 
-  /* Prism Dracula theme hack */
-  /* stylelint-disable-next-line declaration-no-important */
+  /* stylelint-disable-next-line declaration-no-important -- Prism Dracula theme hack */
   border-radius: 0 !important;
 }
 
@@ -182,7 +179,8 @@ a:visited code {
   color: var(--link-visited-color);
 }
 
-/* stylelint-disable-next-line selector-no-qualifying-type */
+/* stylelint-disable-next-line selector-no-qualifying-type -- `aria-current` can
+be used with any element, so limit the scope to `a` only */
 a:hover,
 a:hover code,
 a[aria-current="page"],
@@ -312,7 +310,6 @@ summary:focus {
   filter: brightness(95%);
 }
 
-/* stylelint-disable-next-line selector-max-specificity */
 button:enabled:hover,
 [type="button"]:enabled:hover,
 [type="color"]:enabled:hover,
@@ -342,7 +339,6 @@ summary:hover {
   border-color: transparent;
 }
 
-/* stylelint-disable-next-line selector-max-specificity */
 [type="submit"]:enabled:hover,
 button:not([type]):enabled:hover {
   background-color: var(--success-hover-color);
@@ -371,7 +367,6 @@ tfoot > tr:not(:first-child) {
   border-top: var(--border-width) solid var(--border-color);
 }
 
-/* stylelint-disable-next-line plugin/stylelint-group-selectors */
 thead > tr:nth-child(even),
 tbody > tr:nth-child(even),
 tfoot > tr:nth-child(even) {
@@ -421,7 +416,6 @@ hr {
   border-width: var(--border-width) 0 0;
 }
 
-/* stylelint-disable-next-line selector-max-specificity */
 :disabled,
 [aria-disabled="true"],
 [type="checkbox"][id]:disabled + [for],
@@ -451,7 +445,6 @@ hr {
   box-shadow: 0 0 0.2rem 0.05rem var(--danger-hover-color);
 }
 
-/* stylelint-disable-next-line selector-max-pseudo-class, selector-max-specificity */
 :invalid:not(form):enabled:hover {
   border-color: var(--danger-hover-color);
 }

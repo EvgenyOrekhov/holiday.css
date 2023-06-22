@@ -40,8 +40,7 @@ table {
 pre {
   padding: 1rem;
 
-  /* Prism hack */
-  /* stylelint-disable declaration-no-important */
+  /* stylelint-disable declaration-no-important -- Prism hack */
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
   /* stylelint-enable */
@@ -219,7 +218,6 @@ legend + label {
   vertical-align: text-bottom;
 }
 
-/* stylelint-disable-next-line plugin/stylelint-group-selectors */
 blockquote > p:first-child,
 fieldset > label:first-child {
   margin-top: 0;
@@ -261,7 +259,6 @@ figure {
   text-align: center;
 }
 
-/* stylelint-disable-next-line selector-max-universal */
 figure > * {
   text-align: initial;
 }
@@ -295,14 +292,13 @@ picture {
 }
 
 /* highlight.js hack */
-/* stylelint-disable-next-line selector-max-class */
 .hljs {
-  /* stylelint-disable-next-line declaration-no-important */
+  /* stylelint-disable-next-line declaration-no-important -- highlight.js hack */
   padding: 1rem !important;
   margin: -1rem;
 }
 
-@media (max-width: 50rem) {
+@media (width <= 50rem) {
   table {
     width: calc(100% + 1rem);
     margin-left: -0.5rem;
@@ -317,8 +313,7 @@ picture {
   pre {
     width: calc(100% + 1rem);
 
-    /* !important is Prism hack */
-    /* stylelint-disable declaration-no-important */
+    /* stylelint-disable declaration-no-important -- Prism hack */
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
     margin-left: -0.5rem !important;
@@ -326,9 +321,8 @@ picture {
   }
 
   /* highlight.js hack */
-  /* stylelint-disable-next-line selector-max-class */
   .hljs {
-    /* stylelint-disable declaration-no-important */
+    /* stylelint-disable declaration-no-important -- highlight.js hack */
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
     /* stylelint-enable */

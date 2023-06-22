@@ -4,10 +4,23 @@
   "rules": {
     "max-nesting-depth": 1,
     "selector-max-attribute": 3,
-    "selector-max-class": 0,
-    "selector-max-pseudo-class": 3,
-    "selector-max-specificity": "0,3,0"
+    "selector-max-class": 1,
+    "selector-max-pseudo-class": 4,
+    "selector-max-specificity": "0,4,0",
+    "selector-max-universal": null
   },
+
+  "overrides": [
+    {
+      "files": [".storybook/fix.css"],
+
+      "rules": {
+        "selector-max-class": null,
+        "declaration-no-important": null,
+        "selector-no-qualifying-type": null
+      }
+    }
+  ],
 
   "ignoreFiles": ["dist/holiday.css"]
 }
