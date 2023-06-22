@@ -1,6 +1,6 @@
 {
   "name": "holiday.css",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A minimalist classless CSS theme with dark mode support. Only 5 KB.",
   "main": "dist/holiday.css",
   "style": "dist/holiday.css",
