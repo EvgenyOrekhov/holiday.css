@@ -1,9 +1,3 @@
-/* stylelint-disable
-  selector-max-class,
-  declaration-no-important,
-  selector-no-qualifying-type
-*/
-
 .sb-show-main.sb-main-padded {
   display: flex;
   padding: unset;
