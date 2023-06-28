@@ -8,7 +8,7 @@ layout: layout
 Have an existing web page? Add this to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.1" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.2" />
 ```
 
 Starting afresh? Use [Quickstart Template]({{ "/template/" | url }}).

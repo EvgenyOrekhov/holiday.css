@@ -511,6 +511,7 @@ label > [type="color"] {
 label {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 0.25rem;
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -535,7 +536,6 @@ fieldset > label:first-child {
 label > [type="checkbox"],
 label > [type="radio"] {
   min-height: 1rem;
-  margin-right: 0.25rem;
 }
 
 blockquote {
