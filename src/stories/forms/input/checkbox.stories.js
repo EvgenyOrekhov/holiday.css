@@ -110,6 +110,29 @@ requiredChecked.args = {
   required: true,
 };
 
+const WithMarkupTemplate = (args) => {
+  const { indeterminate, ...rest } = args;
+
+  return (
+    <label>
+      <input
+        type="checkbox"
+        ref={(element) => {
+          if (element) {
+            element.indeterminate = indeterminate;
+          }
+        }}
+        {...rest}
+      />
+      Checkbox <strong>with some</strong> markup
+    </label>
+  );
+};
+
+export const withMarkup = WithMarkupTemplate.bind({});
+
+withMarkup.storyName = "with markup";
+
 const LabelAfterCheckboxTemplate = (args) => (
   <>
     <input type="checkbox" {...args} />{" "}
@@ -130,4 +153,21 @@ labelAfterCheckboxDisabled.storyName = "<label> after checkbox disabled";
 labelAfterCheckboxDisabled.args = {
   disabled: true,
   id: "label-after-checkbox-disabled",
+};
+
+const LabelWithMarkupAfterCheckboxTemplate = (args) => (
+  <>
+    <input type="checkbox" {...args} />{" "}
+    <label htmlFor={args.id}>
+      Checkbox <strong>with some</strong> markup
+    </label>
+  </>
+);
+
+export const labelWithMarkupAfterCheckbox =
+  LabelWithMarkupAfterCheckboxTemplate.bind({});
+
+labelWithMarkupAfterCheckbox.storyName = "<label> with markup after checkbox";
+labelWithMarkupAfterCheckbox.args = {
+  id: "label-with-markup-after-checkbox",
 };
