@@ -46,6 +46,17 @@ disabled.args = {
   disabled: true,
 };
 
+const WithMarkupTemplate = (args) => (
+  <label>
+    <input type="radio" name="example" {...args} />
+    Radio <strong>with some</strong> markup
+  </label>
+);
+
+export const withMarkup = WithMarkupTemplate.bind({});
+
+withMarkup.storyName = "with markup";
+
 const LabelAfterRadioTemplate = (args) => (
   <>
     <input type="radio" {...args} /> <label htmlFor={args.id}>Radio</label>
@@ -65,4 +76,22 @@ labelAfterRadioDisabled.storyName = "<label> after radio disabled";
 labelAfterRadioDisabled.args = {
   disabled: true,
   id: "label-after-radio-disabled",
+};
+
+const LabelWithMarkupAfterRadioTemplate = (args) => (
+  <>
+    <input type="radio" {...args} />{" "}
+    <label htmlFor={args.id}>
+      Radio <strong>with some</strong> markup
+    </label>
+  </>
+);
+
+export const labelWithMarkupAfterRadio = LabelWithMarkupAfterRadioTemplate.bind(
+  {}
+);
+
+labelWithMarkupAfterRadio.storyName = "<label> with markup after radio";
+labelWithMarkupAfterRadio.args = {
+  id: "label-with-markup-after-radio",
 };
