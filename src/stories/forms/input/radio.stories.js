@@ -88,7 +88,7 @@ const LabelWithMarkupAfterRadioTemplate = (args) => (
 );
 
 export const labelWithMarkupAfterRadio = LabelWithMarkupAfterRadioTemplate.bind(
-  {}
+  {},
 );
 
 labelWithMarkupAfterRadio.storyName = "<label> with markup after radio";
