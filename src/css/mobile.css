@@ -219,6 +219,8 @@ legend + label {
   vertical-align: text-bottom;
 }
 
+/* stylelint-disable-next-line plugin/stylelint-group-selectors -- conflicts
+with no-descending-specificity */
 blockquote > p:first-child,
 fieldset > label:first-child {
   margin-top: 0;

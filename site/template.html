@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -60,11 +60,11 @@
       toggle.addEventListener("colorschemechange", () => {
         document.documentElement.classList.toggle(
           "holiday-css-dark",
-          toggle.mode === "dark"
+          toggle.mode === "dark",
         );
         document.documentElement.classList.toggle(
           "holiday-css-light",
-          toggle.mode === "light"
+          toggle.mode === "light",
         );
       });
     </script>
