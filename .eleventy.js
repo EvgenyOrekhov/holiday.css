@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("320x150.svg");
   eleventyConfig.addPassthroughCopy("70x36.svg");
   eleventyConfig.addPassthroughCopy("768x150.svg");
+  eleventyConfig.addPassthroughCopy("qHeff.jpg");
   eleventyConfig.addPassthroughCopy("nyan-cat.mp4");
   eleventyConfig.addPassthroughCopy("sample.pdf");
   eleventyConfig.addPassthroughCopy("t-rex-roar.mp3");
