@@ -196,16 +196,16 @@ export const bugTests = () => (
     </p>
     <p>
       <kbd>
-        <img src="https://i.stack.imgur.com/qHeff.jpg" alt="" />
+        <img src="https://holidaycss.js.org/qHeff.jpg" alt="" />
       </kbd>
       <kbd>
-        <img src="https://i.stack.imgur.com/qHeff.jpg" alt="" />
+        <img src="https://holidaycss.js.org/qHeff.jpg" alt="" />
       </kbd>
     </p>
     <p>
       <kbd>
-        <img src="https://i.stack.imgur.com/qHeff.jpg" alt="" />
-        <img src="https://i.stack.imgur.com/qHeff.jpg" alt="" />
+        <img src="https://holidaycss.js.org/qHeff.jpg" alt="" />
+        <img src="https://holidaycss.js.org/qHeff.jpg" alt="" />
       </kbd>
     </p>
   </>

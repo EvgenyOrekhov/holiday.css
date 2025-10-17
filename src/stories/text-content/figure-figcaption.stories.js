@@ -29,7 +29,7 @@ figcaptionBelowText.storyName = "<figcaption> below text";
 export const figcaptionAboveImg = () => (
   <figure>
     <figcaption>Example</figcaption>
-    <img src="https://via.placeholder.com/150" alt="Placeholder" />
+    <img src="https://holidaycss.js.org/150.svg" alt="Placeholder" />
   </figure>
 );
 
@@ -37,7 +37,7 @@ figcaptionAboveImg.storyName = "<figcaption> above <img>";
 
 export const figcaptionBelowImg = () => (
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Placeholder" />
+    <img src="https://holidaycss.js.org/150.svg" alt="Placeholder" />
     <figcaption>Example</figcaption>
   </figure>
 );

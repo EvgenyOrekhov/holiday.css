@@ -5,13 +5,13 @@ export default {
 };
 
 export const small = () => (
-  <img src="https://via.placeholder.com/150" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/150.svg" alt="Placeholder" />
 );
 
 small.storyName = "small";
 
 export const big = () => (
-  <img src="https://via.placeholder.com/2048x1080" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/2048x1080.svg" alt="Placeholder" />
 );
 
 big.storyName = "big";

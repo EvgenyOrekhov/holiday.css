@@ -70,7 +70,7 @@ export const image = Template.bind({});
 image.storyName = 'type="image"';
 image.args = {
   type: "image",
-  src: "https://via.placeholder.com/70x36",
+  src: "https://holidaycss.js.org/70x36.svg",
   alt: "Placeholder",
 };
 
@@ -106,7 +106,7 @@ export const imageDisabled = Template.bind({});
 imageDisabled.storyName = 'type="image" disabled';
 imageDisabled.args = {
   type: "image",
-  src: "https://via.placeholder.com/70x36",
+  src: "https://holidaycss.js.org/70x36.svg",
   alt: "Placeholder",
   disabled: true,
 };

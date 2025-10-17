@@ -91,28 +91,28 @@ dropdowns)
 
 ```html
 <picture>
-  <img src="https://via.placeholder.com/1920x1080" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/1920x1080.svg" alt="Placeholder" />
 </picture>
 ```
 
 Result:
 
 <picture>
-  <img src="https://via.placeholder.com/1920x1080" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/1920x1080.svg" alt="Placeholder" />
 </picture>
 
 ### Use `<figure>` to center images
 
 ```html
 <figure>
-  <img src="https://via.placeholder.com/150" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/150.svg" alt="Placeholder" />
 </figure>
 ```
 
 Result:
 
 <figure>
-  <img src="https://via.placeholder.com/150" alt="Placeholder" />
+  <img src="https://holidaycss.js.org/150.svg" alt="Placeholder" />
 </figure>
 
 ### Use `<code>` inside `<pre>` for code blocks
