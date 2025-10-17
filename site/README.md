@@ -22,7 +22,7 @@ Or you can use it as a base and build upon it.
 Just add this to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.4" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.5" />
 ```
 
 ## What makes holiday.css different
