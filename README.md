@@ -38,7 +38,7 @@ See form example: [Bootstrap](https://jsfiddle.net/z16aknfh/3/) vs
 ## Quick Start
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.3" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.11.4" />
 ```
 
 ## Browser compatibility
