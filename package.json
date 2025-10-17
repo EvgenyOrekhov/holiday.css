@@ -11,7 +11,7 @@
     "build:site": "eleventy",
     "version": "npm run build && cross-env-shell 'replace \"holiday\\.css@\\d+\\.\\d+\\.\\d+\" holiday.css@$npm_package_version README.md site/ -r' && git add dist/ site/ README.md",
     "postversion": "git push && git push --tags && npm publish",
-    "prepare": "husky install",
+    "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "chromatic --exit-zero-on-changes"
@@ -45,7 +45,7 @@
     "cross-env": "^7.0.3",
     "highlight.js": "^11.9.0",
     "html-webpack-plugin": "^5.6.4",
-    "husky": "^8.0.3",
+    "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "modern-normalize": "^2.0.0",
     "prettier": "^3.0.3",
