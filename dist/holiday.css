@@ -528,6 +528,8 @@ legend + label {
   vertical-align: text-bottom;
 }
 
+/* stylelint-disable-next-line plugin/stylelint-group-selectors -- conflicts
+with no-descending-specificity */
 blockquote > p:first-child,
 fieldset > label:first-child {
   margin-top: 0;
@@ -1028,7 +1030,10 @@ input:not([type]):disabled,
 [type="url"]:disabled,
 [type="week"]:disabled,
 textarea:disabled,
-select:disabled {
+select:disabled,
+thead > tr:nth-child(even),
+tbody > tr:nth-child(even),
+tfoot > tr:nth-child(even) {
   background-color: var(--highlighted-background-color);
 }
 
@@ -1131,12 +1136,6 @@ tfoot > tr:not(:first-child) {
   border-top: var(--border-width) solid var(--border-color);
 }
 
-thead > tr:nth-child(even),
-tbody > tr:nth-child(even),
-tfoot > tr:nth-child(even) {
-  background-color: var(--highlighted-background-color);
-}
-
 kbd {
   background-color: var(--highlighted-background-color);
   border: var(--border-width) solid var(--border-hover-color);
@@ -1147,7 +1146,8 @@ kbd {
 kbd kbd {
   border: unset;
   border-radius: 0;
-  box-shadow: inset 0 -0.2rem 0 0 var(--background-color),
+  box-shadow:
+    inset 0 -0.2rem 0 0 var(--background-color),
     inset 0 0.2rem 0 0 var(--background-color);
 }
 
