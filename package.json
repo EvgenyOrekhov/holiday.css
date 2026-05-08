@@ -31,7 +31,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@twinscom/stylelint-config": "^10.0.0",
-    "chromatic": "^9.1.0",
+    "chromatic": "^16.9.1",
     "cross-env": "^10.1.0",
     "highlight.js": "^11.9.0",
     "husky": "^9.1.7",
@@ -39,8 +39,8 @@
     "modern-normalize": "^2.0.0",
     "prettier": "^3.0.3",
     "prismjs": "^1.29.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "replace": "^1.2.2",
     "stylelint": "^15.11.0"
   },
