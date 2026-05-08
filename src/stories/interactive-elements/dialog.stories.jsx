@@ -33,7 +33,7 @@ const ShowModalTemplate = (args) => {
   useEffect(() => {
     console.log(args.open);
     if (args.open) {
-      dialogElement.current.showModal();
+      dialogElement.current?.showModal();
     }
   }, [dialogElement, args.open]);
 
