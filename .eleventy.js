@@ -1,4 +1,4 @@
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("favicon-16x16.png");
@@ -22,4 +22,4 @@ module.exports = function (eleventyConfig) {
       input: "site",
     },
   };
-};
+}
