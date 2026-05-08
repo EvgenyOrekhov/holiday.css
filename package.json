@@ -43,7 +43,7 @@
     "highlight.js": "^11.11.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.3",
-    "modern-normalize": "^2.0.0",
+    "modern-normalize": "^3.0.1",
     "prettier": "^3.0.3",
     "prismjs": "^1.30.0",
     "react": "^19.2.6",
