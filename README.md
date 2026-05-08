@@ -1,4 +1,4 @@
-# holiday.css :tada:
+# holiday.css 🎉
 
 [![npm version](https://img.shields.io/npm/v/holiday.css.svg?style=flat-square)](https://www.npmjs.com/package/holiday.css)
 [![CI](https://github.com/EvgenyOrekhov/holiday.css/workflows/CI/badge.svg?event=push)](https://github.com/EvgenyOrekhov/holiday.css/actions?query=workflow%3ACI+event%3Apush)
