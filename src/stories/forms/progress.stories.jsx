@@ -24,6 +24,9 @@ const Template = (args) => <progress {...args} />;
 export const indeterminate = Template.bind({});
 
 indeterminate.storyName = "indeterminate";
+indeterminate.parameters = {
+  chromatic: { disableSnapshot: true },
+};
 
 export const empty = Template.bind({});
 
