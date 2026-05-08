@@ -1,2 +1,5 @@
 node_modules/
 _site/
+
+*storybook.log
+storybook-static
