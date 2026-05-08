@@ -1,0 +1,18 @@
+.sb-show-main.sb-main-padded {
+  display: flex;
+  padding: unset;
+  margin: 0 auto;
+}
+
+.sb-show-main.sb-main-fullscreen {
+  width: unset;
+  max-width: unset;
+}
+
+.docs-story {
+  background-color: var(--background-color) !important;
+}
+
+select[class^="css-"] {
+  color: var(--text-color);
+}
