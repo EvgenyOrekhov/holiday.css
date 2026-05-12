@@ -36,7 +36,7 @@
     "@storybook/addon-a11y": "^10.3.6",
     "@storybook/addon-docs": "^10.3.6",
     "@storybook/react-vite": "^10.3.6",
-    "@twinscom/stylelint-config": "^10.0.0",
+    "@twinscom/stylelint-config": "^16.0.0",
     "@vitejs/plugin-react": "^6.0.1",
     "chromatic": "^16.10.0",
     "cross-env": "^10.1.0",
@@ -50,7 +50,7 @@
     "react-dom": "^19.2.6",
     "replace": "^1.2.2",
     "storybook": "^10.3.6",
-    "stylelint": "^15.11.0",
+    "stylelint": "^17.11.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.12"
   },
