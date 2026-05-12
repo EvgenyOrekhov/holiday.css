@@ -3,7 +3,7 @@
 }
 
 html {
-  height: 100%;
+  block-size: 100%;
   line-height: 1.4;
 }
 
@@ -16,9 +16,9 @@ h3 {
 body {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 1rem);
-  max-width: var(--max-body-width);
-  min-height: 100%;
+  inline-size: calc(100% - 1rem);
+  max-inline-size: var(--max-body-width);
+  min-block-size: 100%;
   margin: 0 auto;
   overflow-wrap: break-word;
 }
@@ -28,23 +28,26 @@ main {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100vh;
+  max-inline-size: 100%;
+  max-block-size: 100dvb;
 }
 
 table {
   display: block;
-  overflow-x: auto;
+  overflow-inline: auto;
+  scrollbar-gutter: auto;
+  overscroll-behavior-inline: auto;
 }
 
 pre {
   padding: 1rem;
 
   /* stylelint-disable declaration-no-important -- Prism hack */
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+  margin-block: 1rem !important;
   /* stylelint-enable */
-  overflow-x: auto;
+  overflow-inline: auto;
+  scrollbar-gutter: auto;
+  overscroll-behavior-inline: auto;
   line-height: 1.15;
 }
 
@@ -58,39 +61,42 @@ pre code {
 
 kbd {
   display: inline-flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  min-width: 1.5rem;
-  max-width: calc(100% - 0.1rem * 2);
-  min-height: 1.5rem;
+  min-inline-size: 1.5rem;
+  max-inline-size: calc(100% - 0.1rem * 2);
+  min-block-size: 1.5rem;
   padding: 0 0.25rem;
   margin: 0 0.1rem;
   overflow: hidden;
 }
 
 kbd kbd {
-  min-width: unset;
-  min-height: unset;
+  min-inline-size: unset;
+  min-block-size: unset;
   padding: 0;
   margin: 0;
 }
 
 kbd kbd:not(:first-child) {
-  padding-left: 0.25rem;
+  padding-inline-start: 0.25rem;
 }
 
 kbd kbd:not(:last-child) {
-  padding-right: 0.25rem;
+  padding-inline-end: 0.25rem;
 }
 
 iframe {
-  width: 100%;
+  inline-size: 100%;
   border: none;
 }
 
 dialog {
-  max-height: calc(100% - 1rem);
-  overflow-y: auto;
+  max-block-size: calc(100% - 1rem);
+  overflow-block: auto;
+  scrollbar-gutter: auto;
+  overscroll-behavior-block: contain;
   border: none;
 }
 
@@ -98,19 +104,19 @@ audio,
 video,
 embed,
 object {
-  width: 100%;
+  inline-size: 100%;
 }
 
 [type="range"],
 meter,
 progress {
   display: block;
-  width: 100%;
-  height: 2.25rem;
+  inline-size: 100%;
+  block-size: 2.25rem;
 }
 
 [type="color"] {
-  height: 2.25rem;
+  block-size: 2.25rem;
   vertical-align: top;
 }
 
@@ -124,6 +130,8 @@ button,
   padding: 0.5rem;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`input` only */
 input:not([type]),
 [type="email"],
 [type="hidden"],
@@ -134,18 +142,18 @@ input:not([type]),
 [type="text"],
 [type="url"] {
   display: block;
-  width: 100%;
-  height: 2.25rem;
+  inline-size: 100%;
+  block-size: 2.25rem;
   padding: 0.5rem;
 }
 
 [type="file"] {
   display: block;
-  width: 100%;
-  height: 2.25rem;
+  inline-size: 100%;
+  block-size: 2.25rem;
 
   /* Works in Chrome (but poorly), doesn't work in Firefox */
-  padding-top: 0.35rem;
+  padding-block-start: 0.35rem;
 }
 
 [type="date"],
@@ -154,8 +162,8 @@ input:not([type]),
 [type="month"],
 [type="week"] {
   display: block;
-  width: 100%;
-  height: 2.25rem;
+  inline-size: 100%;
+  block-size: 2.25rem;
 
   /* 0.4rem is a hack for mobile Chrome */
   padding: 0.4rem 0.5rem;
@@ -163,20 +171,22 @@ input:not([type]),
 
 output {
   display: block;
-  width: 100%;
+  inline-size: 100%;
 }
 
 textarea {
   display: block;
-  width: 100%;
-  min-height: 8em;
+  inline-size: 100%;
+  /* stylelint-disable-next-line unit-disallowed-list -- use `em` intentionally
+  to scale with the direct parent */
+  min-block-size: 8em;
   padding: 0.5rem;
 }
 
 select {
   display: block;
-  width: 100%;
-  min-height: 2.25rem;
+  inline-size: 100%;
+  min-block-size: 2.25rem;
 
   /* "padding: 0.5rem;" messes up the height of selects */
   padding: 0.45rem 0.5rem;
@@ -196,7 +206,7 @@ fieldset {
 }
 
 label > [type="color"] {
-  margin-left: 0.25rem;
+  margin-inline-start: 0.25rem;
 }
 
 label {
@@ -204,18 +214,19 @@ label {
   flex-wrap: wrap;
   column-gap: 0.25rem;
   align-items: center;
-  width: 100%;
-  margin-top: 1rem;
+  inline-size: 100%;
+  margin-block-start: 1rem;
 }
 
 legend + label {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 [type="checkbox"] + label,
 [type="radio"] + label {
   display: inline-flex;
-  width: unset;
+  flex-wrap: wrap;
+  inline-size: unset;
   vertical-align: text-bottom;
 }
 
@@ -223,26 +234,25 @@ legend + label {
 with no-descending-specificity */
 blockquote > p:first-child,
 fieldset > label:first-child {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 label > [type="checkbox"],
 label > [type="radio"] {
-  min-height: 1rem;
+  min-block-size: 1rem;
 }
 
 blockquote {
   padding: 1rem 2rem;
-  margin-right: 0;
-  margin-left: 0;
+  margin-inline: 0;
 }
 
 blockquote > p:last-child {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 footer {
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 
 figure > figcaption,
@@ -251,13 +261,12 @@ body > header {
 }
 
 body > footer {
-  padding-bottom: 1rem;
+  padding-block-end: 1rem;
   text-align: center;
 }
 
 figure {
-  margin-right: 0;
-  margin-left: 0;
+  margin-inline: 0;
   text-align: center;
 }
 
@@ -272,24 +281,23 @@ dt,
 [aria-current="date"],
 [aria-current="time"],
 [aria-current="true"] {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-block: 0.5rem;
 }
 
 picture {
   position: relative;
-  left: calc(-50vw + 50%);
+  inset-inline-start: calc(-50vi + 50%);
   display: block;
-  width: 100vw;
-  max-height: 100vh;
+  inline-size: 100vi;
+  max-block-size: 100dvb;
   text-align: center;
 }
 
@@ -302,33 +310,29 @@ picture {
 
 @media (width <= 50rem) {
   table {
-    width: calc(100% + 1rem);
-    margin-left: -0.5rem;
+    inline-size: calc(100% + 1rem);
+    margin-inline-start: -0.5rem;
   }
 
   video {
-    width: calc(100% + 1rem);
-    max-height: 100vh;
-    margin-left: -0.5rem;
+    inline-size: calc(100% + 1rem);
+    max-block-size: 100dvb;
+    margin-inline-start: -0.5rem;
   }
 
   pre {
-    width: calc(100% + 1rem);
+    inline-size: calc(100% + 1rem);
 
     /* stylelint-disable declaration-no-important -- Prism hack */
-    padding-right: 0.5rem !important;
-    padding-left: 0.5rem !important;
-    margin-left: -0.5rem !important;
+    padding-inline: 0.5rem !important;
+    margin-inline-start: -0.5rem !important;
     /* stylelint-enable */
   }
 
   /* highlight.js hack */
   .hljs {
-    /* stylelint-disable declaration-no-important -- highlight.js hack */
-    padding-right: 0.5rem !important;
-    padding-left: 0.5rem !important;
-    /* stylelint-enable */
-
+    /* stylelint-disable-next-line declaration-no-important -- highlight.js hack */
+    padding-inline: 0.5rem !important;
     margin: -1rem -0.5rem;
   }
 }

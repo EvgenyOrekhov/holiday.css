@@ -179,11 +179,18 @@ a:visited code {
   color: var(--link-visited-color);
 }
 
+@media (hover: hover) {
+  a:hover,
+  a:hover code {
+    color: var(--link-hover-color);
+  }
+}
+
 /* stylelint-disable-next-line selector-no-qualifying-type -- `aria-current` can
 be used with any element, so limit the scope to `a` only */
-a:hover,
-a:hover code,
 a[aria-current="page"],
+/* stylelint-disable-next-line selector-no-qualifying-type -- `aria-current` can
+be used with any element, so limit the scope to `a` only */
 a[aria-current="page"] code {
   color: var(--link-hover-color);
 }
@@ -215,6 +222,8 @@ summary {
   border-radius: var(--border-radius);
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`input` only */
 input:not([type]),
 [type="date"],
 [type="datetime-local"],
@@ -243,12 +252,16 @@ input:not([type]),
 }
 
 [type="submit"],
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`button` only */
 button:not([type]) {
   color: var(--success-text-color);
   background-color: var(--success-color);
   border: var(--border-width) solid transparent;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`input` only */
 input:not([type]):disabled,
 [type="date"]:disabled,
 [type="datetime-local"]:disabled,
@@ -280,72 +293,88 @@ select:enabled,
   background-color: var(--background-color);
 }
 
-button:focus,
-[type="button"]:focus,
-[type="color"]:focus,
-[type="reset"]:focus,
-[type="submit"]:focus,
-button:not([type]):focus,
-input:not([type]):focus,
-[type="date"]:focus,
-[type="datetime-local"]:focus,
-[type="email"]:focus,
-[type="hidden"]:focus,
-[type="image"]:focus,
-[type="month"]:focus,
-[type="number"]:focus,
-[type="password"]:focus,
-[type="search"]:focus,
-[type="tel"]:focus,
-[type="text"]:focus,
-[type="time"]:focus,
-[type="url"]:focus,
-[type="week"]:focus,
-textarea:focus,
-select:focus,
-summary:focus {
-  border-color: var(--border-hover-color);
+button:focus-visible,
+[type="button"]:focus-visible,
+[type="color"]:focus-visible,
+[type="reset"]:focus-visible,
+[type="submit"]:focus-visible,
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`button` only */
+button:not([type]):focus-visible,
+/* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+`input` only */
+input:not([type]):focus-visible,
+[type="date"]:focus-visible,
+[type="datetime-local"]:focus-visible,
+[type="email"]:focus-visible,
+[type="hidden"]:focus-visible,
+[type="image"]:focus-visible,
+[type="month"]:focus-visible,
+[type="number"]:focus-visible,
+[type="password"]:focus-visible,
+[type="search"]:focus-visible,
+[type="tel"]:focus-visible,
+[type="text"]:focus-visible,
+[type="time"]:focus-visible,
+[type="url"]:focus-visible,
+[type="week"]:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
   outline: none;
+  border-color: var(--border-hover-color);
   box-shadow: 0 0 0.2rem 0.01rem var(--border-hover-color);
 }
 
-[type="image"]:enabled:hover {
-  filter: brightness(95%);
+@media (hover: hover) {
+  [type="image"]:enabled:hover {
+    filter: brightness(95%);
+  }
 }
 
-button:enabled:hover,
-[type="button"]:enabled:hover,
-[type="color"]:enabled:hover,
-input:not([type]):enabled:hover,
-[type="date"]:enabled:hover,
-[type="datetime-local"]:enabled:hover,
-[type="email"]:enabled:hover,
-[type="hidden"]:enabled:hover,
-[type="month"]:enabled:hover,
-[type="number"]:enabled:hover,
-[type="password"]:enabled:hover,
-[type="range"]:enabled:hover,
-[type="search"]:enabled:hover,
-[type="tel"]:enabled:hover,
-[type="text"]:enabled:hover,
-[type="time"]:enabled:hover,
-[type="url"]:enabled:hover,
-[type="week"]:enabled:hover,
-textarea:enabled:hover,
-select:enabled:hover,
-summary:hover {
-  border-color: var(--border-hover-color);
+@media (hover: hover) {
+  button:enabled:hover,
+  [type="button"]:enabled:hover,
+  [type="color"]:enabled:hover,
+  /* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+  `input` only */
+  input:not([type]):enabled:hover,
+  [type="date"]:enabled:hover,
+  [type="datetime-local"]:enabled:hover,
+  [type="email"]:enabled:hover,
+  [type="hidden"]:enabled:hover,
+  [type="month"]:enabled:hover,
+  [type="number"]:enabled:hover,
+  [type="password"]:enabled:hover,
+  [type="range"]:enabled:hover,
+  [type="search"]:enabled:hover,
+  [type="tel"]:enabled:hover,
+  [type="text"]:enabled:hover,
+  [type="time"]:enabled:hover,
+  [type="url"]:enabled:hover,
+  [type="week"]:enabled:hover,
+  textarea:enabled:hover,
+  select:enabled:hover,
+  summary:hover {
+    border-color: var(--border-hover-color);
+  }
 }
 
-[type="reset"]:enabled:hover {
-  background-color: var(--danger-hover-color);
-  border-color: transparent;
+@media (hover: hover) {
+  [type="reset"]:enabled:hover {
+    background-color: var(--danger-hover-color);
+    border-color: transparent;
+  }
 }
 
-[type="submit"]:enabled:hover,
-button:not([type]):enabled:hover {
-  background-color: var(--success-hover-color);
-  border-color: transparent;
+@media (hover: hover) {
+  [type="submit"]:enabled:hover,
+  /* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
+  `button` only */
+  button:not([type]):enabled:hover {
+    background-color: var(--success-hover-color);
+    border-color: transparent;
+  }
 }
 
 table {
@@ -353,21 +382,21 @@ table {
 }
 
 caption {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 thead {
-  border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
+  border-block-end: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 tfoot {
-  border-top: calc(var(--border-width) * 2) solid var(--border-color);
+  border-block-start: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 thead > tr:not(:first-child),
 tbody > tr:not(:first-child),
 tfoot > tr:not(:first-child) {
-  border-top: var(--border-width) solid var(--border-color);
+  border-block-start: var(--border-width) solid var(--border-color);
 }
 
 kbd {
@@ -386,7 +415,7 @@ kbd kbd {
 }
 
 [open] summary {
-  margin-bottom: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 
 del {
@@ -400,12 +429,12 @@ ins {
 
 blockquote {
   background-color: var(--highlighted-background-color);
-  border-left: 0.5rem solid var(--border-color);
+  border-inline-start: 0.5rem solid var(--border-color);
 }
 
 body > footer {
-  padding-top: 1rem;
-  border-top: var(--border-width) solid var(--border-color);
+  padding-block-start: 1rem;
+  border-block-start: var(--border-width) solid var(--border-color);
 }
 
 hr {
@@ -418,7 +447,7 @@ hr {
 [aria-disabled="true"],
 [type="checkbox"][id]:disabled + [for],
 [type="radio"][id]:disabled + [for] {
-  opacity: 0.5;
+  opacity: 50%;
 }
 
 :invalid:not(form) {
@@ -437,12 +466,14 @@ hr {
   box-shadow: none;
 }
 
-:invalid:not([type="checkbox"]):focus {
-  border-color: var(--danger-hover-color);
+:invalid:not([type="checkbox"]):focus-visible {
   outline: none;
+  border-color: var(--danger-hover-color);
   box-shadow: 0 0 0.2rem 0.05rem var(--danger-hover-color);
 }
 
-:invalid:not(form):enabled:hover {
-  border-color: var(--danger-hover-color);
+@media (hover: hover) {
+  :invalid:not(form):enabled:hover {
+    border-color: var(--danger-hover-color);
+  }
 }
