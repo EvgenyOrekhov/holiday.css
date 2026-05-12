@@ -17,10 +17,7 @@
       }
     ],
 
-    "defensive-css/require-at-layer": null,
-
-    "property-layout-mappings": null,
-    "unit-layout-mappings": null
+    "defensive-css/require-at-layer": null
   },
 
   "overrides": [

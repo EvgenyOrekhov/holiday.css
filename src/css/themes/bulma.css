@@ -386,17 +386,17 @@ caption {
 }
 
 thead {
-  border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
+  border-block-end: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 tfoot {
-  border-top: calc(var(--border-width) * 2) solid var(--border-color);
+  border-block-start: calc(var(--border-width) * 2) solid var(--border-color);
 }
 
 thead > tr:not(:first-child),
 tbody > tr:not(:first-child),
 tfoot > tr:not(:first-child) {
-  border-top: var(--border-width) solid var(--border-color);
+  border-block-start: var(--border-width) solid var(--border-color);
 }
 
 kbd {
@@ -415,7 +415,7 @@ kbd kbd {
 }
 
 [open] summary {
-  margin-bottom: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 
 del {
@@ -429,12 +429,12 @@ ins {
 
 blockquote {
   background-color: var(--highlighted-background-color);
-  border-left: 0.5rem solid var(--border-color);
+  border-inline-start: 0.5rem solid var(--border-color);
 }
 
 body > footer {
-  padding-top: 1rem;
-  border-top: var(--border-width) solid var(--border-color);
+  padding-block-start: 1rem;
+  border-block-start: var(--border-width) solid var(--border-color);
 }
 
 hr {
