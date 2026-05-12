@@ -10,8 +10,17 @@
     "selector-max-universal": null,
 
     "scales/line-heights": [1.15, 1.4],
+    "scales/space": [
+      {
+        "scale": [-1000, 0.1, 0.25, 0.35, 0.4, 0.45, 0.5, 0.75, 1, 2, 4],
+        "units": ["rem"]
+      }
+    ],
 
-    "defensive-css/require-at-layer": null
+    "defensive-css/require-at-layer": null,
+
+    "property-layout-mappings": null,
+    "unit-layout-mappings": null
   },
 
   "overrides": [
