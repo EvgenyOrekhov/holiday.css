@@ -168,6 +168,27 @@ pre code {
   background-color: inherit;
 }
 
+kbd {
+  background-color: var(--highlighted-background-color);
+  border: var(--border-width) solid var(--border-hover-color);
+  border-radius: var(--border-radius);
+  box-shadow: inset 0 0 0 0.2rem var(--background-color);
+}
+
+kbd kbd {
+  border: unset;
+  border-radius: 0;
+  box-shadow:
+    inset 0 -0.2rem 0 0 var(--background-color),
+    inset 0 0.2rem 0 0 var(--background-color);
+}
+
+mark code,
+mark kbd {
+  color: inherit;
+  background-color: inherit;
+}
+
 a,
 a code {
   color: var(--link-color);
@@ -397,21 +418,6 @@ thead > tr:not(:first-child),
 tbody > tr:not(:first-child),
 tfoot > tr:not(:first-child) {
   border-block-start: var(--border-width) solid var(--border-color);
-}
-
-kbd {
-  background-color: var(--highlighted-background-color);
-  border: var(--border-width) solid var(--border-hover-color);
-  border-radius: var(--border-radius);
-  box-shadow: inset 0 0 0 0.2rem var(--background-color);
-}
-
-kbd kbd {
-  border: unset;
-  border-radius: 0;
-  box-shadow:
-    inset 0 -0.2rem 0 0 var(--background-color),
-    inset 0 0.2rem 0 0 var(--background-color);
 }
 
 [open] summary {
