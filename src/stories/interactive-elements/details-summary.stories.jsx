@@ -62,3 +62,26 @@ multipleOpen.storyName = "multiple open";
 multipleOpen.args = {
   open: true,
 };
+
+export const ExclusiveAccordion = () => (
+  <>
+    <details name="exclusive-accordion-example">
+      <summary>Example</summary>
+      Example
+    </details>
+    <details name="exclusive-accordion-example" open>
+      <summary>Example</summary>
+      Example
+    </details>
+    <details name="exclusive-accordion-example">
+      <summary>Example</summary>
+      Example
+    </details>
+    <details name="exclusive-accordion-example">
+      <summary>Example</summary>
+      Example
+    </details>
+  </>
+);
+
+ExclusiveAccordion.storyName = "exclusive accordion";
