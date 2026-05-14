@@ -205,6 +205,11 @@ fieldset {
   padding: 0.75rem;
 }
 
+fieldset + fieldset,
+footer {
+  margin-block-start: 1rem;
+}
+
 label > [type="color"] {
   margin-inline-start: 0.25rem;
 }
@@ -233,7 +238,11 @@ legend + label {
 /* stylelint-disable-next-line plugin/stylelint-group-selectors -- conflicts
 with no-descending-specificity */
 blockquote > p:first-child,
-fieldset > label:first-child {
+fieldset > label:first-child,
+fieldset > legend + [type="checkbox"] + label,
+fieldset > legend + [type="radio"] + label,
+fieldset > [type="checkbox"]:first-child + label,
+fieldset > [type="radio"]:first-child + label {
   margin-block-start: 0;
 }
 
@@ -249,10 +258,6 @@ blockquote {
 
 blockquote > p:last-child {
   margin-block-end: 0;
-}
-
-footer {
-  margin-block-start: 1rem;
 }
 
 figure > figcaption,
