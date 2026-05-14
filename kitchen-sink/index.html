@@ -1384,8 +1384,41 @@ H   H EEEEE LLLLL LLLLL  OOO  ,,    W W   OOO  R   R LLLLL DDDD  !!
     <label for="label-with-markup-after-checkbox-example"
       >Label <strong>with some</strong> markup after checkbox</label
     >
-    <input type="color" />
-    <input type="color" disabled />
+    <fieldset>
+      <legend>Color</legend>
+      <input type="color" />
+      <label>
+        <code>alpha</code>
+        <input type="color" alpha />
+      </label>
+      <label>
+        <code>colorspace="display-p3"</code>
+        <input type="color" colorspace="display-p3" />
+      </label>
+      <label>
+        <code>alpha colorspace="display-p3"</code>
+        <input type="color" alpha colorspace="display-p3" />
+      </label>
+      <label>
+        <code>list</code>
+        <input type="color" list="preset-colors" />
+      </label>
+      <datalist id="preset-colors">
+        <option value="#ff0000">Red</option>
+        <option value="#00ff00">Green</option>
+        <option value="#0000ff">Blue</option>
+        <option value="#ffffff">White</option>
+        <option value="#000000">Black</option>
+      </datalist>
+      <label>
+        Disabled
+        <input type="color" disabled />
+      </label>
+      <label>
+        Readonly
+        <input type="color" readonly />
+      </label>
+    </fieldset>
     <input type="date" />
     <input type="date" value="2004-09-22" />
     <input type="date" value="2004-09-22" disabled />
