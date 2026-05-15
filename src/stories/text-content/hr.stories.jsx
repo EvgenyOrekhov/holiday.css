@@ -4,6 +4,7 @@ export default {
   title: "Text content/<hr>",
 };
 
-export const hr = () => <hr />;
-
-hr.storyName = "<hr>";
+export const hr = {
+  render: () => <hr />,
+  name: "<hr>",
+};

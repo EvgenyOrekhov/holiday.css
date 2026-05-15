@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<var>",
 };
 
-export const varTag = () => <var>Example</var>;
-
-varTag.storyName = "<var>";
+export const varTag = {
+  render: () => <var>Example</var>,
+  name: "<var>",
+};

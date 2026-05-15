@@ -4,12 +4,14 @@ export default {
   title: "Inline text semantics/<br>",
 };
 
-export const br = () => (
-  <>
-    Example
-    <br />
-    Example
-  </>
-);
+export const br = {
+  render: () => (
+    <>
+      Example
+      <br />
+      Example
+    </>
+  ),
 
-br.storyName = "<br>";
+  name: "<br>",
+};

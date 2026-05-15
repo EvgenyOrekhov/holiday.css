@@ -19,15 +19,18 @@ const FieldsetTemplate = (args) => (
   </fieldset>
 );
 
-export const fieldset = FieldsetTemplate.bind({});
+export const fieldset = {
+  render: FieldsetTemplate,
+  name: "<fieldset>",
+};
 
-fieldset.storyName = "<fieldset>";
+export const fieldsetDisabled = {
+  render: FieldsetTemplate,
+  name: "<fieldset> disabled",
 
-export const fieldsetDisabled = FieldsetTemplate.bind({});
-
-fieldsetDisabled.storyName = "<fieldset> disabled";
-fieldsetDisabled.args = {
-  disabled: true,
+  args: {
+    disabled: true,
+  },
 };
 
 const FieldsetWithLegendTemplate = (args) => (
@@ -37,67 +40,78 @@ const FieldsetWithLegendTemplate = (args) => (
   </fieldset>
 );
 
-export const fieldsetWithLegend = FieldsetWithLegendTemplate.bind({});
-
-fieldsetWithLegend.storyName = "<fieldset> with <legend>";
-
-export const fieldsetWithLegendDisabled = FieldsetWithLegendTemplate.bind({});
-
-fieldsetWithLegendDisabled.storyName = "<fieldset> with <legend> disabled";
-fieldsetWithLegendDisabled.args = {
-  disabled: true,
+export const fieldsetWithLegend = {
+  render: FieldsetWithLegendTemplate,
+  name: "<fieldset> with <legend>",
 };
 
-export const FieldsetWithRadios = (args) => (
-  <fieldset {...args}>
-    <input type="radio" id="choice-1" name="choice" value="1" />{" "}
-    <label for="choice-1">Choice 1</label>
-    <br />
-    <input type="radio" id="choice-2" name="choice" value="2" />{" "}
-    <label for="choice-2">Choice 2</label>
-    <br />
-    <input type="radio" id="choice-3" name="choice" value="3" />{" "}
-    <label for="choice-3">Choice 3</label>
-  </fieldset>
-);
+export const fieldsetWithLegendDisabled = {
+  render: FieldsetWithLegendTemplate,
+  name: "<fieldset> with <legend> disabled",
 
-export const FieldsetWithRadiosAndLegend = (args) => (
-  <fieldset {...args}>
-    <legend>Radio</legend>
-    <input type="radio" id="choice-1" name="choice" value="1" />{" "}
-    <label for="choice-1">Choice 1</label>
-    <br />
-    <input type="radio" id="choice-2" name="choice" value="2" />{" "}
-    <label for="choice-2">Choice 2</label>
-    <br />
-    <input type="radio" id="choice-3" name="choice" value="3" />{" "}
-    <label for="choice-3">Choice 3</label>
-  </fieldset>
-);
+  args: {
+    disabled: true,
+  },
+};
 
-export const FieldsetWithCheckboxes = (args) => (
-  <fieldset {...args}>
-    <input type="checkbox" id="check-1" name="check-1" value="check1" />{" "}
-    <label for="check-1">Check 1</label>
-    <br />
-    <input type="checkbox" id="check-2" name="check-2" value="check2" />{" "}
-    <label for="check-2">Check 2</label>
-    <br />
-    <input type="checkbox" id="check-3" name="check-3" value="check3" />{" "}
-    <label for="check-3">Check 3</label>
-  </fieldset>
-);
+export const FieldsetWithRadios = {
+  render: (args) => (
+    <fieldset {...args}>
+      <input type="radio" id="choice-1" name="choice" value="1" />{" "}
+      <label for="choice-1">Choice 1</label>
+      <br />
+      <input type="radio" id="choice-2" name="choice" value="2" />{" "}
+      <label for="choice-2">Choice 2</label>
+      <br />
+      <input type="radio" id="choice-3" name="choice" value="3" />{" "}
+      <label for="choice-3">Choice 3</label>
+    </fieldset>
+  ),
+};
 
-export const FieldsetWithCheckboxesAndLegend = (args) => (
-  <fieldset {...args}>
-    <legend>Checkbox</legend>
-    <input type="checkbox" id="check-1" name="check-1" value="check1" />{" "}
-    <label for="check-1">Check 1</label>
-    <br />
-    <input type="checkbox" id="check-2" name="check-2" value="check2" />{" "}
-    <label for="check-2">Check 2</label>
-    <br />
-    <input type="checkbox" id="check-3" name="check-3" value="check3" />{" "}
-    <label for="check-3">Check 3</label>
-  </fieldset>
-);
+export const FieldsetWithRadiosAndLegend = {
+  render: (args) => (
+    <fieldset {...args}>
+      <legend>Radio</legend>
+      <input type="radio" id="choice-1" name="choice" value="1" />{" "}
+      <label for="choice-1">Choice 1</label>
+      <br />
+      <input type="radio" id="choice-2" name="choice" value="2" />{" "}
+      <label for="choice-2">Choice 2</label>
+      <br />
+      <input type="radio" id="choice-3" name="choice" value="3" />{" "}
+      <label for="choice-3">Choice 3</label>
+    </fieldset>
+  ),
+};
+
+export const FieldsetWithCheckboxes = {
+  render: (args) => (
+    <fieldset {...args}>
+      <input type="checkbox" id="check-1" name="check-1" value="check1" />{" "}
+      <label for="check-1">Check 1</label>
+      <br />
+      <input type="checkbox" id="check-2" name="check-2" value="check2" />{" "}
+      <label for="check-2">Check 2</label>
+      <br />
+      <input type="checkbox" id="check-3" name="check-3" value="check3" />{" "}
+      <label for="check-3">Check 3</label>
+    </fieldset>
+  ),
+};
+
+export const FieldsetWithCheckboxesAndLegend = {
+  render: (args) => (
+    <fieldset {...args}>
+      <legend>Checkbox</legend>
+      <input type="checkbox" id="check-1" name="check-1" value="check1" />{" "}
+      <label for="check-1">Check 1</label>
+      <br />
+      <input type="checkbox" id="check-2" name="check-2" value="check2" />{" "}
+      <label for="check-2">Check 2</label>
+      <br />
+      <input type="checkbox" id="check-3" name="check-3" value="check3" />{" "}
+      <label for="check-3">Check 3</label>
+    </fieldset>
+  ),
+};

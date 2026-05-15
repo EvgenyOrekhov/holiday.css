@@ -4,52 +4,63 @@ export default {
   title: "Forms/<label>",
 };
 
-export const label = () => <label>Example</label>;
+export const label = {
+  render: () => <label>Example</label>,
+  name: "<label>",
+};
 
-label.storyName = "<label>";
+export const inputInsideLabel = {
+  render: () => (
+    <label>
+      Example
+      <input />
+    </label>
+  ),
 
-export const inputInsideLabel = () => (
-  <label>
-    Example
-    <input />
-  </label>
-);
+  name: "<input> inside <label>",
+};
 
-inputInsideLabel.storyName = "<input> inside <label>";
+export const inputAfterLabel = {
+  render: () => (
+    <>
+      <label htmlFor="label-example">Example</label>
+      <input id="label-example" />
+    </>
+  ),
 
-export const inputAfterLabel = () => (
-  <>
-    <label htmlFor="label-example">Example</label>
-    <input id="label-example" />
-  </>
-);
+  name: "<input> after <label>",
+};
 
-inputAfterLabel.storyName = "<input> after <label>";
-
-export const labelWithMarkup = () => (
-  <label>
-    Example label <strong>with some</strong> markup
-  </label>
-);
-
-labelWithMarkup.storyName = "<label> with markup";
-
-export const inputInsideLabelWithMarkup = () => (
-  <label>
-    Example label <strong>with some</strong> markup
-    <input />
-  </label>
-);
-
-inputInsideLabelWithMarkup.storyName = "<input> inside <label> with markup";
-
-export const inputAfterLabelWithMarkup = () => (
-  <>
-    <label htmlFor="label-with-markup-example">
+export const labelWithMarkup = {
+  render: () => (
+    <label>
       Example label <strong>with some</strong> markup
     </label>
-    <input id="label-with-markup-example" />
-  </>
-);
+  ),
 
-inputAfterLabelWithMarkup.storyName = "<input> after <label> with markup";
+  name: "<label> with markup",
+};
+
+export const inputInsideLabelWithMarkup = {
+  render: () => (
+    <label>
+      Example label <strong>with some</strong> markup
+      <input />
+    </label>
+  ),
+
+  name: "<input> inside <label> with markup",
+};
+
+export const inputAfterLabelWithMarkup = {
+  render: () => (
+    <>
+      <label htmlFor="label-with-markup-example">
+        Example label <strong>with some</strong> markup
+      </label>
+      <input id="label-with-markup-example" />
+    </>
+  ),
+
+  name: "<input> after <label> with markup",
+};

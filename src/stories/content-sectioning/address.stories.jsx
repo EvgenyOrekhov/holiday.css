@@ -4,6 +4,7 @@ export default {
   title: "Content sectioning/<address>",
 };
 
-export const address = () => <address>221B Baker Street</address>;
-
-address.storyName = "<address>";
+export const address = {
+  render: () => <address>221B Baker Street</address>,
+  name: "<address>",
+};

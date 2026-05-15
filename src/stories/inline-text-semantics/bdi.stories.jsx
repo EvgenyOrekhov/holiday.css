@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<bdi>",
 };
 
-export const bdi = () => <bdi>Example</bdi>;
-
-bdi.storyName = "<bdi>";
+export const bdi = {
+  render: () => <bdi>Example</bdi>,
+  name: "<bdi>",
+};

@@ -9,6 +9,7 @@ export default {
   },
 };
 
-export const iframe = () => <iframe src="https://example.com/"></iframe>;
-
-iframe.storyName = "<iframe>";
+export const iframe = {
+  render: () => <iframe src="https://example.com/"></iframe>,
+  name: "<iframe>",
+};

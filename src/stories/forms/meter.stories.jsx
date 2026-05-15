@@ -46,50 +46,58 @@ export default {
 
 const Template = (args) => <meter {...args} />;
 
-export const empty = Template.bind({});
+export const empty = {
+  render: Template,
+  name: "empty",
 
-empty.storyName = "empty";
-empty.args = {
-  value: 0,
-  min: 0,
-  max: 100,
-  low: 25,
-  high: 75,
-  optimum: 100,
+  args: {
+    value: 0,
+    min: 0,
+    max: 100,
+    low: 25,
+    high: 75,
+    optimum: 100,
+  },
 };
 
-export const some = Template.bind({});
+export const some = {
+  render: Template,
+  name: "some",
 
-some.storyName = "some";
-some.args = {
-  value: 10,
-  min: 0,
-  max: 100,
-  low: 25,
-  high: 75,
-  optimum: 100,
+  args: {
+    value: 10,
+    min: 0,
+    max: 100,
+    low: 25,
+    high: 75,
+    optimum: 100,
+  },
 };
 
-export const half = Template.bind({});
+export const half = {
+  render: Template,
+  name: "half",
 
-half.storyName = "half";
-half.args = {
-  value: 50,
-  min: 0,
-  max: 100,
-  low: 25,
-  high: 75,
-  optimum: 100,
+  args: {
+    value: 50,
+    min: 0,
+    max: 100,
+    low: 25,
+    high: 75,
+    optimum: 100,
+  },
 };
 
-export const full = Template.bind({});
+export const full = {
+  render: Template,
+  name: "full",
 
-full.storyName = "full";
-full.args = {
-  value: 100,
-  min: 0,
-  max: 100,
-  low: 25,
-  high: 75,
-  optimum: 100,
+  args: {
+    value: 100,
+    min: 0,
+    max: 100,
+    low: 25,
+    high: 75,
+    optimum: 100,
+  },
 };

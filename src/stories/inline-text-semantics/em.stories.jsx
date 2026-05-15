@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<em>",
 };
 
-export const em = () => <em>Example</em>;
-
-em.storyName = "<em>";
+export const em = {
+  render: () => <em>Example</em>,
+  name: "<em>",
+};

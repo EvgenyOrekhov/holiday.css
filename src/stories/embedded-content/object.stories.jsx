@@ -9,11 +9,13 @@ export default {
   },
 };
 
-export const object = () => (
-  <object
-    type="application/pdf"
-    data="https://holidaycss.js.org/sample.pdf"
-  ></object>
-);
+export const object = {
+  render: () => (
+    <object
+      type="application/pdf"
+      data="https://holidaycss.js.org/sample.pdf"
+    ></object>
+  ),
 
-object.storyName = "<object>";
+  name: "<object>",
+};

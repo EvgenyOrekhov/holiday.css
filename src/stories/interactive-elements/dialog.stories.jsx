@@ -13,18 +13,21 @@ export default {
   },
 };
 
-export const dialog = (args) => (
-  <dialog {...args}>
-    Example
-    <form method="dialog">
-      <button>Cancel</button> <button>OK</button>
-    </form>
-  </dialog>
-);
+export const dialog = {
+  render: (args) => (
+    <dialog {...args}>
+      Example
+      <form method="dialog">
+        <button>Cancel</button> <button>OK</button>
+      </form>
+    </dialog>
+  ),
 
-dialog.storyName = "<dialog>";
-dialog.args = {
-  open: true,
+  name: "<dialog>",
+
+  args: {
+    open: true,
+  },
 };
 
 const ShowModalTemplate = (args) => {
@@ -57,13 +60,16 @@ const ShowModalTemplate = (args) => {
   );
 };
 
-export const showModal = ShowModalTemplate.bind({});
+export const showModal = {
+  render: ShowModalTemplate,
+  name: "showModal()",
+};
 
-showModal.storyName = "showModal()";
+export const showModalOpen = {
+  render: ShowModalTemplate,
+  name: "showModal() open",
 
-export const showModalOpen = ShowModalTemplate.bind({});
-
-showModalOpen.storyName = "showModal() open";
-showModalOpen.args = {
-  open: true,
+  args: {
+    open: true,
+  },
 };

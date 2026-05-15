@@ -37,92 +37,114 @@ const Template = (args) => {
   return <button {...rest}>{text}</button>;
 };
 
-export const button = Template.bind({});
+export const button = {
+  render: Template,
+  name: 'type="button"',
 
-button.storyName = 'type="button"';
-button.args = {
-  type: "button",
-  text: "Button",
+  args: {
+    type: "button",
+    text: "Button",
+  },
 };
 
-export const reset = Template.bind({});
+export const reset = {
+  render: Template,
+  name: 'type="reset"',
 
-reset.storyName = 'type="reset"';
-reset.args = {
-  type: "reset",
-  text: "Reset",
+  args: {
+    type: "reset",
+    text: "Reset",
+  },
 };
 
-export const submit = Template.bind({});
+export const submit = {
+  render: Template,
+  name: 'type="submit"',
 
-submit.storyName = 'type="submit"';
-submit.args = {
-  type: "submit",
-  text: "Submit",
+  args: {
+    type: "submit",
+    text: "Submit",
+  },
 };
 
-export const implicitSubmit = Template.bind({});
+export const implicitSubmit = {
+  render: Template,
+  name: 'implicit type="submit"',
 
-implicitSubmit.storyName = 'implicit type="submit"';
-implicitSubmit.args = {
-  text: "Submit",
+  args: {
+    text: "Submit",
+  },
 };
 
-export const buttonDisabled = Template.bind({});
+export const buttonDisabled = {
+  render: Template,
+  name: 'type="button" disabled',
 
-buttonDisabled.storyName = 'type="button" disabled';
-buttonDisabled.args = {
-  type: "button",
-  disabled: true,
-  text: "Button",
+  args: {
+    type: "button",
+    disabled: true,
+    text: "Button",
+  },
 };
 
-export const resetDisabled = Template.bind({});
+export const resetDisabled = {
+  render: Template,
+  name: 'type="reset" disabled',
 
-resetDisabled.storyName = 'type="reset" disabled';
-resetDisabled.args = {
-  type: "reset",
-  disabled: true,
-  text: "Reset",
+  args: {
+    type: "reset",
+    disabled: true,
+    text: "Reset",
+  },
 };
 
-export const submitDisabled = Template.bind({});
+export const submitDisabled = {
+  render: Template,
+  name: 'type="submit" disabled',
 
-submitDisabled.storyName = 'type="submit" disabled';
-submitDisabled.args = {
-  type: "submit",
-  disabled: true,
-  text: "Submit",
+  args: {
+    type: "submit",
+    disabled: true,
+    text: "Submit",
+  },
 };
 
-export const implicitSubmitDisabled = Template.bind({});
+export const implicitSubmitDisabled = {
+  render: Template,
+  name: 'implicit type="submit" disabled',
 
-implicitSubmitDisabled.storyName = 'implicit type="submit" disabled';
-implicitSubmitDisabled.args = {
-  disabled: true,
-  text: "Submit",
+  args: {
+    disabled: true,
+    text: "Submit",
+  },
 };
 
-export const emojiLeft = Template.bind({});
+export const emojiLeft = {
+  render: Template,
+  name: "emoji left",
 
-emojiLeft.storyName = "emoji left";
-emojiLeft.args = {
-  type: "button",
-  text: "🙂 emoji-left",
+  args: {
+    type: "button",
+    text: "🙂 emoji-left",
+  },
 };
 
-export const emoji = Template.bind({});
+export const emoji = {
+  render: Template,
+  name: "emoji",
 
-emoji.storyName = "emoji";
-emoji.args = {
-  type: "button",
-  text: "🙂",
+  args: {
+    type: "button",
+    text: "🙂",
+  },
 };
 
-export const emojiRight = Template.bind({});
+export const emojiRight = {
+  render: Template,
+  name: "emoji right",
 
-emojiRight.storyName = "emoji right";
-emojiRight.args = {
-  type: "button",
-  text: "emoji-right 🙂",
+  args: {
+    type: "button",
+    text: "emoji-right 🙂",
+  },
 };

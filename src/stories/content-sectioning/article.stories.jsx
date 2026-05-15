@@ -4,6 +4,7 @@ export default {
   title: "Content sectioning/<article>",
 };
 
-export const article = () => <article>Example</article>;
-
-article.storyName = "<article>";
+export const article = {
+  render: () => <article>Example</article>,
+  name: "<article>",
+};

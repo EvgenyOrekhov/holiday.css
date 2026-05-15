@@ -45,51 +45,64 @@ export default {
 
 const Template = (args) => <input type="tel" {...args} />;
 
-export const tel = Template.bind({});
-
-tel.storyName = 'type="tel"';
-
-export const placeholder = Template.bind({});
-
-placeholder.storyName = "placeholder";
-placeholder.args = {
-  placeholder: "123-4567-8901",
+export const tel = {
+  render: Template,
+  name: 'type="tel"',
 };
 
-export const value = Template.bind({});
+export const placeholder = {
+  render: Template,
+  name: "placeholder",
 
-value.storyName = "value";
-value.args = {
-  defaultValue: "+61 2 5550 6077",
+  args: {
+    placeholder: "123-4567-8901",
+  },
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "+61 2 5550 6077",
-  disabled: true,
+  args: {
+    defaultValue: "+61 2 5550 6077",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "+61 2 5550 6077",
-  readOnly: true,
+  args: {
+    defaultValue: "+61 2 5550 6077",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "+61 2 5550 6077",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "+61 2 5550 6077",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "+61 2 5550 6077",
+    required: true,
+  },
 };

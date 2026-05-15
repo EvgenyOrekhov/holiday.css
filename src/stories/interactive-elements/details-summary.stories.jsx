@@ -20,15 +20,18 @@ const Template = (args) => (
   </details>
 );
 
-export const closed = Template.bind({});
+export const closed = {
+  render: Template,
+  name: "closed",
+};
 
-closed.storyName = "closed";
+export const open = {
+  render: Template,
+  name: "open",
 
-export const open = Template.bind({});
-
-open.storyName = "open";
-open.args = {
-  open: true,
+  args: {
+    open: true,
+  },
 };
 
 const MultipleTemplate = (args) => (
@@ -52,36 +55,41 @@ const MultipleTemplate = (args) => (
   </>
 );
 
-export const multipleClosed = MultipleTemplate.bind({});
-
-multipleClosed.storyName = "multiple closed";
-
-export const multipleOpen = MultipleTemplate.bind({});
-
-multipleOpen.storyName = "multiple open";
-multipleOpen.args = {
-  open: true,
+export const multipleClosed = {
+  render: MultipleTemplate,
+  name: "multiple closed",
 };
 
-export const ExclusiveAccordion = () => (
-  <>
-    <details name="exclusive-accordion-example">
-      <summary>Example</summary>
-      Example
-    </details>
-    <details name="exclusive-accordion-example" open>
-      <summary>Example</summary>
-      Example
-    </details>
-    <details name="exclusive-accordion-example">
-      <summary>Example</summary>
-      Example
-    </details>
-    <details name="exclusive-accordion-example">
-      <summary>Example</summary>
-      Example
-    </details>
-  </>
-);
+export const multipleOpen = {
+  render: MultipleTemplate,
+  name: "multiple open",
 
-ExclusiveAccordion.storyName = "exclusive accordion";
+  args: {
+    open: true,
+  },
+};
+
+export const ExclusiveAccordion = {
+  render: () => (
+    <>
+      <details name="exclusive-accordion-example">
+        <summary>Example</summary>
+        Example
+      </details>
+      <details name="exclusive-accordion-example" open>
+        <summary>Example</summary>
+        Example
+      </details>
+      <details name="exclusive-accordion-example">
+        <summary>Example</summary>
+        Example
+      </details>
+      <details name="exclusive-accordion-example">
+        <summary>Example</summary>
+        Example
+      </details>
+    </>
+  ),
+
+  name: "exclusive accordion",
+};

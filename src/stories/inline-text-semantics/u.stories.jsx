@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<u>",
 };
 
-export const u = () => <u>Example</u>;
-
-u.storyName = "<u>";
+export const u = {
+  render: () => <u>Example</u>,
+  name: "<u>",
+};

@@ -4,6 +4,7 @@ export default {
   title: "Content sectioning/<header>",
 };
 
-export const header = () => <header>Example</header>;
-
-header.storyName = "<header>";
+export const header = {
+  render: () => <header>Example</header>,
+  name: "<header>",
+};

@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<strong>",
 };
 
-export const strong = () => <strong>Example</strong>;
-
-strong.storyName = "<strong>";
+export const strong = {
+  render: () => <strong>Example</strong>,
+  name: "<strong>",
+};

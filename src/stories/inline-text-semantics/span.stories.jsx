@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<span>",
 };
 
-export const span = () => <span>Example</span>;
-
-span.storyName = "<span>";
+export const span = {
+  render: () => <span>Example</span>,
+  name: "<span>",
+};

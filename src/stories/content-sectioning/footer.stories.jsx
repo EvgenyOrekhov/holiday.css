@@ -4,6 +4,7 @@ export default {
   title: "Content sectioning/<footer>",
 };
 
-export const footer = () => <footer>Example</footer>;
-
-footer.storyName = "<footer>";
+export const footer = {
+  render: () => <footer>Example</footer>,
+  name: "<footer>",
+};

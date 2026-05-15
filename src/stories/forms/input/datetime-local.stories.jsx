@@ -38,44 +38,55 @@ export default {
 
 const Template = (args) => <input type="datetime-local" {...args} />;
 
-export const datetimeLocal = Template.bind({});
-
-datetimeLocal.storyName = 'type="datetime-local"';
-
-export const value = Template.bind({});
-
-value.storyName = "value";
-value.args = {
-  defaultValue: "2004-09-22T16:16:00",
+export const datetimeLocal = {
+  render: Template,
+  name: 'type="datetime-local"',
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "2004-09-22T16:16:00",
-  disabled: true,
+  args: {
+    defaultValue: "2004-09-22T16:16:00",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "2004-09-22T16:16:00",
-  readOnly: true,
+  args: {
+    defaultValue: "2004-09-22T16:16:00",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "2004-09-22T16:16:00",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "2004-09-22T16:16:00",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "2004-09-22T16:16:00",
+    required: true,
+  },
 };

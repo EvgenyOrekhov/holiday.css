@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<s>",
 };
 
-export const s = () => <s>Example</s>;
-
-s.storyName = "<s>";
+export const s = {
+  render: () => <s>Example</s>,
+  name: "<s>",
+};

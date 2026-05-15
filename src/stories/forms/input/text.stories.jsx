@@ -56,58 +56,73 @@ export default {
 
 const Template = (args) => <input {...args} />;
 
-export const input = Template.bind({});
-
-input.storyName = "<input>";
-
-export const text = Template.bind({});
-
-text.storyName = 'type="text"';
-text.args = {
-  type: "text",
+export const input = {
+  render: Template,
+  name: "<input>",
 };
 
-export const placeholder = Template.bind({});
+export const text = {
+  render: Template,
+  name: 'type="text"',
 
-placeholder.storyName = "placeholder";
-placeholder.args = {
-  placeholder: "Placeholder",
+  args: {
+    type: "text",
+  },
 };
 
-export const value = Template.bind({});
+export const placeholder = {
+  render: Template,
+  name: "placeholder",
 
-value.storyName = "value";
-value.args = {
-  defaultValue: "Example",
+  args: {
+    placeholder: "Placeholder",
+  },
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "Disabled",
-  disabled: true,
+  args: {
+    defaultValue: "Example",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "Read-only",
-  readOnly: true,
+  args: {
+    defaultValue: "Disabled",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "Read-only",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "Required filled",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "Required filled",
+    required: true,
+  },
 };

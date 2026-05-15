@@ -9,8 +9,10 @@ export default {
   },
 };
 
-export const embed = () => (
-  <embed type="video/mp4" src="https://holidaycss.js.org/nyan-cat.mp4" />
-);
+export const embed = {
+  render: () => (
+    <embed type="video/mp4" src="https://holidaycss.js.org/nyan-cat.mp4" />
+  ),
 
-embed.storyName = "<embed>";
+  name: "<embed>",
+};

@@ -4,6 +4,7 @@ export default {
   title: "Content sectioning/<section>",
 };
 
-export const section = () => <section>Example</section>;
-
-section.storyName = "<section>";
+export const section = {
+  render: () => <section>Example</section>,
+  name: "<section>",
+};

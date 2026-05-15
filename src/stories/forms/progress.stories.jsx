@@ -21,41 +21,51 @@ export default {
 
 const Template = (args) => <progress {...args} />;
 
-export const indeterminate = Template.bind({});
+export const indeterminate = {
+  render: Template,
+  name: "indeterminate",
 
-indeterminate.storyName = "indeterminate";
-indeterminate.parameters = {
-  chromatic: { disableSnapshot: true },
+  parameters: {
+    chromatic: { disableSnapshot: true },
+  },
 };
 
-export const empty = Template.bind({});
+export const empty = {
+  render: Template,
+  name: "empty",
 
-empty.storyName = "empty";
-empty.args = {
-  value: 0,
-  max: 100,
+  args: {
+    value: 0,
+    max: 100,
+  },
 };
 
-export const some = Template.bind({});
+export const some = {
+  render: Template,
+  name: "some",
 
-some.storyName = "some";
-some.args = {
-  value: 10,
-  max: 100,
+  args: {
+    value: 10,
+    max: 100,
+  },
 };
 
-export const half = Template.bind({});
+export const half = {
+  render: Template,
+  name: "half",
 
-half.storyName = "half";
-half.args = {
-  value: 50,
-  max: 100,
+  args: {
+    value: 50,
+    max: 100,
+  },
 };
 
-export const full = Template.bind({});
+export const full = {
+  render: Template,
+  name: "full",
 
-full.storyName = "full";
-full.args = {
-  value: 100,
-  max: 100,
+  args: {
+    value: 100,
+    max: 100,
+  },
 };

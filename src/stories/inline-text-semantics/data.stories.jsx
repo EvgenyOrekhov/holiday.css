@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<data>",
 };
 
-export const data = () => <data value="example">Example</data>;
-
-data.storyName = "<data>";
+export const data = {
+  render: () => <data value="example">Example</data>,
+  name: "<data>",
+};

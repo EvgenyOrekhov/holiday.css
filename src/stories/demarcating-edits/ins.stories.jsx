@@ -4,6 +4,7 @@ export default {
   title: "Demarcating edits/<ins>",
 };
 
-export const ins = () => <ins>Example</ins>;
-
-ins.storyName = "<ins>";
+export const ins = {
+  render: () => <ins>Example</ins>,
+  name: "<ins>",
+};

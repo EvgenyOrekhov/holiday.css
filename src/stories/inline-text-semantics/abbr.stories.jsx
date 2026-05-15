@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<abbr>",
 };
 
-export const abbr = () => <abbr title="Example">Example</abbr>;
-
-abbr.storyName = "<abbr>";
+export const abbr = {
+  render: () => <abbr title="Example">Example</abbr>,
+  name: "<abbr>",
+};

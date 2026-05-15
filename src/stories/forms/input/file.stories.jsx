@@ -22,20 +22,25 @@ export default {
 
 const Template = (args) => <input type="file" {...args} />;
 
-export const file = Template.bind({});
-
-file.storyName = 'type="file"';
-
-export const disabled = Template.bind({});
-
-disabled.storyName = "disabled";
-disabled.args = {
-  disabled: true,
+export const file = {
+  render: Template,
+  name: 'type="file"',
 };
 
-export const required = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-required.storyName = "required";
-required.args = {
-  required: true,
+  args: {
+    disabled: true,
+  },
+};
+
+export const required = {
+  render: Template,
+  name: "required",
+
+  args: {
+    required: true,
+  },
 };

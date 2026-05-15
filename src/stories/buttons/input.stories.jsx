@@ -43,94 +43,116 @@ export default {
 
 const Template = (args) => <input {...args} />;
 
-export const button = Template.bind({});
+export const button = {
+  render: Template,
+  name: 'type="button"',
 
-button.storyName = 'type="button"';
-button.args = {
-  type: "button",
-  value: "Button",
+  args: {
+    type: "button",
+    value: "Button",
+  },
 };
 
-export const reset = Template.bind({});
+export const reset = {
+  render: Template,
+  name: 'type="reset"',
 
-reset.storyName = 'type="reset"';
-reset.args = {
-  type: "reset",
+  args: {
+    type: "reset",
+  },
 };
 
-export const submit = Template.bind({});
+export const submit = {
+  render: Template,
+  name: 'type="submit"',
 
-submit.storyName = 'type="submit"';
-submit.args = {
-  type: "submit",
+  args: {
+    type: "submit",
+  },
 };
 
-export const image = Template.bind({});
+export const image = {
+  render: Template,
+  name: 'type="image"',
 
-image.storyName = 'type="image"';
-image.args = {
-  type: "image",
-  src: "https://holidaycss.js.org/70x36.svg",
-  alt: "Placeholder",
+  args: {
+    type: "image",
+    src: "https://holidaycss.js.org/70x36.svg",
+    alt: "Placeholder",
+  },
 };
 
-export const buttonDisabled = Template.bind({});
+export const buttonDisabled = {
+  render: Template,
+  name: 'type="button" disabled',
 
-buttonDisabled.storyName = 'type="button" disabled';
-buttonDisabled.args = {
-  type: "button",
-  disabled: true,
-  value: "Button",
+  args: {
+    type: "button",
+    disabled: true,
+    value: "Button",
+  },
 };
 
-export const resetDisabled = Template.bind({});
+export const resetDisabled = {
+  render: Template,
+  name: 'type="reset" disabled',
 
-resetDisabled.storyName = 'type="reset" disabled';
-resetDisabled.args = {
-  type: "reset",
-  disabled: true,
-  value: "Reset",
+  args: {
+    type: "reset",
+    disabled: true,
+    value: "Reset",
+  },
 };
 
-export const submitDisabled = Template.bind({});
+export const submitDisabled = {
+  render: Template,
+  name: 'type="submit" disabled',
 
-submitDisabled.storyName = 'type="submit" disabled';
-submitDisabled.args = {
-  type: "submit",
-  disabled: true,
-  value: "Submit",
+  args: {
+    type: "submit",
+    disabled: true,
+    value: "Submit",
+  },
 };
 
-export const imageDisabled = Template.bind({});
+export const imageDisabled = {
+  render: Template,
+  name: 'type="image" disabled',
 
-imageDisabled.storyName = 'type="image" disabled';
-imageDisabled.args = {
-  type: "image",
-  src: "https://holidaycss.js.org/70x36.svg",
-  alt: "Placeholder",
-  disabled: true,
+  args: {
+    type: "image",
+    src: "https://holidaycss.js.org/70x36.svg",
+    alt: "Placeholder",
+    disabled: true,
+  },
 };
 
-export const emojiLeft = Template.bind({});
+export const emojiLeft = {
+  render: Template,
+  name: "emoji left",
 
-emojiLeft.storyName = "emoji left";
-emojiLeft.args = {
-  type: "button",
-  value: "🙂 emoji-left",
+  args: {
+    type: "button",
+    value: "🙂 emoji-left",
+  },
 };
 
-export const emoji = Template.bind({});
+export const emoji = {
+  render: Template,
+  name: "emoji",
 
-emoji.storyName = "emoji";
-emoji.args = {
-  type: "button",
-  value: "🙂",
+  args: {
+    type: "button",
+    value: "🙂",
+  },
 };
 
-export const emojiRight = Template.bind({});
+export const emojiRight = {
+  render: Template,
+  name: "emoji right",
 
-emojiRight.storyName = "emoji right";
-emojiRight.args = {
-  type: "button",
-  value: "emoji-right 🙂",
+  args: {
+    type: "button",
+    value: "emoji-right 🙂",
+  },
 };

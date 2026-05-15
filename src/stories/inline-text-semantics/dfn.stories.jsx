@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<dfn>",
 };
 
-export const dfn = () => <dfn>Example</dfn>;
-
-dfn.storyName = "<dfn>";
+export const dfn = {
+  render: () => <dfn>Example</dfn>,
+  name: "<dfn>",
+};

@@ -43,23 +43,27 @@ export default {
 
 const Template = (args) => <input type="range" {...args} />;
 
-export const range = Template.bind({});
+export const range = {
+  render: Template,
+  name: 'type="range"',
 
-range.storyName = 'type="range"';
-range.args = {
-  defaultValue: 50,
-  min: 0,
-  max: 100,
+  args: {
+    defaultValue: 50,
+    min: 0,
+    max: 100,
+  },
 };
 
-export const disabled = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: 50,
-  min: 0,
-  max: 100,
-  disabled: true,
+  args: {
+    defaultValue: 50,
+    min: 0,
+    max: 100,
+    disabled: true,
+  },
 };
 
 const WithDatalistTemplate = (args) => (
@@ -82,25 +86,29 @@ const WithDatalistTemplate = (args) => (
   </>
 );
 
-export const withDatalist = WithDatalistTemplate.bind({});
+export const withDatalist = {
+  render: WithDatalistTemplate,
+  name: "with <datalist>",
 
-withDatalist.storyName = "with <datalist>";
-withDatalist.args = {
-  defaultValue: 50,
-  min: 0,
-  max: 100,
-  step: "10",
-  list: "tickmarks",
+  args: {
+    defaultValue: 50,
+    min: 0,
+    max: 100,
+    step: "10",
+    list: "tickmarks",
+  },
 };
 
-export const withDatalistDisabled = WithDatalistTemplate.bind({});
+export const withDatalistDisabled = {
+  render: WithDatalistTemplate,
+  name: "with <datalist> disabled",
 
-withDatalistDisabled.storyName = "with <datalist> disabled";
-withDatalistDisabled.args = {
-  defaultValue: 50,
-  min: 0,
-  max: 100,
-  step: "10",
-  list: "tickmarks-disabled",
-  disabled: true,
+  args: {
+    defaultValue: 50,
+    min: 0,
+    max: 100,
+    step: "10",
+    list: "tickmarks-disabled",
+    disabled: true,
+  },
 };

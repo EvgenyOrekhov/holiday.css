@@ -45,51 +45,64 @@ export default {
 
 const Template = (args) => <input type="email" {...args} />;
 
-export const email = Template.bind({});
-
-email.storyName = 'type="email"';
-
-export const placeholder = Template.bind({});
-
-placeholder.storyName = "placeholder";
-placeholder.args = {
-  placeholder: "placeholder@example.com",
+export const email = {
+  render: Template,
+  name: 'type="email"',
 };
 
-export const value = Template.bind({});
+export const placeholder = {
+  render: Template,
+  name: "placeholder",
 
-value.storyName = "value";
-value.args = {
-  defaultValue: "example@example.com",
+  args: {
+    placeholder: "placeholder@example.com",
+  },
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "disabled@example.com",
-  disabled: true,
+  args: {
+    defaultValue: "example@example.com",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "readonly@example.com",
-  readOnly: true,
+  args: {
+    defaultValue: "disabled@example.com",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "readonly@example.com",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "required-filled@example.com",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "required-filled@example.com",
+    required: true,
+  },
 };

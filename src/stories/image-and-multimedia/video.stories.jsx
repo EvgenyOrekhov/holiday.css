@@ -9,8 +9,10 @@ export default {
   },
 };
 
-export const video = () => (
-  <video controls loop src="https://holidaycss.js.org/nyan-cat.mp4"></video>
-);
+export const video = {
+  render: () => (
+    <video controls loop src="https://holidaycss.js.org/nyan-cat.mp4"></video>
+  ),
 
-video.storyName = "<video>";
+  name: "<video>",
+};

@@ -4,17 +4,20 @@ export default {
   title: "Forms/<output>",
 };
 
-export const single = () => <output>Example</output>;
+export const single = {
+  render: () => <output>Example</output>,
+  name: "single",
+};
 
-single.storyName = "single";
+export const multiple = {
+  render: () => (
+    <>
+      <output>Example</output>
+      <output>Example</output>
+      <output>Example</output>
+      <output>Example</output>
+    </>
+  ),
 
-export const multiple = () => (
-  <>
-    <output>Example</output>
-    <output>Example</output>
-    <output>Example</output>
-    <output>Example</output>
-  </>
-);
-
-multiple.storyName = "multiple";
+  name: "multiple",
+};

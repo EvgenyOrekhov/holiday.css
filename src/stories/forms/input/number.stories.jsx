@@ -38,44 +38,55 @@ export default {
 
 const Template = (args) => <input type="number" {...args} />;
 
-export const number = Template.bind({});
-
-number.storyName = 'type="number"';
-
-export const value = Template.bind({});
-
-value.storyName = "value";
-value.args = {
-  defaultValue: "42",
+export const number = {
+  render: Template,
+  name: 'type="number"',
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "42",
-  disabled: true,
+  args: {
+    defaultValue: "42",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "42",
-  readOnly: true,
+  args: {
+    defaultValue: "42",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "42",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "42",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "42",
+    required: true,
+  },
 };

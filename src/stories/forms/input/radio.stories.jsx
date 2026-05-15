@@ -28,22 +28,27 @@ const Template = (args) => (
   </label>
 );
 
-export const unchecked = Template.bind({});
-
-unchecked.storyName = "unchecked";
-
-export const checked = Template.bind({});
-
-checked.storyName = "checked";
-checked.args = {
-  defaultChecked: true,
+export const unchecked = {
+  render: Template,
+  name: "unchecked",
 };
 
-export const disabled = Template.bind({});
+export const checked = {
+  render: Template,
+  name: "checked",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  disabled: true,
+  args: {
+    defaultChecked: true,
+  },
+};
+
+export const disabled = {
+  render: Template,
+  name: "disabled",
+
+  args: {
+    disabled: true,
+  },
 };
 
 const WithMarkupTemplate = (args) => (
@@ -53,9 +58,10 @@ const WithMarkupTemplate = (args) => (
   </label>
 );
 
-export const withMarkup = WithMarkupTemplate.bind({});
-
-withMarkup.storyName = "with markup";
+export const withMarkup = {
+  render: WithMarkupTemplate,
+  name: "with markup",
+};
 
 const LabelAfterRadioTemplate = (args) => (
   <>
@@ -63,19 +69,23 @@ const LabelAfterRadioTemplate = (args) => (
   </>
 );
 
-export const labelAfterRadio = LabelAfterRadioTemplate.bind({});
+export const labelAfterRadio = {
+  render: LabelAfterRadioTemplate,
+  name: "<label> after radio",
 
-labelAfterRadio.storyName = "<label> after radio";
-labelAfterRadio.args = {
-  id: "label-after-radio",
+  args: {
+    id: "label-after-radio",
+  },
 };
 
-export const labelAfterRadioDisabled = LabelAfterRadioTemplate.bind({});
+export const labelAfterRadioDisabled = {
+  render: LabelAfterRadioTemplate,
+  name: "<label> after radio disabled",
 
-labelAfterRadioDisabled.storyName = "<label> after radio disabled";
-labelAfterRadioDisabled.args = {
-  disabled: true,
-  id: "label-after-radio-disabled",
+  args: {
+    disabled: true,
+    id: "label-after-radio-disabled",
+  },
 };
 
 const LabelWithMarkupAfterRadioTemplate = (args) => (
@@ -87,11 +97,11 @@ const LabelWithMarkupAfterRadioTemplate = (args) => (
   </>
 );
 
-export const labelWithMarkupAfterRadio = LabelWithMarkupAfterRadioTemplate.bind(
-  {},
-);
+export const labelWithMarkupAfterRadio = {
+  render: LabelWithMarkupAfterRadioTemplate,
+  name: "<label> with markup after radio",
 
-labelWithMarkupAfterRadio.storyName = "<label> with markup after radio";
-labelWithMarkupAfterRadio.args = {
-  id: "label-with-markup-after-radio",
+  args: {
+    id: "label-with-markup-after-radio",
+  },
 };

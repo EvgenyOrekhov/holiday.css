@@ -54,60 +54,75 @@ const Template = (args) => {
   );
 };
 
-export const unchecked = Template.bind({});
-
-unchecked.storyName = "unchecked";
-
-export const checked = Template.bind({});
-
-checked.storyName = "checked";
-checked.args = {
-  defaultChecked: true,
+export const unchecked = {
+  render: Template,
+  name: "unchecked",
 };
 
-export const indeterminate = Template.bind({});
+export const checked = {
+  render: Template,
+  name: "checked",
 
-indeterminate.storyName = "indeterminate";
-indeterminate.args = {
-  indeterminate: true,
+  args: {
+    defaultChecked: true,
+  },
 };
 
-export const disabledUnchecked = Template.bind({});
+export const indeterminate = {
+  render: Template,
+  name: "indeterminate",
 
-disabledUnchecked.storyName = "disabled unchecked";
-disabledUnchecked.args = {
-  disabled: true,
+  args: {
+    indeterminate: true,
+  },
 };
 
-export const disabledChecked = Template.bind({});
+export const disabledUnchecked = {
+  render: Template,
+  name: "disabled unchecked",
 
-disabledChecked.storyName = "disabled checked";
-disabledChecked.args = {
-  defaultChecked: true,
-  disabled: true,
+  args: {
+    disabled: true,
+  },
 };
 
-export const disabledIndeterminate = Template.bind({});
+export const disabledChecked = {
+  render: Template,
+  name: "disabled checked",
 
-disabledIndeterminate.storyName = "disabled indeterminate";
-disabledIndeterminate.args = {
-  indeterminate: true,
-  disabled: true,
+  args: {
+    defaultChecked: true,
+    disabled: true,
+  },
 };
 
-export const requiredUnchecked = Template.bind({});
+export const disabledIndeterminate = {
+  render: Template,
+  name: "disabled indeterminate",
 
-requiredUnchecked.storyName = "required unchecked";
-requiredUnchecked.args = {
-  required: true,
+  args: {
+    indeterminate: true,
+    disabled: true,
+  },
 };
 
-export const requiredChecked = Template.bind({});
+export const requiredUnchecked = {
+  render: Template,
+  name: "required unchecked",
 
-requiredChecked.storyName = "required checked";
-requiredChecked.args = {
-  defaultChecked: true,
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredChecked = {
+  render: Template,
+  name: "required checked",
+
+  args: {
+    defaultChecked: true,
+    required: true,
+  },
 };
 
 const WithMarkupTemplate = (args) => {
@@ -129,9 +144,10 @@ const WithMarkupTemplate = (args) => {
   );
 };
 
-export const withMarkup = WithMarkupTemplate.bind({});
-
-withMarkup.storyName = "with markup";
+export const withMarkup = {
+  render: WithMarkupTemplate,
+  name: "with markup",
+};
 
 const LabelAfterCheckboxTemplate = (args) => (
   <>
@@ -140,19 +156,23 @@ const LabelAfterCheckboxTemplate = (args) => (
   </>
 );
 
-export const labelAfterCheckbox = LabelAfterCheckboxTemplate.bind({});
+export const labelAfterCheckbox = {
+  render: LabelAfterCheckboxTemplate,
+  name: "<label> after checkbox",
 
-labelAfterCheckbox.storyName = "<label> after checkbox";
-labelAfterCheckbox.args = {
-  id: "label-after-checkbox",
+  args: {
+    id: "label-after-checkbox",
+  },
 };
 
-export const labelAfterCheckboxDisabled = LabelAfterCheckboxTemplate.bind({});
+export const labelAfterCheckboxDisabled = {
+  render: LabelAfterCheckboxTemplate,
+  name: "<label> after checkbox disabled",
 
-labelAfterCheckboxDisabled.storyName = "<label> after checkbox disabled";
-labelAfterCheckboxDisabled.args = {
-  disabled: true,
-  id: "label-after-checkbox-disabled",
+  args: {
+    disabled: true,
+    id: "label-after-checkbox-disabled",
+  },
 };
 
 const LabelWithMarkupAfterCheckboxTemplate = (args) => (
@@ -164,10 +184,11 @@ const LabelWithMarkupAfterCheckboxTemplate = (args) => (
   </>
 );
 
-export const labelWithMarkupAfterCheckbox =
-  LabelWithMarkupAfterCheckboxTemplate.bind({});
+export const labelWithMarkupAfterCheckbox = {
+  render: LabelWithMarkupAfterCheckboxTemplate,
+  name: "<label> with markup after checkbox",
 
-labelWithMarkupAfterCheckbox.storyName = "<label> with markup after checkbox";
-labelWithMarkupAfterCheckbox.args = {
-  id: "label-with-markup-after-checkbox",
+  args: {
+    id: "label-with-markup-after-checkbox",
+  },
 };

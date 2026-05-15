@@ -4,6 +4,7 @@ export default {
   title: "Text content/<div>",
 };
 
-export const div = () => <div>Example</div>;
-
-div.storyName = "<div>";
+export const div = {
+  render: () => <div>Example</div>,
+  name: "<div>",
+};

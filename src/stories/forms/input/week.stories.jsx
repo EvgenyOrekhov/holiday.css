@@ -38,44 +38,55 @@ export default {
 
 const Template = (args) => <input type="week" {...args} />;
 
-export const week = Template.bind({});
-
-week.storyName = 'type="week"';
-
-export const value = Template.bind({});
-
-value.storyName = "value";
-value.args = {
-  defaultValue: "2004-W39",
+export const week = {
+  render: Template,
+  name: 'type="week"',
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "2004-W39",
-  disabled: true,
+  args: {
+    defaultValue: "2004-W39",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "2004-W39",
-  readOnly: true,
+  args: {
+    defaultValue: "2004-W39",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "2004-W39",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "2004-W39",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "2004-W39",
+    required: true,
+  },
 };

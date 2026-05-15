@@ -4,6 +4,7 @@ export default {
   title: "Inline text semantics/<sub>",
 };
 
-export const sub = () => <sub>Example</sub>;
-
-sub.storyName = "<sub>";
+export const sub = {
+  render: () => <sub>Example</sub>,
+  name: "<sub>",
+};

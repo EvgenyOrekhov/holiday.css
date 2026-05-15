@@ -4,6 +4,7 @@ export default {
   title: "Demarcating edits/<del>",
 };
 
-export const del = () => <del>Example</del>;
-
-del.storyName = "<del>";
+export const del = {
+  render: () => <del>Example</del>,
+  name: "<del>",
+};

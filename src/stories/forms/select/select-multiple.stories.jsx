@@ -45,28 +45,35 @@ const Template = (args) => (
   </select>
 );
 
-export const select = Template.bind({});
-
-select.storyName = "<select multiple>";
-
-export const disabled = Template.bind({});
-
-disabled.storyName = "disabled";
-disabled.args = {
-  disabled: true,
+export const select = {
+  render: Template,
+  name: "<select multiple>",
 };
 
-export const requiredEmpty = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    disabled: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: ["4"],
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: ["4"],
+    required: true,
+  },
 };

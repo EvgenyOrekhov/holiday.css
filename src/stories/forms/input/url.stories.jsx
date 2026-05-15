@@ -38,44 +38,55 @@ export default {
 
 const Template = (args) => <input type="url" {...args} />;
 
-export const url = Template.bind({});
-
-url.storyName = 'type="url"';
-
-export const value = Template.bind({});
-
-value.storyName = "value";
-value.args = {
-  defaultValue: "https://example.com",
+export const url = {
+  render: Template,
+  name: 'type="url"',
 };
 
-export const disabled = Template.bind({});
+export const value = {
+  render: Template,
+  name: "value",
 
-disabled.storyName = "disabled";
-disabled.args = {
-  defaultValue: "https://example.com/disabled",
-  disabled: true,
+  args: {
+    defaultValue: "https://example.com",
+  },
 };
 
-export const readonly = Template.bind({});
+export const disabled = {
+  render: Template,
+  name: "disabled",
 
-readonly.storyName = "readonly";
-readonly.args = {
-  defaultValue: "https://example.com/readonly",
-  readOnly: true,
+  args: {
+    defaultValue: "https://example.com/disabled",
+    disabled: true,
+  },
 };
 
-export const requiredEmpty = Template.bind({});
+export const readonly = {
+  render: Template,
+  name: "readonly",
 
-requiredEmpty.storyName = "required empty";
-requiredEmpty.args = {
-  required: true,
+  args: {
+    defaultValue: "https://example.com/readonly",
+    readOnly: true,
+  },
 };
 
-export const requiredFilled = Template.bind({});
+export const requiredEmpty = {
+  render: Template,
+  name: "required empty",
 
-requiredFilled.storyName = "required filled";
-requiredFilled.args = {
-  defaultValue: "https://example.com/required-filled",
-  required: true,
+  args: {
+    required: true,
+  },
+};
+
+export const requiredFilled = {
+  render: Template,
+  name: "required filled",
+
+  args: {
+    defaultValue: "https://example.com/required-filled",
+    required: true,
+  },
 };
