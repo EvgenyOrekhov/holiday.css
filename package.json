@@ -33,11 +33,11 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@storybook/addon-a11y": "^10.3.6",
-    "@storybook/addon-docs": "^10.3.6",
-    "@storybook/react-vite": "^10.3.6",
+    "@storybook/addon-a11y": "^10.4.0",
+    "@storybook/addon-docs": "^10.4.0",
+    "@storybook/react-vite": "^10.4.0",
     "@twinscom/stylelint-config": "^17.0.0",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^6.0.2",
     "chromatic": "^16.10.0",
     "cross-env": "^10.1.0",
     "highlight.js": "^11.11.1",
@@ -49,10 +49,10 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "replace": "^1.2.2",
-    "storybook": "^10.3.6",
-    "stylelint": "^17.11.0",
+    "storybook": "^10.4.0",
+    "stylelint": "^17.11.1",
     "typescript": "^6.0.3",
-    "vite": "^8.0.12"
+    "vite": "^8.0.13"
   },
   "lint-staged": {
     "*.{js,css,json,yml,yaml,md,html}": "prettier --write",
