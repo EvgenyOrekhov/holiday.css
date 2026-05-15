@@ -130,6 +130,23 @@ button,
   padding: 0.5rem;
 }
 
+[type="image"] {
+  vertical-align: bottom;
+}
+
+label > [type="color"] {
+  margin-inline-start: 0.25rem;
+}
+
+button:not(:last-child),
+[type="button"]:not(:last-child),
+[type="reset"]:not(:last-child),
+[type="submit"]:not(:last-child),
+[type="image"]:not(:last-child),
+[type="color"]:not(:last-child) {
+  margin-inline-end: 0.5rem;
+}
+
 /* stylelint-disable-next-line selector-no-qualifying-type -- limit scope to
 `input` only */
 input:not([type]),
@@ -197,10 +214,6 @@ summary {
   margin: -0.5rem;
 }
 
-[type="image"] {
-  vertical-align: bottom;
-}
-
 fieldset {
   padding: 0.75rem;
 }
@@ -208,10 +221,6 @@ fieldset {
 fieldset + fieldset,
 footer {
   margin-block-start: 1rem;
-}
-
-label > [type="color"] {
-  margin-inline-start: 0.25rem;
 }
 
 label {
