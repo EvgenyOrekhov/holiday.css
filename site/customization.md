@@ -21,6 +21,7 @@ your needs:
   /* Light mode colors */
   --light-border-color: #dbdbdb;
   --light-border-hover-color: #b5b5b5;
+  --light-focus-color: #767676;
   --light-background-color: #fff;
   --light-highlighted-background-color: #f5f5f5;
   --light-text-color: #363636;
@@ -42,6 +43,7 @@ your needs:
   /* Dark mode colors */
   --dark-border-color: #5f6267;
   --dark-border-hover-color: #bcbebd;
+  --dark-focus-color: #bcbebd;
   --dark-background-color: #202124;
   --dark-highlighted-background-color: #292b2e;
   --dark-text-color: #fff;
